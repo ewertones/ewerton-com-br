@@ -1,0 +1,69 @@
+{
+    "common": {
+        "viewResume": "Ver Currículo",
+        "connectLinkedIn": "Conectar no LinkedIn",
+        "learnMore": "Saiba Mais",
+        "visitProject": "Visitar Projeto",
+        "comingSoon": "Em Breve"
+    },
+    "nav": {
+        "home": "Início",
+        "about": "Sobre",
+        "projects": "Projetos"
+    },
+    "landing": {
+        "hero": {
+            "title1": "Melhorando o Mundo",
+            "title2": "Através da Tecnologia",
+            "subtitle": "ewerton é uma software house focada em transformar problemas complexos em softwares bonitos e confiáveis. Projetamos e construímos tecnologia que ajuda pessoas e empresas a avançar mais rápido, escalar com segurança e criar um impacto real.",
+            "cta": "Entre em Contato"
+        },
+        "projects": {
+            "title": "O Que Estamos Construindo",
+            "subtitle": "Estes são os produtos que estamos ativamente construindo e melhorando para resolver problemas operacionais reais.",
+            "aiomover": {
+                "title": "aiomover",
+                "tagline": "Mova seus arquivos para qualquer lugar, instantaneamente",
+                "description": "A ferramenta definitiva de migração na nuvem para uso pessoal e empresarial. O aiomover torna simples transferir arquivos entre diferentes serviços de nuvem de forma segura e eficiente. Seja para backup de dados, migrações para novos programas ou sincronização entre plataformas, o aiomover cuida de tudo.",
+                "features": {
+                    "fast": "Transferências Ultra Rápidas",
+                    "secure": "Segurança de Nível Bancário",
+                    "simple": "Interface Simples"
+                }
+            },
+            "questao": {
+                "title": "questao",
+                "tagline": "Domine o ENEM, uma questão de cada vez",
+                "description": "Uma plataforma EdTech com inteligência artificial projetada para ajudar estudantes a se prepararem para o ENEM. Com 25 anos de questões reais, aprendizado gamificado, rankings e mentoria personalizada por IA, o questão torna o estudo divertido e eficaz.",
+                "features": {
+                    "ai": "Aprendizado com IA",
+                    "gamified": "Experiência Gamificada",
+                    "community": "Conecte-se com amigos"
+                }
+            }
+        },
+        "about": {
+            "title": "Sobre ewerton",
+            "description": "Opa, me chamo Ewerton, sou um Engenheiro de Software movido por curiosidade, excelência e propósito. Amo construir sistemas elegantes e confiáveis e sou movido por transformar problemas complexos em soluções simples e escaláveis. Sou um andarilho na vida, vagando por lugares que vão desde as praias do Nordeste brasileiro até os picos nevados dos Andes. Guiado pela minha fé em Deus, busco construir tecnologia de forma responsável e criar ferramentas que tenham um impacto positivo e duradouro.",
+            "location": "Tô no Brasil",
+            "focus": "Fã n°1 do Python"
+        },
+        "contact": {
+            "title": "Vamos Conectar",
+            "subtitle": "Interessado em trabalhar junto ou só quer dizer olá? Fique à vontade para entrar em contato!"
+        }
+    },
+    "footer": {
+        "copyright": "© 2025 ewerton. Todos os direitos reservados.",
+        "madeWith": "Feito com amor no",
+        "brazil": "Brasil"
+    },
+    "theme": {
+        "light": "Tema Claro",
+        "dark": "Tema Escuro",
+        "system": "Sistema"
+    },
+    "metadata": {
+        "title": "ewerton"
+    }
+}

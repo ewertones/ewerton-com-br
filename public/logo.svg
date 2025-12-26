@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_4" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080">
+  <!-- Generator: Adobe Illustrator 29.8.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 2)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #002776;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: none;
+      }
+
+      .st3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path id="cut" class="st2" d="M22.8,353.8c3.7-12,7.9-23.8,12.6-35.3,33.9-84.3,88.3-153.6,163.4-207.7C273.8,56.6,364.8,22,471.8,6.9c105.6-14.9,200.5-5.8,284.8,27.3,84.3,33.1,153.6,85.6,207.9,157.5,54.3,71.9,88.7,159.4,103.2,262.5l12.3,87.5-783.2,110.4c12.6,68.8,48,121.2,106.1,157.3,58.2,36.1,124.8,48.8,200.1,38.2,76.7-10.8,130.9-34.3,162.7-70.7,31.8-36.3,54.4-74.8,67.9-115.4l238.9,78.4c-15.3,38.2-39.2,80.6-71.8,127.4-32.5,46.8-78.6,89.2-138.1,127.4-59.6,38.1-138.5,64.1-236.9,78-107.1,15.1-204.4,7-292.1-24.2-87.7-31.2-159.8-82.6-216.3-154.2-56.5-71.6-92.2-160.3-107-266.1l-3.4-24.4c-12.8-91.3-7.5-174.6,16-249.9h0ZM272.1,460.5l503.4-70.9c-14-57.5-45.5-100.8-94.5-129.9-49.1-29-109.1-38.6-179.9-28.6-73.8,10.4-129.9,36.3-168.3,77.7-38.4,41.4-58.7,92-60.6,151.7Z"/>
+    </clipPath>
+  </defs>
+  <path id="e" class="st0" d="M22.8,353.8c3.7-12,7.9-23.8,12.6-35.3,33.9-84.3,88.3-153.6,163.4-207.7C273.8,56.6,364.8,22,471.8,6.9c105.6-14.9,200.5-5.8,284.8,27.3,84.3,33.1,153.6,85.6,207.9,157.5,54.3,71.9,88.7,159.4,103.2,262.5l12.3,87.5-783.2,110.4c12.6,68.8,48,121.2,106.1,157.3,58.2,36.1,124.8,48.8,200.1,38.2,76.7-10.8,130.9-34.3,162.7-70.7,31.8-36.3,54.4-74.8,67.9-115.4l238.9,78.4c-15.3,38.2-39.2,80.6-71.8,127.4-32.5,46.8-78.6,89.2-138.1,127.4-59.6,38.1-138.5,64.1-236.9,78-107.1,15.1-204.4,7-292.1-24.2-87.7-31.2-159.8-82.6-216.3-154.2-56.5-71.6-92.2-160.3-107-266.1l-3.4-24.4c-12.8-91.3-7.5-174.6,16-249.9h0ZM272.1,460.5l503.4-70.9c-14-57.5-45.5-100.8-94.5-129.9-49.1-29-109.1-38.6-179.9-28.6-73.8,10.4-129.9,36.3-168.3,77.7-38.4,41.4-58.7,92-60.6,151.7Z"/>
+  <g id="arco">
+    <g class="st3">
+      <path id="arc" class="st1" d="M-936.8,1584.7c0-721.1,583-1305.7,1302.3-1305.7s1302.3,584.6,1302.3,1305.7h-76.6c0-678.7-548.7-1228.9-1225.7-1228.9S-860.2,906-860.2,1584.7h-76.6Z"/>
+    </g>
+  </g>
+  <g id="br">
+    <g id="_αCMi" data-name="αCMi">
+      <g id="star1">
+        <g id="star">
+          <g id="c">
+            <path id="t" class="st1" d="M101.3,421l-7.1,21.9,10.9,3.6"/>
+            <path id="t1" data-name="t" class="st1" d="M101.3,421l7.1,21.9-10.9,3.6"/>
+          </g>
+          <g id="c1" data-name="c">
+            <path id="t2" data-name="t" class="st1" d="M123.2,436.9h-23v11.5"/>
+            <path id="t3" data-name="t" class="st1" d="M123.2,436.9l-18.6,13.5-6.8-9.3"/>
+          </g>
+          <g id="c2" data-name="c">
+            <path id="t4" data-name="t" class="st1" d="M79.5,436.9l18.6,13.5,6.8-9.3"/>
+            <path id="t5" data-name="t" class="st1" d="M79.5,436.9h23v11.5"/>
+          </g>
+          <g id="c3" data-name="c">
+            <path id="t6" data-name="t" class="st1" d="M114.8,462.7l-7.1-21.9-10.9,3.6"/>
+            <path id="t7" data-name="t" class="st1" d="M114.8,462.7l-18.6-13.5,6.8-9.3"/>
+          </g>
+          <g id="c4" data-name="c">
+            <path id="t8" data-name="t" class="st1" d="M87.8,462.7l18.6-13.5-6.8-9.3"/>
+            <path id="t9" data-name="t" class="st1" d="M87.8,462.7l7.1-21.9,10.9,3.6"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_αCMa" data-name="αCMa">
+      <g id="star11" data-name="star1">
+        <g id="star2" data-name="star">
+          <g id="c5" data-name="c">
+            <path id="t10" data-name="t" class="st1" d="M143,650l-7.1,21.9,10.9,3.6"/>
+            <path id="t11" data-name="t" class="st1" d="M143,650l7.1,21.9-10.9,3.6"/>
+          </g>
+          <g id="c6" data-name="c">
+            <path id="t12" data-name="t" class="st1" d="M164.8,665.9h-23v11.5"/>
+            <path id="t13" data-name="t" class="st1" d="M164.8,665.9l-18.6,13.5-6.8-9.3"/>
+          </g>
+          <g id="c7" data-name="c">
+            <path id="t14" data-name="t" class="st1" d="M121.1,665.9l18.6,13.5,6.8-9.3"/>
+            <path id="t15" data-name="t" class="st1" d="M121.1,665.9h23v11.5"/>
+          </g>
+          <g id="c8" data-name="c">
+            <path id="t16" data-name="t" class="st1" d="M156.5,691.6l-7.1-21.9-10.9,3.6"/>
+            <path id="t17" data-name="t" class="st1" d="M156.5,691.6l-18.6-13.5,6.8-9.3"/>
+          </g>
+          <g id="c9" data-name="c">
+            <path id="t18" data-name="t" class="st1" d="M129.5,691.6l18.6-13.5-6.8-9.3"/>
+            <path id="t19" data-name="t" class="st1" d="M129.5,691.6l7.1-21.9,10.9,3.6"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_βCMa" data-name="βCMa">
+      <g id="uuid-eb5bc46f-4c74-423b-bef5-461e734c9d72" data-name="star2">
+        <g id="star3" data-name="star">
+          <g id="c10" data-name="c">
+            <path id="t20" data-name="t" class="st1" d="M77.3,702.1l-5.9,18.3,9.1,3"/>
+            <path id="t21" data-name="t" class="st1" d="M77.3,702.1l5.9,18.3-9.1,3"/>
+          </g>
+          <g id="c11" data-name="c">
+            <path id="t22" data-name="t" class="st1" d="M95.5,715.3h-19.2v9.6"/>
+            <path id="t23" data-name="t" class="st1" d="M95.5,715.3l-15.5,11.3-5.6-7.8"/>
+          </g>
+          <g id="c12" data-name="c">
+            <path id="t24" data-name="t" class="st1" d="M59.1,715.3l15.5,11.3,5.6-7.8"/>
+            <path id="t25" data-name="t" class="st1" d="M59.1,715.3h19.2v9.6"/>
+          </g>
+          <g id="c13" data-name="c">
+            <path id="t26" data-name="t" class="st1" d="M88.6,736.8l-5.9-18.3-9.1,3"/>
+            <path id="t27" data-name="t" class="st1" d="M88.6,736.8l-15.5-11.3,5.6-7.8"/>
+          </g>
+          <g id="c14" data-name="c">
+            <path id="t28" data-name="t" class="st1" d="M66.1,736.8l15.5-11.3-5.6-7.8"/>
+            <path id="t29" data-name="t" class="st1" d="M66.1,736.8l5.9-18.3,9.1,3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_γCMa" data-name="γCMa">
+      <g id="star4">
+        <g id="star5" data-name="star">
+          <g id="c15" data-name="c">
+            <path id="t30" data-name="t" class="st1" d="M195.5,629.1l-3.4,10.4,5.2,1.7"/>
+            <path id="t31" data-name="t" class="st1" d="M195.5,629.1l3.4,10.4-5.2,1.7"/>
+          </g>
+          <g id="c16" data-name="c">
+            <path id="t32" data-name="t" class="st1" d="M205.9,636.7h-10.9v5.5"/>
+            <path id="t33" data-name="t" class="st1" d="M205.9,636.7l-8.9,6.4-3.2-4.4"/>
+          </g>
+          <g id="c17" data-name="c">
+            <path id="t34" data-name="t" class="st1" d="M185.1,636.7l8.9,6.4,3.2-4.4"/>
+            <path id="t35" data-name="t" class="st1" d="M185.1,636.7h10.9v5.5"/>
+          </g>
+          <g id="c18" data-name="c">
+            <path id="t36" data-name="t" class="st1" d="M201.9,649l-3.4-10.4-5.2,1.7"/>
+            <path id="t37" data-name="t" class="st1" d="M201.9,649l-8.9-6.4,3.2-4.4"/>
+          </g>
+          <g id="c19" data-name="c">
+            <path id="t38" data-name="t" class="st1" d="M189.1,649l8.9-6.4-3.2-4.4"/>
+            <path id="t39" data-name="t" class="st1" d="M189.1,649l3.4-10.4,5.2,1.7"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_δCMa" data-name="δCMa">
+      <g id="uuid-defc6b00-d17a-498d-9733-dd2fd0cd15ca" data-name="star2">
+        <g id="star6" data-name="star">
+          <g id="c20" data-name="c">
+            <path id="t40" data-name="t" class="st1" d="M254.6,707.2l-5.9,18.3,9.1,3"/>
+            <path id="t41" data-name="t" class="st1" d="M254.6,707.2l5.9,18.3-9.1,3"/>
+          </g>
+          <g id="c21" data-name="c">
+            <path id="t42" data-name="t" class="st1" d="M272.8,720.5h-19.2v9.6"/>
+            <path id="t43" data-name="t" class="st1" d="M272.8,720.5l-15.5,11.3-5.6-7.8"/>
+          </g>
+          <g id="c22" data-name="c">
+            <path id="t44" data-name="t" class="st1" d="M236.4,720.5l15.5,11.3,5.6-7.8"/>
+            <path id="t45" data-name="t" class="st1" d="M236.4,720.5h19.2v9.6"/>
+          </g>
+          <g id="c23" data-name="c">
+            <path id="t46" data-name="t" class="st1" d="M265.8,741.9l-5.9-18.3-9.1,3"/>
+            <path id="t47" data-name="t" class="st1" d="M265.8,741.9l-15.5-11.3,5.6-7.8"/>
+          </g>
+          <g id="c24" data-name="c">
+            <path id="t48" data-name="t" class="st1" d="M243.3,741.9l15.5-11.3-5.6-7.8"/>
+            <path id="t49" data-name="t" class="st1" d="M243.3,741.9l5.9-18.3,9.1,3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_εCMa" data-name="εCMa">
+      <g id="uuid-2da8101f-919a-41dc-bb1b-2e9dfc734d97" data-name="star3">
+        <g id="star7" data-name="star">
+          <g id="c25" data-name="c">
+            <path id="t50" data-name="t" class="st1" d="M238.5,764.4l-4.7,14.6,7.3,2.4"/>
+            <path id="t51" data-name="t" class="st1" d="M238.5,764.4l4.7,14.6-7.3,2.4"/>
+          </g>
+          <g id="c26" data-name="c">
+            <path id="t52" data-name="t" class="st1" d="M253.1,775.1h-15.3v7.7"/>
+            <path id="t53" data-name="t" class="st1" d="M253.1,775.1l-12.4,9-4.5-6.2"/>
+          </g>
+          <g id="c27" data-name="c">
+            <path id="t54" data-name="t" class="st1" d="M224,775.1l12.4,9,4.5-6.2"/>
+            <path id="t55" data-name="t" class="st1" d="M224,775.1h15.3v7.7"/>
+          </g>
+          <g id="c28" data-name="c">
+            <path id="t56" data-name="t" class="st1" d="M247.5,792.2l-4.7-14.6-7.3,2.4"/>
+            <path id="t57" data-name="t" class="st1" d="M247.5,792.2l-12.4-9,4.5-6.2"/>
+          </g>
+          <g id="c29" data-name="c">
+            <path id="t58" data-name="t" class="st1" d="M229.5,792.2l12.4-9-4.5-6.2"/>
+            <path id="t59" data-name="t" class="st1" d="M229.5,792.2l4.7-14.6,7.3,2.4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_αVir" data-name="αVir">
+      <g id="star12" data-name="star1">
+        <g id="star8" data-name="star">
+          <g id="c30" data-name="c">
+            <path id="t60" data-name="t" class="st1" d="M777.7,272.5l-7.1,21.9,10.9,3.6"/>
+            <path id="t61" data-name="t" class="st1" d="M777.7,272.5l7.1,21.9-10.9,3.6"/>
+          </g>
+          <g id="c31" data-name="c">
+            <path id="t62" data-name="t" class="st1" d="M799.5,288.5h-23v11.5"/>
+            <path id="t63" data-name="t" class="st1" d="M799.5,288.5l-18.6,13.5-6.8-9.3"/>
+          </g>
+          <g id="c32" data-name="c">
+            <path id="t64" data-name="t" class="st1" d="M755.8,288.5l18.6,13.5,6.8-9.3"/>
+            <path id="t65" data-name="t" class="st1" d="M755.8,288.5h23v11.5"/>
+          </g>
+          <g id="c33" data-name="c">
+            <path id="t66" data-name="t" class="st1" d="M791.2,314.2l-7.1-21.9-10.9,3.6"/>
+            <path id="t67" data-name="t" class="st1" d="M791.2,314.2l-18.6-13.5,6.8-9.3"/>
+          </g>
+          <g id="c34" data-name="c">
+            <path id="t68" data-name="t" class="st1" d="M764.2,314.2l18.6-13.5-6.8-9.3"/>
+            <path id="t69" data-name="t" class="st1" d="M764.2,314.2l7.1-21.9,10.9,3.6"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_αSco" data-name="αSco">
+      <g id="star13" data-name="star1">
+        <g id="star9" data-name="star">
+          <g id="c35" data-name="c">
+            <path id="t70" data-name="t" class="st1" d="M926.3,738.2l-7.1,21.9,10.9,3.6"/>
+            <path id="t71" data-name="t" class="st1" d="M926.3,738.2l7.1,21.9-10.9,3.6"/>
+          </g>
+          <g id="c36" data-name="c">
+            <path id="t72" data-name="t" class="st1" d="M948.2,754.1h-23v11.5"/>
+            <path id="t73" data-name="t" class="st1" d="M948.2,754.1l-18.6,13.5-6.8-9.3"/>
+          </g>
+          <g id="c37" data-name="c">
+            <path id="t74" data-name="t" class="st1" d="M904.5,754.1l18.6,13.5,6.8-9.3"/>
+            <path id="t75" data-name="t" class="st1" d="M904.5,754.1h23v11.5"/>
+          </g>
+          <g id="c38" data-name="c">
+            <path id="t76" data-name="t" class="st1" d="M939.9,779.9l-7.1-21.9-10.9,3.6"/>
+            <path id="t77" data-name="t" class="st1" d="M939.9,779.9l-18.6-13.5,6.8-9.3"/>
+          </g>
+          <g id="c39" data-name="c">
+            <path id="t78" data-name="t" class="st1" d="M912.8,779.9l18.6-13.5-6.8-9.3"/>
+            <path id="t79" data-name="t" class="st1" d="M912.8,779.9l7.1-21.9,10.9,3.6"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_βSco" data-name="βSco">
+      <g id="uuid-cee00ca0-111d-4b20-8c80-b5c9b06725e0" data-name="star3">
+        <g id="star10" data-name="star">
+          <g id="c40" data-name="c">
+            <path id="t80" data-name="t" class="st1" d="M1000.8,751l-4.7,14.6,7.3,2.4"/>
+            <path id="t81" data-name="t" class="st1" d="M1000.8,751l4.7,14.6-7.3,2.4"/>
+          </g>
+          <g id="c41" data-name="c">
+            <path id="t82" data-name="t" class="st1" d="M1015.3,761.6h-15.3v7.7"/>
+            <path id="t83" data-name="t" class="st1" d="M1015.3,761.6l-12.4,9-4.5-6.2"/>
+          </g>
+          <g id="c42" data-name="c">
+            <path id="t84" data-name="t" class="st1" d="M986.2,761.6l12.4,9,4.5-6.2"/>
+            <path id="t85" data-name="t" class="st1" d="M986.2,761.6h15.3v7.7"/>
+          </g>
+          <g id="c43" data-name="c">
+            <path id="t86" data-name="t" class="st1" d="M1009.8,778.8l-4.7-14.6-7.3,2.4"/>
+            <path id="t87" data-name="t" class="st1" d="M1009.8,778.8l-12.4-9,4.5-6.2"/>
+          </g>
+          <g id="c44" data-name="c">
+            <path id="t88" data-name="t" class="st1" d="M991.8,778.8l12.4-9-4.5-6.2"/>
+            <path id="t89" data-name="t" class="st1" d="M991.8,778.8l4.7-14.6,7.3,2.4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_εSco" data-name="εSco">
+      <g id="uuid-d4763c27-549c-4f84-8635-15b574e21e0f" data-name="star2">
+        <g id="star14" data-name="star">
+          <g id="c45" data-name="c">
+            <path id="t90" data-name="t" class="st1" d="M948.2,789.6l-5.9,18.3,9.1,3"/>
+            <path id="t91" data-name="t" class="st1" d="M948.2,789.6l5.9,18.3-9.1,3"/>
+          </g>
+          <g id="c46" data-name="c">
+            <path id="t92" data-name="t" class="st1" d="M966.4,802.9h-19.2v9.6"/>
+            <path id="t93" data-name="t" class="st1" d="M966.4,802.9l-15.5,11.3-5.6-7.8"/>
+          </g>
+          <g id="c47" data-name="c">
+            <path id="t94" data-name="t" class="st1" d="M930,802.9l15.5,11.3,5.6-7.8"/>
+            <path id="t95" data-name="t" class="st1" d="M930,802.9h19.2v9.6"/>
+          </g>
+          <g id="c48" data-name="c">
+            <path id="t96" data-name="t" class="st1" d="M959.5,824.3l-5.9-18.3-9.1,3"/>
+            <path id="t97" data-name="t" class="st1" d="M959.5,824.3l-15.5-11.3,5.6-7.8"/>
+          </g>
+          <g id="c49" data-name="c">
+            <path id="t98" data-name="t" class="st1" d="M937,824.3l15.5-11.3-5.6-7.8"/>
+            <path id="t99" data-name="t" class="st1" d="M937,824.3l5.9-18.3,9.1,3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_θSco" data-name="θSco">
+      <g id="uuid-e3a32f21-202a-4c98-b5b6-d7bcf140a7cc" data-name="star2">
+        <g id="star15" data-name="star">
+          <g id="c50" data-name="c">
+            <path id="t100" data-name="t" class="st1" d="M819.1,902.2l-5.9,18.3,9.1,3"/>
+            <path id="t101" data-name="t" class="st1" d="M819.1,902.2l5.9,18.3-9.1,3"/>
+          </g>
+          <g id="c51" data-name="c">
+            <path id="t102" data-name="t" class="st1" d="M837.3,915.5h-19.2v9.6"/>
+            <path id="t103" data-name="t" class="st1" d="M837.3,915.5l-15.5,11.3-5.6-7.8"/>
+          </g>
+          <g id="c52" data-name="c">
+            <path id="t104" data-name="t" class="st1" d="M800.9,915.5l15.5,11.3,5.6-7.8"/>
+            <path id="t105" data-name="t" class="st1" d="M800.9,915.5h19.2v9.6"/>
+          </g>
+          <g id="c53" data-name="c">
+            <path id="t106" data-name="t" class="st1" d="M830.4,937l-5.9-18.3-9.1,3"/>
+            <path id="t107" data-name="t" class="st1" d="M830.4,937l-15.5-11.3,5.6-7.8"/>
+          </g>
+          <g id="c54" data-name="c">
+            <path id="t108" data-name="t" class="st1" d="M807.8,937l15.5-11.3-5.6-7.8"/>
+            <path id="t109" data-name="t" class="st1" d="M807.8,937l5.9-18.3,9.1,3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_ιSco" data-name="ιSco">
+      <g id="uuid-df4804b4-8451-42e5-a090-5a6f6ba45b30" data-name="star3">
+        <g id="star16" data-name="star">
+          <g id="c55" data-name="c">
+            <path id="t110" data-name="t" class="st1" d="M818.4,960.2l-4.7,14.6,7.3,2.4"/>
+            <path id="t111" data-name="t" class="st1" d="M818.4,960.2l4.7,14.6-7.3,2.4"/>
+          </g>
+          <g id="c56" data-name="c">
+            <path id="t112" data-name="t" class="st1" d="M832.9,970.8h-15.3v7.7"/>
+            <path id="t113" data-name="t" class="st1" d="M832.9,970.8l-12.4,9-4.5-6.2"/>
+          </g>
+          <g id="c57" data-name="c">
+            <path id="t114" data-name="t" class="st1" d="M803.8,970.8l12.4,9,4.5-6.2"/>
+            <path id="t115" data-name="t" class="st1" d="M803.8,970.8h15.3v7.7"/>
+          </g>
+          <g id="c58" data-name="c">
+            <path id="t116" data-name="t" class="st1" d="M827.4,988l-4.7-14.6-7.3,2.4"/>
+            <path id="t117" data-name="t" class="st1" d="M827.4,988l-12.4-9,4.5-6.2"/>
+          </g>
+          <g id="c59" data-name="c">
+            <path id="t118" data-name="t" class="st1" d="M809.4,988l12.4-9-4.5-6.2"/>
+            <path id="t119" data-name="t" class="st1" d="M809.4,988l4.7-14.6,7.3,2.4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_κSco" data-name="κSco">
+      <g id="uuid-c4c58711-f2de-48d3-990e-80c8fa358b82" data-name="star3">
+        <g id="star17" data-name="star">
+          <g id="c60" data-name="c">
+            <path id="t120" data-name="t" class="st1" d="M872.4,863.6l-4.7,14.6,7.3,2.4"/>
+            <path id="t121" data-name="t" class="st1" d="M872.4,863.6l4.7,14.6-7.3,2.4"/>
+          </g>
+          <g id="c61" data-name="c">
+            <path id="t122" data-name="t" class="st1" d="M886.9,874.3h-15.3v7.7"/>
+            <path id="t123" data-name="t" class="st1" d="M886.9,874.3l-12.4,9-4.5-6.2"/>
+          </g>
+          <g id="c62" data-name="c">
+            <path id="t124" data-name="t" class="st1" d="M857.8,874.3l12.4,9,4.5-6.2"/>
+            <path id="t125" data-name="t" class="st1" d="M857.8,874.3h15.3v7.7"/>
+          </g>
+          <g id="c63" data-name="c">
+            <path id="t126" data-name="t" class="st1" d="M881.4,891.4l-4.7-14.6-7.3,2.4"/>
+            <path id="t127" data-name="t" class="st1" d="M881.4,891.4l-12.4-9,4.5-6.2"/>
+          </g>
+          <g id="c64" data-name="c">
+            <path id="t128" data-name="t" class="st1" d="M863.4,891.4l12.4-9-4.5-6.2"/>
+            <path id="t129" data-name="t" class="st1" d="M863.4,891.4l4.7-14.6,7.3,2.4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_λSco" data-name="λSco">
+      <g id="uuid-82a47e5f-f2fa-4ee4-85da-b3ad7353c5f5" data-name="star2">
+        <g id="star18" data-name="star">
+          <g id="c65" data-name="c">
+            <path id="t130" data-name="t" class="st1" d="M915.4,832.7l-5.9,18.3,9.1,3"/>
+            <path id="t131" data-name="t" class="st1" d="M915.4,832.7l5.9,18.3-9.1,3"/>
+          </g>
+          <g id="c66" data-name="c">
+            <path id="t132" data-name="t" class="st1" d="M933.6,846h-19.2v9.6"/>
+            <path id="t133" data-name="t" class="st1" d="M933.6,846l-15.5,11.3-5.6-7.8"/>
+          </g>
+          <g id="c67" data-name="c">
+            <path id="t134" data-name="t" class="st1" d="M897.2,846l15.5,11.3,5.6-7.8"/>
+            <path id="t135" data-name="t" class="st1" d="M897.2,846h19.2v9.6"/>
+          </g>
+          <g id="c68" data-name="c">
+            <path id="t136" data-name="t" class="st1" d="M926.7,867.5l-5.9-18.3-9.1,3"/>
+            <path id="t137" data-name="t" class="st1" d="M926.7,867.5l-15.5-11.3,5.6-7.8"/>
+          </g>
+          <g id="c69" data-name="c">
+            <path id="t138" data-name="t" class="st1" d="M904.1,867.5l15.5-11.3-5.6-7.8"/>
+            <path id="t139" data-name="t" class="st1" d="M904.1,867.5l5.9-18.3,9.1,3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_μSco" data-name="μSco">
+      <g id="uuid-b7c3de3f-881c-47ac-8ea0-b1106f3c1952" data-name="star3">
+        <g id="star19" data-name="star">
+          <g id="c70" data-name="c">
+            <path id="t140" data-name="t" class="st1" d="M816.9,853.4l-4.7,14.6,7.3,2.4"/>
+            <path id="t141" data-name="t" class="st1" d="M816.9,853.4l4.7,14.6-7.3,2.4"/>
+          </g>
+          <g id="c71" data-name="c">
+            <path id="t142" data-name="t" class="st1" d="M831.5,864h-15.3v7.7"/>
+            <path id="t143" data-name="t" class="st1" d="M831.5,864l-12.4,9-4.5-6.2"/>
+          </g>
+          <g id="c72" data-name="c">
+            <path id="t144" data-name="t" class="st1" d="M802.3,864l12.4,9,4.5-6.2"/>
+            <path id="t145" data-name="t" class="st1" d="M802.3,864h15.3v7.7"/>
+          </g>
+          <g id="c73" data-name="c">
+            <path id="t146" data-name="t" class="st1" d="M825.9,881.2l-4.7-14.6-7.3,2.4"/>
+            <path id="t147" data-name="t" class="st1" d="M825.9,881.2l-12.4-9,4.5-6.2"/>
+          </g>
+          <g id="c74" data-name="c">
+            <path id="t148" data-name="t" class="st1" d="M807.9,881.2l12.4-9-4.5-6.2"/>
+            <path id="t149" data-name="t" class="st1" d="M807.9,881.2l4.7-14.6,7.3,2.4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_αHya" data-name="αHya">
+      <g id="uuid-f23643bc-e84a-4b7a-8559-b8841e94bea3" data-name="star2">
+        <g id="star20" data-name="star">
+          <g id="c75" data-name="c">
+            <path id="t150" data-name="t" class="st1" d="M334.8,543.4l-5.9,18.3,9.1,3"/>
+            <path id="t151" data-name="t" class="st1" d="M334.8,543.4l5.9,18.3-9.1,3"/>
+          </g>
+          <g id="c76" data-name="c">
+            <path id="t152" data-name="t" class="st1" d="M353,556.6h-19.2v9.6"/>
+            <path id="t153" data-name="t" class="st1" d="M353,556.6l-15.5,11.3-5.6-7.8"/>
+          </g>
+          <g id="c77" data-name="c">
+            <path id="t154" data-name="t" class="st1" d="M316.6,556.6l15.5,11.3,5.6-7.8"/>
+            <path id="t155" data-name="t" class="st1" d="M316.6,556.6h19.2v9.6"/>
+          </g>
+          <g id="c78" data-name="c">
+            <path id="t156" data-name="t" class="st1" d="M346,578.1l-5.9-18.3-9.1,3"/>
+            <path id="t157" data-name="t" class="st1" d="M346,578.1l-15.5-11.3,5.6-7.8"/>
+          </g>
+          <g id="c79" data-name="c">
+            <path id="t158" data-name="t" class="st1" d="M323.5,578.1l15.5-11.3-5.6-7.8"/>
+            <path id="t159" data-name="t" class="st1" d="M323.5,578.1l5.9-18.3,9.1,3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_γHya" data-name="γHya">
+      <g id="uuid-b6a449c8-3908-4368-96ce-745c6f4a122d" data-name="star3">
+        <g id="star21" data-name="star">
+          <g id="c80" data-name="c">
+            <path id="t160" data-name="t" class="st1" d="M685,498.2l-4.7,14.6,7.3,2.4"/>
+            <path id="t161" data-name="t" class="st1" d="M685,498.2l4.7,14.6-7.3,2.4"/>
+          </g>
+          <g id="c81" data-name="c">
+            <path id="t162" data-name="t" class="st1" d="M699.5,508.8h-15.3v7.7"/>
+            <path id="t163" data-name="t" class="st1" d="M699.5,508.8l-12.4,9-4.5-6.2"/>
+          </g>
+          <g id="c82" data-name="c">
+            <path id="t164" data-name="t" class="st1" d="M670.4,508.8l12.4,9,4.5-6.2"/>
+            <path id="t165" data-name="t" class="st1" d="M670.4,508.8h15.3v7.7"/>
+          </g>
+          <g id="c83" data-name="c">
+            <path id="t166" data-name="t" class="st1" d="M694,526l-4.7-14.6-7.3,2.4"/>
+            <path id="t167" data-name="t" class="st1" d="M694,526l-12.4-9,4.5-6.2"/>
+          </g>
+          <g id="c84" data-name="c">
+            <path id="t168" data-name="t" class="st1" d="M676,526l12.4-9-4.5-6.2"/>
+            <path id="t169" data-name="t" class="st1" d="M676,526l4.7-14.6,7.3,2.4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_αCru" data-name="αCru">
+      <g id="star110" data-name="star1">
+        <g id="star22" data-name="star">
+          <g id="c85" data-name="c">
+            <path id="t170" data-name="t" class="st1" d="M528.7,567.8l-7.1,21.9,10.9,3.6"/>
+            <path id="t171" data-name="t" class="st1" d="M528.7,567.8l7.1,21.9-10.9,3.6"/>
+          </g>
+          <g id="c86" data-name="c">
+            <path id="t172" data-name="t" class="st1" d="M550.6,583.7h-23v11.5"/>
+            <path id="t173" data-name="t" class="st1" d="M550.6,583.7l-18.6,13.5-6.8-9.3"/>
+          </g>
+          <g id="c87" data-name="c">
+            <path id="t174" data-name="t" class="st1" d="M506.8,583.7l18.6,13.5,6.8-9.3"/>
+            <path id="t175" data-name="t" class="st1" d="M506.8,583.7h23v11.5"/>
+          </g>
+          <g id="c88" data-name="c">
+            <path id="t176" data-name="t" class="st1" d="M542.2,609.5l-7.1-21.9-10.9,3.6"/>
+            <path id="t177" data-name="t" class="st1" d="M542.2,609.5l-18.6-13.5,6.8-9.3"/>
+          </g>
+          <g id="c89" data-name="c">
+            <path id="t178" data-name="t" class="st1" d="M515.2,609.5l18.6-13.5-6.8-9.3"/>
+            <path id="t179" data-name="t" class="st1" d="M515.2,609.5l7.1-21.9,10.9,3.6"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_βCru" data-name="βCru">
+      <g id="uuid-8a56ed4e-cfab-4400-b3ae-5e06a0e2a7ce" data-name="star2">
+        <g id="star23" data-name="star">
+          <g id="c90" data-name="c">
+            <path id="t180" data-name="t" class="st1" d="M590.7,473.5l-5.9,18.3,9.1,3"/>
+            <path id="t181" data-name="t" class="st1" d="M590.7,473.5l5.9,18.3-9.1,3"/>
+          </g>
+          <g id="c91" data-name="c">
+            <path id="t182" data-name="t" class="st1" d="M608.9,486.8h-19.2v9.6"/>
+            <path id="t183" data-name="t" class="st1" d="M608.9,486.8l-15.5,11.3-5.6-7.8"/>
+          </g>
+          <g id="c92" data-name="c">
+            <path id="t184" data-name="t" class="st1" d="M572.5,486.8l15.5,11.3,5.6-7.8"/>
+            <path id="t185" data-name="t" class="st1" d="M572.5,486.8h19.2v9.6"/>
+          </g>
+          <g id="c93" data-name="c">
+            <path id="t186" data-name="t" class="st1" d="M602,508.3l-5.9-18.3-9.1,3"/>
+            <path id="t187" data-name="t" class="st1" d="M602,508.3l-15.5-11.3,5.6-7.8"/>
+          </g>
+          <g id="c94" data-name="c">
+            <path id="t188" data-name="t" class="st1" d="M579.5,508.3l15.5-11.3-5.6-7.8"/>
+            <path id="t189" data-name="t" class="st1" d="M579.5,508.3l5.9-18.3,9.1,3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_γCru" data-name="γCru">
+      <g id="uuid-d27e411c-0146-4289-bcf4-345d5d64832a" data-name="star2">
+        <g id="star24" data-name="star">
+          <g id="c95" data-name="c">
+            <path id="t190" data-name="t" class="st1" d="M528.7,428.2l-5.9,18.3,9.1,3"/>
+            <path id="t191" data-name="t" class="st1" d="M528.7,428.2l5.9,18.3-9.1,3"/>
+          </g>
+          <g id="c96" data-name="c">
+            <path id="t192" data-name="t" class="st1" d="M546.9,441.4h-19.2v9.6"/>
+            <path id="t193" data-name="t" class="st1" d="M546.9,441.4l-15.5,11.3-5.6-7.8"/>
+          </g>
+          <g id="c97" data-name="c">
+            <path id="t194" data-name="t" class="st1" d="M510.5,441.4l15.5,11.3,5.6-7.8"/>
+            <path id="t195" data-name="t" class="st1" d="M510.5,441.4h19.2v9.6"/>
+          </g>
+          <g id="c98" data-name="c">
+            <path id="t196" data-name="t" class="st1" d="M540,462.9l-5.9-18.3-9.1,3"/>
+            <path id="t197" data-name="t" class="st1" d="M540,462.9l-15.5-11.3,5.6-7.8"/>
+          </g>
+          <g id="c99" data-name="c">
+            <path id="t198" data-name="t" class="st1" d="M517.4,462.9l15.5-11.3-5.6-7.8"/>
+            <path id="t199" data-name="t" class="st1" d="M517.4,462.9l5.9-18.3,9.1,3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_δCru" data-name="δCru">
+      <g id="uuid-06054b8d-8ec8-4168-a22f-60da3adb7eee" data-name="star3">
+        <g id="star25" data-name="star">
+          <g id="c100" data-name="c">
+            <path id="t200" data-name="t" class="st1" d="M474.7,477.4l-4.7,14.6,7.3,2.4"/>
+            <path id="t201" data-name="t" class="st1" d="M474.7,477.4l4.7,14.6-7.3,2.4"/>
+          </g>
+          <g id="c101" data-name="c">
+            <path id="t202" data-name="t" class="st1" d="M489.3,488h-15.3v7.7"/>
+            <path id="t203" data-name="t" class="st1" d="M489.3,488l-12.4,9-4.5-6.2"/>
+          </g>
+          <g id="c102" data-name="c">
+            <path id="t204" data-name="t" class="st1" d="M460.1,488l12.4,9,4.5-6.2"/>
+            <path id="t205" data-name="t" class="st1" d="M460.1,488h15.3v7.7"/>
+          </g>
+          <g id="c103" data-name="c">
+            <path id="t206" data-name="t" class="st1" d="M483.7,505.2l-4.7-14.6-7.3,2.4"/>
+            <path id="t207" data-name="t" class="st1" d="M483.7,505.2l-12.4-9,4.5-6.2"/>
+          </g>
+          <g id="c104" data-name="c">
+            <path id="t208" data-name="t" class="st1" d="M465.7,505.2l12.4-9-4.5-6.2"/>
+            <path id="t209" data-name="t" class="st1" d="M465.7,505.2l4.7-14.6,7.3,2.4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_εCru" data-name="εCru">
+      <g id="star41" data-name="star4">
+        <g id="star26" data-name="star">
+          <g id="c105" data-name="c">
+            <path id="t210" data-name="t" class="st1" d="M501.7,519.1l-3.4,10.4,5.2,1.7"/>
+            <path id="t211" data-name="t" class="st1" d="M501.7,519.1l3.4,10.4-5.2,1.7"/>
+          </g>
+          <g id="c106" data-name="c">
+            <path id="t212" data-name="t" class="st1" d="M512.1,526.6h-10.9v5.5"/>
+            <path id="t213" data-name="t" class="st1" d="M512.1,526.6l-8.9,6.4-3.2-4.4"/>
+          </g>
+          <g id="c107" data-name="c">
+            <path id="t214" data-name="t" class="st1" d="M491.3,526.6l8.9,6.4,3.2-4.4"/>
+            <path id="t215" data-name="t" class="st1" d="M491.3,526.6h10.9v5.5"/>
+          </g>
+          <g id="c108" data-name="c">
+            <path id="t216" data-name="t" class="st1" d="M508.1,538.9l-3.4-10.4-5.2,1.7"/>
+            <path id="t217" data-name="t" class="st1" d="M508.1,538.9l-8.9-6.4,3.2-4.4"/>
+          </g>
+          <g id="c109" data-name="c">
+            <path id="t218" data-name="t" class="st1" d="M495.3,538.9l8.9-6.4-3.2-4.4"/>
+            <path id="t219" data-name="t" class="st1" d="M495.3,538.9l3.4-10.4,5.2,1.7"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_αTrA" data-name="αTrA">
+      <g id="uuid-040fa60d-2831-44ba-9685-d76038345890" data-name="star2">
+        <g id="star27" data-name="star">
+          <g id="c110" data-name="c">
+            <path id="t220" data-name="t" class="st1" d="M711.1,915.4l-5.9,18.3,9.1,3"/>
+            <path id="t221" data-name="t" class="st1" d="M711.1,915.4l5.9,18.3-9.1,3"/>
+          </g>
+          <g id="c111" data-name="c">
+            <path id="t222" data-name="t" class="st1" d="M729.3,928.7h-19.2v9.6"/>
+            <path id="t223" data-name="t" class="st1" d="M729.3,928.7l-15.5,11.3-5.6-7.8"/>
+          </g>
+          <g id="c112" data-name="c">
+            <path id="t224" data-name="t" class="st1" d="M692.9,928.7l15.5,11.3,5.6-7.8"/>
+            <path id="t225" data-name="t" class="st1" d="M692.9,928.7h19.2v9.6"/>
+          </g>
+          <g id="c113" data-name="c">
+            <path id="t226" data-name="t" class="st1" d="M722.4,950.1l-5.9-18.3-9.1,3"/>
+            <path id="t227" data-name="t" class="st1" d="M722.4,950.1l-15.5-11.3,5.6-7.8"/>
+          </g>
+          <g id="c114" data-name="c">
+            <path id="t228" data-name="t" class="st1" d="M699.9,950.1l15.5-11.3-5.6-7.8"/>
+            <path id="t229" data-name="t" class="st1" d="M699.9,950.1l5.9-18.3,9.1,3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_βTrA" data-name="βTrA">
+      <g id="uuid-d801c8da-36b4-43f0-a3a6-85bc91877fa8" data-name="star3">
+        <g id="star28" data-name="star">
+          <g id="c115" data-name="c">
+            <path id="t230" data-name="t" class="st1" d="M757.1,871.7l-4.7,14.6,7.3,2.4"/>
+            <path id="t231" data-name="t" class="st1" d="M757.1,871.7l4.7,14.6-7.3,2.4"/>
+          </g>
+          <g id="c116" data-name="c">
+            <path id="t232" data-name="t" class="st1" d="M771.7,882.3h-15.3v7.7"/>
+            <path id="t233" data-name="t" class="st1" d="M771.7,882.3l-12.4,9-4.5-6.2"/>
+          </g>
+          <g id="c117" data-name="c">
+            <path id="t234" data-name="t" class="st1" d="M742.5,882.3l12.4,9,4.5-6.2"/>
+            <path id="t235" data-name="t" class="st1" d="M742.5,882.3h15.3v7.7"/>
+          </g>
+          <g id="c118" data-name="c">
+            <path id="t236" data-name="t" class="st1" d="M766.1,899.5l-4.7-14.6-7.3,2.4"/>
+            <path id="t237" data-name="t" class="st1" d="M766.1,899.5l-12.4-9,4.5-6.2"/>
+          </g>
+          <g id="c119" data-name="c">
+            <path id="t238" data-name="t" class="st1" d="M748.1,899.5l12.4-9-4.5-6.2"/>
+            <path id="t239" data-name="t" class="st1" d="M748.1,899.5l4.7-14.6,7.3,2.4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_γTrA" data-name="γTrA">
+      <g id="uuid-5718692e-f138-4d30-88e2-8b14ab0568eb" data-name="star3">
+        <g id="star29" data-name="star">
+          <g id="c120" data-name="c">
+            <path id="t240" data-name="t" class="st1" d="M668.8,858.5l-4.7,14.6,7.3,2.4"/>
+            <path id="t241" data-name="t" class="st1" d="M668.8,858.5l4.7,14.6-7.3,2.4"/>
+          </g>
+          <g id="c121" data-name="c">
+            <path id="t242" data-name="t" class="st1" d="M683.4,869.1h-15.3v7.7"/>
+            <path id="t243" data-name="t" class="st1" d="M683.4,869.1l-12.4,9-4.5-6.2"/>
+          </g>
+          <g id="c122" data-name="c">
+            <path id="t244" data-name="t" class="st1" d="M654.2,869.1l12.4,9,4.5-6.2"/>
+            <path id="t245" data-name="t" class="st1" d="M654.2,869.1h15.3v7.7"/>
+          </g>
+          <g id="c123" data-name="c">
+            <path id="t246" data-name="t" class="st1" d="M677.8,886.3l-4.7-14.6-7.3,2.4"/>
+            <path id="t247" data-name="t" class="st1" d="M677.8,886.3l-12.4-9,4.5-6.2"/>
+          </g>
+          <g id="c124" data-name="c">
+            <path id="t248" data-name="t" class="st1" d="M659.8,886.3l12.4-9-4.5-6.2"/>
+            <path id="t249" data-name="t" class="st1" d="M659.8,886.3l4.7-14.6,7.3,2.4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_αCar" data-name="αCar">
+      <g id="star111" data-name="star1">
+        <g id="star30" data-name="star">
+          <g id="c125" data-name="c">
+            <path id="t250" data-name="t" class="st1" d="M318.1,805.8l-7.1,21.9,10.9,3.6"/>
+            <path id="t251" data-name="t" class="st1" d="M318.1,805.8l7.1,21.9-10.9,3.6"/>
+          </g>
+          <g id="c126" data-name="c">
+            <path id="t252" data-name="t" class="st1" d="M339.9,821.7h-23v11.5"/>
+            <path id="t253" data-name="t" class="st1" d="M339.9,821.7l-18.6,13.5-6.8-9.3"/>
+          </g>
+          <g id="c127" data-name="c">
+            <path id="t254" data-name="t" class="st1" d="M296.2,821.7l18.6,13.5,6.8-9.3"/>
+            <path id="t255" data-name="t" class="st1" d="M296.2,821.7h23v11.5"/>
+          </g>
+          <g id="c128" data-name="c">
+            <path id="t256" data-name="t" class="st1" d="M331.6,847.5l-7.1-21.9-10.9,3.6"/>
+            <path id="t257" data-name="t" class="st1" d="M331.6,847.5l-18.6-13.5,6.8-9.3"/>
+          </g>
+          <g id="c129" data-name="c">
+            <path id="t258" data-name="t" class="st1" d="M304.6,847.5l18.6-13.5-6.8-9.3"/>
+            <path id="t259" data-name="t" class="st1" d="M304.6,847.5l7.1-21.9,10.9,3.6"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_σOct" data-name="σOct">
+      <g id="uuid-fd0963c0-8fa0-4c30-81ad-3f0679ba44ca" data-name="star5">
+        <g id="star31" data-name="star">
+          <g id="c130" data-name="c">
+            <path id="t260" data-name="t" class="st1" d="M539.1,953.6l-2.4,7.3,3.6,1.2"/>
+            <path id="t261" data-name="t" class="st1" d="M539.1,953.6l2.4,7.3-3.6,1.2"/>
+          </g>
+          <g id="c131" data-name="c">
+            <path id="t262" data-name="t" class="st1" d="M546.3,958.9h-7.7v3.8"/>
+            <path id="t263" data-name="t" class="st1" d="M546.3,958.9l-6.2,4.5-2.3-3.1"/>
+          </g>
+          <g id="c132" data-name="c">
+            <path id="t264" data-name="t" class="st1" d="M531.8,958.9l6.2,4.5,2.3-3.1"/>
+            <path id="t265" data-name="t" class="st1" d="M531.8,958.9h7.7v3.8"/>
+          </g>
+          <g id="c133" data-name="c">
+            <path id="t266" data-name="t" class="st1" d="M543.6,967.5l-2.4-7.3-3.6,1.2"/>
+            <path id="t267" data-name="t" class="st1" d="M543.6,967.5l-6.2-4.5,2.3-3.1"/>
+          </g>
+          <g id="c134" data-name="c">
+            <path id="t268" data-name="t" class="st1" d="M534.6,967.5l6.2-4.5-2.3-3.1"/>
+            <path id="t269" data-name="t" class="st1" d="M534.6,967.5l2.4-7.3,3.6,1.2"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+{
+    "common": {
+        "viewResume": "View Resume",
+        "connectLinkedIn": "Connect on LinkedIn",
+        "learnMore": "Learn More",
+        "visitProject": "Visit Project",
+        "comingSoon": "Coming Soon"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects"
+    },
+    "landing": {
+        "hero": {
+            "title1": "Improving the World",
+            "title2": "Through Technology",
+            "subtitle": "ewerton is a software house focused on turning complex problems into elegant, reliable software. We design and build technology that helps people and businesses move faster, scale safely, and create real-world impact.",
+            "cta": "Get in Touch"
+        },
+        "projects": {
+            "title": "What We're Building",
+            "subtitle": "These are the products we're actively building and evolving to solve real operational problems.",
+            "aiomover": {
+                "title": "aiomover",
+                "tagline": "Move your files anywhere, instantly",
+                "description": "The ultimate cloud migration tool for personal and business use. aiomover makes it simple to transfer files between cloud storage providers securely and efficiently. Whether you're backing up data, migrating to a new provider, or synchronizing across platforms, aiomover handles it all.",
+                "features": {
+                    "fast": "Lightning Fast Transfers",
+                    "secure": "Bank-Grade Security",
+                    "simple": "Simple Interface"
+                }
+            },
+            "questao": {
+                "title": "questao",
+                "tagline": "Master national exams, one question at a time",
+                "description": "An AI-powered EdTech platform designed to help students prepare for the national exams. With years of real exam questions, gamified learning, live rankings, and personalized AI tutoring, questao makes studying engaging and effective.",
+                "features": {
+                    "ai": "AI-Powered Learning",
+                    "gamified": "Gamified Experience",
+                    "community": "Connect with Peers"
+                }
+            }
+        },
+        "about": {
+            "title": "About ewerton",
+            "description": "Hi, I am Ewerton, a software engineer driven by curiosity, craftsmanship, and purpose. I love building elegant and reliable systems and genuinely enjoy turning complex problems into simple, scalable solutions. I am a wanderer in life, exploring places as contrasting as the warm Brazilian beaches and the snowy peaks of the Andes mountains. Guided by my faith in God, I strive to build technology responsibly and create tools that have a positive, lasting impact.",
+            "location": "Based in Brazil",
+            "focus": "Python n°1 fan"
+        },
+        "contact": {
+            "title": "Let's Connect",
+            "subtitle": "Interested in working together or just want to say hello? Feel free to reach out!"
+        }
+    },
+    "footer": {
+        "copyright": "© 2025 ewerton. All rights reserved.",
+        "madeWith": "Made with passion in",
+        "brazil": "Brazil"
+    },
+    "theme": {
+        "light": "Light Mode",
+        "dark": "Dark Mode",
+        "system": "System"
+    },
+    "metadata": {
+        "title": "ewerton"
+    }
+}

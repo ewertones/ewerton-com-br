@@ -23,10 +23,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
             setThemeState(saved);
             document.documentElement.setAttribute("data-theme", saved);
         } else {
-            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-            const initial = prefersDark ? "dark" : "light";
-            setThemeState(initial);
-            document.documentElement.setAttribute("data-theme", initial);
+            setThemeState("light");
+            document.documentElement.setAttribute("data-theme", "light");
         }
     }, []);
 

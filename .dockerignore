@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+.vscode
+test-results
+Dockerfile
+.dockerignore
+.env*
+README.md

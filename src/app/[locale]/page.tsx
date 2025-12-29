@@ -21,8 +21,7 @@ import {
 import styles from "./page.module.css";
 import Image from "next/image";
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/ewertones";
-const AIOMOVER_URL = "https://aiomover.com";
+import { LINKEDIN_URL, AIOMOVER_URL, RESUME_PATH } from "@/constants";
 
 export default function HomePage() {
     const t = useTranslations();
@@ -177,7 +176,7 @@ export default function HomePage() {
             {showPdfViewer && (
                 <div className={styles.pdfViewerOverlay} onClick={() => setShowPdfViewer(false)}>
                     <div className={styles.pdfViewerContainer} onClick={(e) => e.stopPropagation()}>
-                        <iframe src="/documents/resume-ewerton.pdf" className={styles.pdfViewerFrame} title="Resume" />
+                        <iframe src={RESUME_PATH} className={styles.pdfViewerFrame} title="Resume" />
                     </div>
                 </div>
             )}

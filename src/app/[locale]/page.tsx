@@ -18,15 +18,26 @@ import {
     Gamepad2,
     Users,
     Search,
+    Info,
 } from "lucide-react";
 import styles from "./page.module.css";
 import Image from "next/image";
+import CompanyModal from "@/components/ui/CompanyModal";
 
 import { LINKEDIN_URL, AIOMOVER_URL, RESUME_PATH } from "@/constants";
 import { StarRating } from "@/components/ui/StarRating";
 import { TECHNOLOGY_CATEGORIES } from "@/data/technologies";
 import { EDUCATION_DATA } from "@/data/education";
 import { Calendar } from "lucide-react";
+
+interface Partner {
+    slug: string;
+    name: string;
+    logo: string;
+    url: string;
+    displayUrl: string;
+    hasDescription?: boolean;
+}
 
 const HELLO_WORDS = [
     "Hello",
@@ -47,35 +58,35 @@ const PARTNER_GROUPS = [
     {
         slug: "financial",
         partners: [
-            { name: "DashFi", logo: "/partners/dashfi.webp", url: "https://dash.fi", displayUrl: "dash.fi" },
-            { name: "CERC", logo: "/partners/cerc.webp", url: "https://cerc.com", displayUrl: "cerc.com" },
+            { slug: "dashfi", name: "DashFi", logo: "/partners/dashfi.webp", url: "https://dash.fi", displayUrl: "dash.fi", hasDescription: true },
+            { slug: "cerc", name: "CERC", logo: "/partners/cerc.webp", url: "https://cerc.com", displayUrl: "cerc.com", hasDescription: true },
         ]
     },
     {
         slug: "marketing",
         partners: [
-            { name: "Stagwell", logo: "/partners/stagwell.webp", url: "https://stagwellglobal.com", displayUrl: "stagwellglobal.com" },
-            { name: "BeGrowth", logo: "/partners/begrowth.webp", url: "https://begrowth.com.br", displayUrl: "begrowth.com.br" },
+            { slug: "stagwell", name: "Stagwell", logo: "/partners/stagwell.webp", url: "https://stagwellglobal.com", displayUrl: "stagwellglobal.com", hasDescription: true },
+            { slug: "begrowth", name: "BeGrowth", logo: "/partners/begrowth.webp", url: "https://begrowth.com.br", displayUrl: "begrowth.com.br", hasDescription: true },
         ]
     },
     {
         slug: "tax",
         partners: [
-            { name: "EY", logo: "/partners/ey.webp", url: "https://ey.com", displayUrl: "ey.com" },
+            { slug: "ey", name: "EY", logo: "/partners/ey.webp", url: "https://ey.com", displayUrl: "ey.com" },
         ]
     },
     {
         slug: "food",
         partners: [
-            { name: "Morsum", logo: "/partners/morsum.webp", url: "https://www.dotfoods.com", displayUrl: "dotfoods.com" },
+            { slug: "morsum", name: "Morsum", logo: "/partners/morsum.webp", url: "https://www.dotfoods.com", displayUrl: "dotfoods.com", hasDescription: true },
         ]
     },
     {
         slug: "outsourcing",
         partners: [
-            { name: "Softensity", logo: "/partners/softensity.webp", url: "https://softensity.com", displayUrl: "softensity.com" },
-            { name: "Truelogic", logo: "/partners/truelogic.webp", url: "https://truelogic.io", displayUrl: "truelogic.io" },
-            { name: "BlueShift", logo: "/partners/blueshift.webp", url: "https://blueshift.com.br", displayUrl: "blueshift.com.br" },
+            { slug: "softensity", name: "Softensity", logo: "/partners/softensity.webp", url: "https://softensity.com", displayUrl: "softensity.com" },
+            { slug: "truelogic", name: "Truelogic", logo: "/partners/truelogic.webp", url: "https://truelogic.io", displayUrl: "truelogic.io" },
+            { slug: "blueshift", name: "BlueShift", logo: "/partners/blueshift.webp", url: "https://blueshift.com.br", displayUrl: "blueshift.com.br" },
         ]
     }
 ];
@@ -84,6 +95,8 @@ export default function HomePage() {
     const t = useTranslations();
     const locale = useLocale();
     const [showPdfViewer, setShowPdfViewer] = useState(false);
+    const [selectedCompany, setSelectedCompany] = useState<Partner | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Typewriter state
     const [helloIndex, setHelloIndex] = useState(0);
@@ -379,20 +392,37 @@ export default function HomePage() {
                                     {t(`landing.partners.categories.${group.slug}`)}
                                 </h3>
                                 <div className={styles.partnersGrid}>
-                                    {group.partners.map((partner) => (
-                                        <a
-                                            key={partner.name}
-                                            href={partner.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className={styles.partnerCard}
+                                    {group.partners.map((partner: Partner) => (
+                                        <div 
+                                            key={partner.name} 
+                                            className={styles.partnerCardWrapper}
                                         >
-                                            <div className={styles.partnerLogo}>
-                                                <Image src={partner.logo} alt={partner.name} width={72} height={72} />
-                                            </div>
-                                            <p className={styles.partnerName}>{partner.name}</p>
-                                            <p className={styles.partnerUrl}>{partner.displayUrl}</p>
-                                        </a>
+                                            <a
+                                                href={partner.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className={styles.partnerCard}
+                                            >
+                                                <div className={styles.partnerLogo}>
+                                                    <Image src={partner.logo} alt={partner.name} width={72} height={72} />
+                                                </div>
+                                                <p className={styles.partnerName}>{partner.name}</p>
+                                                <p className={styles.partnerUrl}>{partner.displayUrl}</p>
+                                            </a>
+                                            {partner.hasDescription && (
+                                                <button
+                                                    className={styles.infoButton}
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        setSelectedCompany(partner);
+                                                        setIsModalOpen(true);
+                                                    }}
+                                                    title={t("common.viewDetails")}
+                                                >
+                                                    <Info size={18} />
+                                                </button>
+                                            )}
+                                        </div>
                                     ))}
                                 </div>
                             </div>
@@ -414,6 +444,11 @@ export default function HomePage() {
                         </a>
                     </div>
                 </div>
+                <CompanyModal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                    company={selectedCompany}
+                />
             </main>
 
             <Footer />

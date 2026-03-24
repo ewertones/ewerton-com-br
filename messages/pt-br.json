@@ -2,7 +2,8 @@
     "common": {
         "viewResume": "Ver Currículo",
         "connectLinkedIn": "Conectar no LinkedIn",
-        "comingSoon": "Em Breve"
+        "comingSoon": "Em Breve",
+        "viewDetails": "Ver Detalhes"
     },
     "landing": {
         "hero": {
@@ -49,6 +50,36 @@
                 "tax": "Impostos e Contabilidade",
                 "food": "Comida",
                 "outsourcing": "Terceirização"
+            },
+            "descriptions": {
+                "stagwell": {
+                    "role1": "Engenheiro Backend Líder (Code & Theory)",
+                    "period1": "Dez 2024 - Fev 2026",
+                    "desc1": "Como Desenvolvedor Backend Líder fundador, eu arquitetei e escalei esta plataforma de IA empresarial do zero, liderando uma equipe de engenheiros sêniores para construir um sistema robusto e pronto para produção no Google Cloud Platform.\n\nPrincipais conquistas:\n- Arquitetei um Motor de IA Escalonável usando Python, FastAPI e LangGraph com RAG e busca vetorial multi-inquilino.\n- Engenhei um Backend de Classe Empresarial no GCP com SQLAlchemy e Pydantic.\n- Liderei Operações de Equipe e Segurança (JWT, SSO/Okta, RBAC) e mentorei uma equipe de 8 desenvolvedores sêniores.",
+                    "role2": "Engenheiro de Dados Sênior (Stagwell Marketing Cloud)",
+                    "period2": "Abr 2024 - Nov 2024",
+                    "desc2": "Pioneiro na estratégia de colaboração de dados segura da empresa, projetando e implementando um pipeline de dados multi-nuvem totalmente automatizado para AWS, GCP e Snowflake.\n\nPrincipais conquistas:\n- Arquitetei uma Estrutura de Ingestão e Processamento Multi-Nuvem para compartilhamento de dados seguro e escalonável.\n- Construí um Motor de Automação Serverless na AWS usando Glue, Lambda e Step Functions.\n- Implementei Analytics Seguros com Snowflake Clean Rooms, permitindo insights conjuntos preservando a privacidade."
+                },
+                "morsum": {
+                    "role": "Desenvolvedor Back End Sênior",
+                    "period": "Maio 2023 - Abr 2024",
+                    "desc": "Responsável por escalar a API principal da plataforma e a infraestrutura de pipeline de dados no setor de foodtech.\n\n- Desenvolvi e escalei a API REST principal em Python/Flask.\n- Arquitetei a estrutura de processamento de dados da empresa usando Apache Airflow para todos os pipelines ETL automatizados."
+                },
+                "dashfi": {
+                    "role": "Engenheiro de Dados Sênior",
+                    "period": "Out 2021 - Maio 2023",
+                    "desc": "Trabalhei em uma empresa de cartões de crédito B2B para gastos com anúncios digitais.\n\n- Criei APIs REST rápidas e seguras com FastAPI.\n- Construí pipelines ETL para painéis internos usando GCP BigQuery e Looker Studio.\n- Mantive o servidor Apache Airflow com CI/CD para DAGs.\n- Desenvolvi modelos estatísticos preditivos para dados de gastos."
+                },
+                "cerc": {
+                    "role": "Engenheiro de Big Data",
+                    "period": "Maio 2021 - Out 2021",
+                    "desc": "Mantive pipelines de dados e infraestrutura para uma das principais registradoras de recebíveis do Brasil.\n\n- Mantive pipelines de dados em Python e Java/Kotlin.\n- Implementei soluções usando Docker, Kubernetes, Airflow, Hadoop, Spark e Dataflow.\n- Otimizei consultas no Spanner e BigQuery."
+                },
+                "begrowth": {
+                    "role": "Engenheiro de Dados",
+                    "period": "Maio 2020 - Maio 2021",
+                    "desc": "Construí a infraestrutura de dados para uma startup de AdTech.\n\n- Criei solução de Data Lake e Warehouse usando Google Cloud BigQuery.\n- Orquestrei dados de anúncios (Facebook, Google) usando Airflow.\n- Escrevi scripts Python (Pandas/Numpy) para mesclagem de dados.\n- Gerenciei contas/campanhas do Google e Facebook Ads e melhorei o ROAS por meio de testes A/B."
+                }
             }
         },
         "about": {

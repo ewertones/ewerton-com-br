@@ -501,7 +501,7 @@
 .eduInst {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--color-text-main);
+    color: #002776;
     margin: 0;
 }
 
@@ -568,7 +568,7 @@
 .partnerGroupTitle {
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--color-primary-600);
+    color: #002776;
     margin: 0;
     position: relative;
     padding-left: 16px;
@@ -582,7 +582,7 @@
     transform: translateY(-50%);
     width: 4px;
     height: 100%;
-    background: var(--color-primary-500);
+    background: #002776;
     border-radius: 2px;
 }
 
@@ -591,6 +591,11 @@
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 32px;
     margin-top: 8px;
+}
+
+.partnerCardWrapper {
+    position: relative;
+    width: 100%;
 }
 
 .partnerCard {
@@ -612,7 +617,32 @@
 .partnerCard:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 40px oklch(0 0 0 / 0.1);
-    border-color: var(--color-primary-300);
+    border-color: #002776;
+}
+
+.infoButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--color-surface-glass);
+    border: 1px solid var(--color-surface-glass-border);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-primary-600);
+    transition: all 0.2s ease;
+    z-index: 5;
+}
+
+.infoButton:hover {
+    background: #002776;
+    color: white;
+    transform: scale(1.1);
+    border-color: #002776;
 }
 
 .partnerLogo {

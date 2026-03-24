@@ -2,7 +2,8 @@
     "common": {
         "viewResume": "View Resume",
         "connectLinkedIn": "Connect on LinkedIn",
-        "comingSoon": "Coming Soon"
+        "comingSoon": "Coming Soon",
+        "viewDetails": "View Details"
     },
     "landing": {
         "hero": {
@@ -49,6 +50,36 @@
                 "tax": "Tax & Accounting",
                 "food": "Food",
                 "outsourcing": "Outsourcing"
+            },
+            "descriptions": {
+                "stagwell": {
+                    "role1": "Lead Back-end Engineer (Code & Theory)",
+                    "period1": "Dec 2024 - Feb 2026",
+                    "desc1": "As the founding Lead Backend Developer, I architected and scaled this enterprise AI platform from the ground up, leading a team of senior engineers to build a robust, production-ready system on Google Cloud Platform.\n\nKey achievements:\n- Architected a Scalable AI Engine using Python, FastAPI, and LangGraph with RAG and multi-tenant vector search.\n- Engineered an Enterprise-Grade Backend on GCP with SQLAlchemy and Pydantic.\n- Led Security & Team Operations (JWT, SSO/Okta, RBAC) and mentored a team of 8 senior developers.",
+                    "role2": "Senior Data Engineer (Stagwell Marketing Cloud)",
+                    "period2": "Apr 2024 - Nov 2024",
+                    "desc2": "I pioneered the company's secure data collaboration strategy by designing and implementing a fully automated, multi-cloud data pipeline for AWS, GCP, and Snowflake.\n\nKey achievements:\n- Architected a Multi-Cloud Ingestion & Processing Framework for scalable and secure data sharing.\n- Built a Serverless Automation Engine on AWS using Glue, Lambda, and Step Functions.\n- Implemented Secure Analytics with Snowflake Clean Rooms enabling privacy-preserving joint insights."
+                },
+                "morsum": {
+                    "role": "Senior Back End Developer",
+                    "period": "May 2023 - Apr 2024",
+                    "desc": "Responsible for scaling the platform's core API and data pipeline infrastructure in the foodtech space.\n\n- Developed and scaled the primary Python/Flask REST API.\n- Architected the company's data processing framework using Apache Airflow for all automated ETL pipelines."
+                },
+                "dashfi": {
+                    "role": "Senior Data Engineer",
+                    "period": "Oct 2021 - May 2023",
+                    "desc": "Worked on a B2B credit card company for digital ad spending.\n\n- Created fast, secure REST APIs with FastAPI.\n- Built ETL pipelines for internal dashboards using GCP BigQuery and Looker Studio.\n- Maintained Apache Airflow server with CI/CD for DAGs.\n- Developed predictive statistical models for spending data."
+                },
+                "cerc": {
+                    "role": "Big Data Engineer",
+                    "period": "May 2021 - Oct 2021",
+                    "desc": "Maintained data pipelines and infrastructure for one of Brazil's main receivables registers.\n\n- Maintained Python and Java/Kotlin data pipelines.\n- Implemented solutions using Docker, Kubernetes, Airflow, Hadoop, Spark, and Dataflow.\n- Optimized queries in Spanner and BigQuery."
+                },
+                "begrowth": {
+                    "role": "Data Engineer",
+                    "period": "May 2020 - May 2021",
+                    "desc": "Built data infrastructure for an AdTech startup.\n\n- Created Data Lake & Warehouse using Google Cloud BigQuery.\n- Orchestrated Ads data (Facebook, Google) using Airflow.\n- Wrote Python (Pandas/Numpy) scripts for data merging.\n- Managed Ads accounts and improved ROAS through A/B testing."
+                }
             }
         },
         "about": {

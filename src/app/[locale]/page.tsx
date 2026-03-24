@@ -69,12 +69,12 @@ const PARTNER_GROUPS = [
             { slug: "begrowth", name: "BeGrowth", logo: "/partners/begrowth.webp", url: "https://begrowth.com.br", displayUrl: "begrowth.com.br", hasDescription: true },
         ]
     },
-    {
+    /* {
         slug: "tax",
         partners: [
             { slug: "ey", name: "EY", logo: "/partners/ey.webp", url: "https://ey.com", displayUrl: "ey.com" },
         ]
-    },
+    }, */
     {
         slug: "food",
         partners: [

@@ -42,7 +42,14 @@
         },
         "partners": {
             "title": "Empresas com as Quais Trabalhei",
-            "subtitle": "Ao longo da minha carreira, tive o privilégio de trabalhar com essas empresas incríveis. Meu trabalho envolveu implementação de APIs, modelagem de bancos de dados, melhoria de processos, consultoria, migração de sistemas, automação de pipelines e muito mais."
+            "subtitle": "Ao longo da minha carreira, tive o privilégio de trabalhar com essas empresas incríveis. Meu trabalho envolveu implementação de APIs, modelagem de bancos de dados, melhoria de processos, consultoria, migração de sistemas, automação de pipelines e muito mais.",
+            "categories": {
+                "financial": "Instituições Financeiras",
+                "marketing": "Marketing",
+                "tax": "Impostos e Contabilidade",
+                "food": "Comida",
+                "outsourcing": "Terceirização"
+            }
         },
         "about": {
             "title": "Trajetória e Formação",

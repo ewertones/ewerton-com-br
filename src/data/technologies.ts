@@ -111,10 +111,10 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         category: "Cloud Providers",
         icon: Cloud,
         skills: [
-            { name: "GCP", rating: 4.0, keywords: ["google cloud platform", "google cloud", "cloud", "serverless", "computing", "bigquery", "cloud run", "gke", "cloud functions", "pub/sub", "gcs"] },
+            { name: "Google Cloud", rating: 4.0, keywords: ["gcp", "google cloud platform", "cloud", "serverless", "computing", "bigquery", "cloud run", "gke", "cloud functions", "pub/sub", "gcs"] },
             { name: "AWS", rating: 3.0, keywords: ["amazon web services", "amazon", "cloud", "s3", "ec2", "lambda", "rds", "dynamodb", "iam", "cloudwatch", "ecs", "eks"] },
             { name: "Snowflake", rating: 2.5, keywords: ["cloud", "data warehouse", "analytics", "saas", "sql", "data sharing", "time travel", "virtual warehouse", "marketplace"] },
-            { name: "Azure", rating: 1.5, keywords: ["microsoft", "cloud", "computing", "enterprise", "azure devops", "active directory", "blob storage", "aks", "functions", "ad"] },
+            { name: "Microsoft Azure", rating: 1.5, keywords: ["azure", "microsoft", "cloud", "computing", "enterprise", "azure devops", "active directory", "blob storage", "aks", "functions", "ad"] },
         ]
     },
     {
@@ -175,7 +175,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
             { name: "Pytest", rating: 3.5, keywords: ["python", "testing", "unit test", "automation", "fixtures", "mocking", "parametrize", "plugins", "coverage"] },
             { name: "unittest", rating: 3.5, keywords: ["python", "testing", "unit test", "standard library", "mock", "assertions", "test cases", "test suite", "tdd"] },
             { name: "Selenium", rating: 3.0, keywords: ["automation", "web", "browser", "testing", "qa", "webdriver", "e2e", "integration", "ui testing", "scraping"] },
-            { name: "TDD", rating: 2.5, keywords: ["test driven development", "agile", "quality", "clean code", "red-green-refactor", "unit tests", "bdd", "coverage", "design"] },
+            { name: "TDD", rating: 3.0, keywords: ["test driven development", "agile", "quality", "clean code", "red-green-refactor", "unit tests", "bdd", "coverage", "design"] },
         ]
     },
     {

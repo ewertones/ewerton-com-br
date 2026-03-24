@@ -43,36 +43,41 @@ const HELLO_WORDS = [
     "مرحبا",
 ];
 
-const PARTNERS = [
-    { name: "EY", logo: "/partners/ey.webp", url: "https://ey.com", displayUrl: "ey.com" },
+const PARTNER_GROUPS = [
     {
-        name: "Softensity",
-        logo: "/partners/softensity.webp",
-        url: "https://softensity.com",
-        displayUrl: "softensity.com",
+        slug: "financial",
+        partners: [
+            { name: "DashFi", logo: "/partners/dashfi.webp", url: "https://dash.fi", displayUrl: "dash.fi" },
+            { name: "CERC", logo: "/partners/cerc.webp", url: "https://cerc.com", displayUrl: "cerc.com" },
+        ]
     },
     {
-        name: "Stagwell",
-        logo: "/partners/stagwell.webp",
-        url: "https://stagwellglobal.com",
-        displayUrl: "stagwellglobal.com",
-    },
-    { name: "Truelogic", logo: "/partners/truelogic.webp", url: "https://truelogic.io", displayUrl: "truelogic.io" },
-    { name: "Morsum", logo: "/partners/morsum.webp", url: "https://www.dotfoods.com", displayUrl: "dotfoods.com" },
-    { name: "DashFi", logo: "/partners/dashfi.webp", url: "https://dash.fi", displayUrl: "dash.fi" },
-    { name: "CERC", logo: "/partners/cerc.webp", url: "https://cerc.com", displayUrl: "cerc.com" },
-    {
-        name: "BlueShift",
-        logo: "/partners/blueshift.webp",
-        url: "https://blueshift.com.br",
-        displayUrl: "blueshift.com.br",
+        slug: "marketing",
+        partners: [
+            { name: "Stagwell", logo: "/partners/stagwell.webp", url: "https://stagwellglobal.com", displayUrl: "stagwellglobal.com" },
+            { name: "BeGrowth", logo: "/partners/begrowth.webp", url: "https://begrowth.com.br", displayUrl: "begrowth.com.br" },
+        ]
     },
     {
-        name: "BeGrowth",
-        logo: "/partners/begrowth.webp",
-        url: "https://begrowth.com.br",
-        displayUrl: "begrowth.com.br",
+        slug: "tax",
+        partners: [
+            { name: "EY", logo: "/partners/ey.webp", url: "https://ey.com", displayUrl: "ey.com" },
+        ]
     },
+    {
+        slug: "food",
+        partners: [
+            { name: "Morsum", logo: "/partners/morsum.webp", url: "https://www.dotfoods.com", displayUrl: "dotfoods.com" },
+        ]
+    },
+    {
+        slug: "outsourcing",
+        partners: [
+            { name: "Softensity", logo: "/partners/softensity.webp", url: "https://softensity.com", displayUrl: "softensity.com" },
+            { name: "Truelogic", logo: "/partners/truelogic.webp", url: "https://truelogic.io", displayUrl: "truelogic.io" },
+            { name: "BlueShift", logo: "/partners/blueshift.webp", url: "https://blueshift.com.br", displayUrl: "blueshift.com.br" },
+        ]
+    }
 ];
 
 export default function HomePage() {
@@ -367,21 +372,30 @@ export default function HomePage() {
                     <h2 className={styles.sectionTitle}>{t("landing.partners.title")}</h2>
                     <p className={styles.sectionSubtitle}>{t("landing.partners.subtitle")}</p>
 
-                    <div className={styles.partnersGrid}>
-                        {PARTNERS.map((partner) => (
-                            <a
-                                key={partner.name}
-                                href={partner.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.partnerCard}
-                            >
-                                <div className={styles.partnerLogo}>
-                                    <Image src={partner.logo} alt={partner.name} width={72} height={72} />
+                    <div className={styles.partnerGroups}>
+                        {PARTNER_GROUPS.map((group) => (
+                            <div key={group.slug} className={styles.partnerGroup}>
+                                <h3 className={styles.partnerGroupTitle}>
+                                    {t(`landing.partners.categories.${group.slug}`)}
+                                </h3>
+                                <div className={styles.partnersGrid}>
+                                    {group.partners.map((partner) => (
+                                        <a
+                                            key={partner.name}
+                                            href={partner.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.partnerCard}
+                                        >
+                                            <div className={styles.partnerLogo}>
+                                                <Image src={partner.logo} alt={partner.name} width={72} height={72} />
+                                            </div>
+                                            <p className={styles.partnerName}>{partner.name}</p>
+                                            <p className={styles.partnerUrl}>{partner.displayUrl}</p>
+                                        </a>
+                                    ))}
                                 </div>
-                                <p className={styles.partnerName}>{partner.name}</p>
-                                <p className={styles.partnerUrl}>{partner.displayUrl}</p>
-                            </a>
+                            </div>
                         ))}
                     </div>
                 </section>

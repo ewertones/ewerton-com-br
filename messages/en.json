@@ -42,7 +42,14 @@
         },
         "partners": {
             "title": "Companies I've Worked With",
-            "subtitle": "Throughout my career, I've had the privilege of partnering with these amazing companies. My work involved implementing APIs, modeling databases, improving processes, consulting, migrating systems, automating pipelines, and more."
+            "subtitle": "Throughout my career, I've had the privilege of partnering with these amazing companies. My work involved implementing APIs, modeling databases, improving processes, consulting, migrating systems, automating pipelines, and more.",
+            "categories": {
+                "financial": "Financial Institutions",
+                "marketing": "Marketing",
+                "tax": "Tax & Accounting",
+                "food": "Food",
+                "outsourcing": "Outsourcing"
+            }
         },
         "about": {
             "title": "Background & Education",

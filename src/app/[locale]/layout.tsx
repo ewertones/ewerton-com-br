@@ -1,4 +1,5 @@
 import { NextIntlClientProvider } from "next-intl";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Omit<Props, "children">): Pro
 
     return {
         title: t("title"),
-        description: "ewerton is a software house dedicated to building innovative solutions that make a difference.",
+        description: "I'm a software engineer dedicated to building innovative solutions that make a difference.",
         openGraph: {
             locale: locale === "pt-br" ? "pt_BR" : "en_US",
             type: "website",
@@ -37,11 +38,11 @@ export async function generateMetadata({ params }: Omit<Props, "children">): Pro
 
 const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "ewerton",
+    "@type": "Person",
+    name: "Ewerton",
     url: "https://ewerton.com.br",
-    logo: "https://ewerton.com.br/logo.svg",
-    description: "Improving the world through technology.",
+    image: "https://ewerton.com.br/logo.svg",
+    description: "Software engineer improving the world through technology.",
 };
 
 export function generateStaticParams() {
@@ -88,6 +89,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                 <ThemeProvider>
                     <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
                 </ThemeProvider>
+                <GoogleAnalytics gaId="G-MFH72L1LCE" />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             </body>
         </html>

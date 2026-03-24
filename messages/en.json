@@ -2,25 +2,19 @@
     "common": {
         "viewResume": "View Resume",
         "connectLinkedIn": "Connect on LinkedIn",
-        "learnMore": "Learn More",
-        "visitProject": "Visit Project",
         "comingSoon": "Coming Soon"
-    },
-    "nav": {
-        "home": "Home",
-        "about": "About",
-        "projects": "Projects"
     },
     "landing": {
         "hero": {
             "title1": "Improving the World",
             "title2": "Through Technology",
-            "subtitle": "ewerton is a software house focused on turning complex problems into elegant, reliable software. We design and build technology that helps people and businesses move faster, scale safely, and create real-world impact.",
+            "subtitle": "I'm a software engineer focused on turning complex problems into elegant, reliable software. I design and build technology that helps people and businesses move faster, scale safely, and create real-world impact.",
+            "greeting": "nice to meet you!",
             "cta": "Get in Touch"
         },
         "projects": {
-            "title": "What We're Building",
-            "subtitle": "These are the products we're actively building and evolving to solve real operational problems.",
+            "title": "What I'm Building",
+            "subtitle": "These are the products I'm actively building and evolving to solve real operational problems. I am entirely responsible for all areas of development, from conception and modeling, to implementing, deploying, and marketing.",
             "aiomover": {
                 "title": "aiomover",
                 "tagline": "Move your files anywhere, instantly",
@@ -42,26 +36,31 @@
                 }
             }
         },
+        "technologies": {
+            "title": "Technologies I Master",
+            "subtitle": "An overview of the tools and technologies I've been using over the past years, along with a self-evaluation of my proficiency."
+        },
+        "partners": {
+            "title": "Companies I've Worked With",
+            "subtitle": "Throughout my career, I've had the privilege of partnering with these amazing companies. My work involved implementing APIs, modeling databases, improving processes, consulting, migrating systems, automating pipelines, and more."
+        },
         "about": {
-            "title": "About ewerton",
-            "description": "Hi, I am Ewerton, a software engineer driven by curiosity, craftsmanship, and purpose. I love building elegant and reliable systems and genuinely enjoy turning complex problems into simple, scalable solutions. I am a wanderer in life, exploring places as contrasting as the warm Brazilian beaches and the snowy peaks of the Andes mountains. Guided by my faith in God, I strive to build technology responsibly and create tools that have a positive, lasting impact.",
+            "title": "Background & Education",
+            "subtitle": "My professional journey and academic background",
+            "description": "Hi, I am Ewerton, a Lead Engineer with over 7 years of experience in architecting and scaling complex data and AI platforms from the ground up. I specialize in the intersection of backend development and data engineering, transforming business requirements into robust, production-ready systems on GCP and AWS. Mentoring developers and driving projects from concept to deployment, I am passionate about solving complex data challenges and building the infrastructure that powers intelligent products. Guided by my faith in God, I strive to build technology responsibly and create tools that have a lasting impact.",
             "location": "Based in Brazil",
             "focus": "Python n°1 fan"
         },
-        "contact": {
+        "closingCta": {
             "title": "Let's Connect",
-            "subtitle": "Interested in working together or just want to say hello? Feel free to reach out!"
+            "subtitle": "If you reached here, feel free to book a meeting with me if needed!",
+            "button": "Book a Meeting"
         }
     },
     "footer": {
-        "copyright": "© 2025 ewerton. All rights reserved.",
+        "copyright": "© 2018–2026 Ewerton Software LTDA · CNPJ 39.633.105/0001-13 · All rights reserved.",
         "madeWith": "Made with passion in",
         "brazil": "Brazil"
-    },
-    "theme": {
-        "light": "Light Mode",
-        "dark": "Dark Mode",
-        "system": "System"
     },
     "metadata": {
         "title": "ewerton"

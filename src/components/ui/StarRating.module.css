@@ -1,0 +1,29 @@
+.starContainer {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.starsBackground {
+    display: flex;
+    gap: 4px;
+}
+
+.starEmpty {
+    color: var(--color-surface-glass-border);
+}
+
+.starsForeground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.starFilled {
+    color: #F59E0B; /* Amber/Gold */
+    flex-shrink: 0;
+}

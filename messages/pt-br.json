@@ -2,25 +2,19 @@
     "common": {
         "viewResume": "Ver Currículo",
         "connectLinkedIn": "Conectar no LinkedIn",
-        "learnMore": "Saiba Mais",
-        "visitProject": "Visitar Projeto",
         "comingSoon": "Em Breve"
-    },
-    "nav": {
-        "home": "Início",
-        "about": "Sobre",
-        "projects": "Projetos"
     },
     "landing": {
         "hero": {
             "title1": "Melhorando o Mundo",
             "title2": "Através da Tecnologia",
-            "subtitle": "ewerton é uma software house focada em transformar problemas complexos em softwares bonitos e confiáveis. Projetamos e construímos tecnologia que ajuda pessoas e empresas a avançar mais rápido, escalar com segurança e criar um impacto real.",
+            "subtitle": "Sou um engenheiro de software focado em transformar problemas complexos em softwares elegantes e confiáveis. Projeto e construo tecnologia que ajuda pessoas e empresas a avançar mais rápido, escalar com segurança e criar um impacto real.",
+            "greeting": "prazer em te conhecer!",
             "cta": "Entre em Contato"
         },
         "projects": {
-            "title": "O Que Estamos Construindo",
-            "subtitle": "Estes são os produtos que estamos ativamente construindo e melhorando para resolver problemas operacionais reais.",
+            "title": "O Que Estou Construindo",
+            "subtitle": "Estes são os produtos que estou ativamente construindo e melhorando para resolver problemas operacionais reais. Sou inteiramente responsável por todas as áreas de desenvolvimento, da concepção e modelagem, até implementação, deployment e marketing.",
             "aiomover": {
                 "title": "aiomover",
                 "tagline": "Mova seus arquivos para qualquer lugar, instantaneamente",
@@ -34,34 +28,39 @@
             "questao": {
                 "title": "questao",
                 "tagline": "Domine o ENEM, uma questão de cada vez",
-                "description": "Uma plataforma EdTech com inteligência artificial projetada para ajudar estudantes a se prepararem para o ENEM. Com 25 anos de questões reais, aprendizado gamificado, rankings e mentoria personalizada por IA, o questão torna o estudo divertido e eficaz.",
+                "description": "Uma plataforma EdTech com inteligência artificial projetada para ajudar estudantes a se prepararem para o ENEM. Com anos de questões reais de provas, aprendizado gamificado, rankings ao vivo e tutoria personalizada por IA, o questao torna o estudo divertido e eficaz.",
                 "features": {
                     "ai": "Aprendizado com IA",
                     "gamified": "Experiência Gamificada",
-                    "community": "Conecte-se com amigos"
+                    "community": "Conecte-se com colegas"
                 }
             }
         },
+        "technologies": {
+            "title": "Tecnologias que Domino",
+            "subtitle": "Uma visão geral das ferramentas e tecnologias que venho utilizando nos últimos anos, juntamente com uma autoavaliação da minha proficiência."
+        },
+        "partners": {
+            "title": "Empresas com as Quais Trabalhei",
+            "subtitle": "Ao longo da minha carreira, tive o privilégio de trabalhar com essas empresas incríveis. Meu trabalho envolveu implementação de APIs, modelagem de bancos de dados, melhoria de processos, consultoria, migração de sistemas, automação de pipelines e muito mais."
+        },
         "about": {
-            "title": "Sobre ewerton",
-            "description": "Opa, me chamo Ewerton, sou um Engenheiro de Software movido por curiosidade, excelência e propósito. Amo construir sistemas elegantes e confiáveis e sou movido por transformar problemas complexos em soluções simples e escaláveis. Sou um andarilho na vida, vagando por lugares que vão desde as praias do Nordeste brasileiro até os picos nevados dos Andes. Guiado pela minha fé em Deus, busco construir tecnologia de forma responsável e criar ferramentas que tenham um impacto positivo e duradouro.",
+            "title": "Trajetória e Formação",
+            "subtitle": "Minha jornada profissional e base acadêmica",
+            "description": "Opa, me chamo Ewerton, um Engenheiro Líder com mais de 7 anos de experiência arquitetando e escalando plataformas complexas de dados e IA do zero. Especializo-me na interseção do desenvolvimento backend e engenharia de dados, transformando requisitos de negócios em sistemas robustos e prontos para produção na GCP e AWS. Orientando desenvolvedores e conduzindo projetos desde o conceito inicial até a implantação, sou apaixonado por resolver desafios complexos de dados e construir a infraestrutura que alimenta produtos inteligentes. Guiado pela minha fé em Deus, busco construir tecnologia de forma responsável e criar ferramentas que tenham um impacto positivo e duradouro.",
             "location": "Tô no Brasil",
             "focus": "Fã n°1 do Python"
         },
-        "contact": {
-            "title": "Vamos Conectar",
-            "subtitle": "Interessado em trabalhar junto ou só quer dizer olá? Fique à vontade para entrar em contato!"
+        "closingCta": {
+            "title": "Vamos Conversar",
+            "subtitle": "Se você chegou até aqui, sinta-se à vontade para agendar uma reunião comigo, se necessário!",
+            "button": "Agendar uma Reunião"
         }
     },
     "footer": {
-        "copyright": "© 2025 ewerton. Todos os direitos reservados.",
+        "copyright": "© 2018–2026 Ewerton Software LTDA · CNPJ 39.633.105/0001-13 · Todos os direitos reservados.",
         "madeWith": "Feito com amor no",
         "brazil": "Brasil"
-    },
-    "theme": {
-        "light": "Tema Claro",
-        "dark": "Tema Escuro",
-        "system": "Sistema"
     },
     "metadata": {
         "title": "ewerton"

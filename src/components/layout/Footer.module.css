@@ -29,7 +29,7 @@
 
 .bottom {
     padding-top: 24px;
-    border-top: 1px solid var(--color-neutral-100);
+    border-top: 1px solid var(--color-surface-glass-border);
     width: 100%;
     max-width: 600px;
 }
@@ -40,8 +40,15 @@
     margin: 0 0 4px 0;
 }
 
-.madeWith {
+.legalInfo {
     color: var(--color-neutral-400);
+    font-size: 0.75rem;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.3px;
+}
+
+.madeWith {
+    color: var(--color-text-muted);
     font-size: 0.8rem;
     margin: 0;
 }

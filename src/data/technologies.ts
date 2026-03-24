@@ -25,6 +25,7 @@ export interface Technology {
 }
 
 export interface TechnologyCategory {
+    slug: string;
     category: string;
     icon: LucideIcon;
     skills: Technology[];
@@ -32,6 +33,7 @@ export interface TechnologyCategory {
 
 export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
     {
+        slug: "programming_languages",
         category: "Programming Languages",
         icon: Code2,
         skills: [
@@ -46,7 +48,8 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
-        category: "Database Technologies",
+        slug: "databases",
+        category: "Databases",
         icon: Database,
         skills: [
             { name: "MySQL", rating: 4.0, keywords: ["sql", "rdbms", "relational", "database", "innodb", "transactions", "indexing", "web", "open source", "mariadb"] },
@@ -60,6 +63,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "big_data_processing",
         category: "Big Data & Data Processing",
         icon: Network,
         skills: [
@@ -69,6 +73,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "data_science_ml",
         category: "Data Science & ML",
         icon: LineChart,
         skills: [
@@ -83,6 +88,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "web_development",
         category: "Web Development",
         icon: Layout,
         skills: [
@@ -98,6 +104,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "data_engineering",
         category: "Data Engineering",
         icon: Server,
         skills: [
@@ -108,6 +115,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "cloud_providers",
         category: "Cloud Providers",
         icon: Cloud,
         skills: [
@@ -118,6 +126,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "containerization",
         category: "Containerization",
         icon: Box,
         skills: [
@@ -126,6 +135,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "devops_ci_cd",
         category: "DevOps & CI/CD",
         icon: Settings,
         skills: [
@@ -134,6 +144,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "version_control",
         category: "Version Control",
         icon: GitBranch,
         skills: [
@@ -143,6 +154,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "dashboarding",
         category: "Dashboarding",
         icon: LayoutDashboard,
         skills: [
@@ -152,6 +164,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "agile",
         category: "Agile",
         icon: Route,
         skills: [
@@ -161,6 +174,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "orchestration",
         category: "Orchestration",
         icon: ListTree,
         skills: [
@@ -169,6 +183,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "testing_frameworks",
         category: "Testing Frameworks",
         icon: Activity,
         skills: [
@@ -179,6 +194,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "logging",
         category: "Logging",
         icon: Activity, // Reuse generic monitoring activity
         skills: [
@@ -187,6 +203,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "ads",
         category: "Ads",
         icon: Megaphone,
         skills: [
@@ -197,6 +214,7 @@ export const TECHNOLOGY_CATEGORIES: TechnologyCategory[] = [
         ]
     },
     {
+        slug: "os",
         category: "OS",
         icon: Monitor,
         skills: [

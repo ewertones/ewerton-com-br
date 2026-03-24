@@ -108,6 +108,8 @@ export default function HomePage() {
 
     const filteredTechnologies = TECHNOLOGY_CATEGORIES.map((cat) => {
         const query = techSearch.toLowerCase().trim();
+        const categoryName = t(`landing.technologies.categories.${cat.slug}`).toLowerCase();
+
         if (!query) return cat;
 
         const filteredSkills = cat.skills.filter(
@@ -115,8 +117,15 @@ export default function HomePage() {
                 s.name.toLowerCase().includes(query) ||
                 (s.keywords && s.keywords.some((k) => k.toLowerCase().includes(query))),
         );
+        
+        const matchesCategory = categoryName.includes(query) || cat.category.toLowerCase().includes(query);
+        
+        if (matchesCategory) {
+            return cat;
+        }
+
         return { ...cat, skills: filteredSkills };
-    }).filter((cat) => cat.skills.length > 0 || cat.category.toLowerCase().includes(techSearch.toLowerCase().trim()));
+    }).filter((cat) => cat.skills.length > 0);
 
     useEffect(() => {
         const currentWord = HELLO_WORDS[helloIndex];
@@ -310,7 +319,9 @@ export default function HomePage() {
                             <div key={cat.category} className={styles.techCategory}>
                                 <div className={styles.techCategoryHeader}>
                                     <cat.icon size={20} className={styles.techCategoryIcon} />
-                                    <h3 className={styles.techCategoryTitle}>{cat.category}</h3>
+                                    <h3 className={styles.techCategoryTitle}>
+                                        {t(`landing.technologies.categories.${cat.slug}`)}
+                                    </h3>
                                 </div>
                                 <div className={styles.techSkillsGrid}>
                                     {cat.skills.map((skill) => (

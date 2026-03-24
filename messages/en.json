@@ -38,8 +38,27 @@
             }
         },
         "technologies": {
-            "title": "Technologies I Master",
-            "subtitle": "An overview of the tools and technologies I've been using over the past years, along with a self-evaluation of my proficiency."
+            "title": "Technologies & Skills",
+            "subtitle": "An overview of the tools and technologies I've worked with over the years, along with a self-assessment of my proficiency.",
+            "categories": {
+                "programming_languages": "Programming Languages",
+                "databases": "Databases",
+                "big_data_processing": "Big Data & Processing",
+                "data_science_ml": "Data Science & ML",
+                "web_development": "Web Development",
+                "data_engineering": "Data Engineering",
+                "cloud_providers": "Cloud Providers",
+                "containerization": "Containerization",
+                "devops_ci_cd": "DevOps & CI/CD",
+                "version_control": "Version Control",
+                "dashboarding": "Dashboarding",
+                "agile": "Agile",
+                "orchestration": "Orchestration",
+                "testing_frameworks": "Testing Frameworks",
+                "logging": "Logging",
+                "ads": "Social & Search Ads",
+                "os": "Operating Systems"
+            }
         },
         "partners": {
             "title": "Companies I've Worked With",

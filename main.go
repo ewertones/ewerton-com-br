@@ -17,6 +17,13 @@ var templatesFS embed.FS
 //go:embed static
 var staticFS embed.FS
 
+func cacheControlMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Cache-Control", "public, max-age=31536000, immutable")
+		next.ServeHTTP(w, r)
+	})
+}
+
 //go:embed messages/en.json messages/pt-br.json
 var messagesFS embed.FS
 
@@ -62,7 +69,8 @@ func main() {
 	mux.HandleFunc("GET /cv", handler.CVRedirect)
 
 	// Static assets
-	mux.Handle("GET /static/", http.StripPrefix("/static/", http.FileServer(http.FS(staticSub))))
+	fileServer := http.StripPrefix("/static/", http.FileServer(http.FS(staticSub)))
+	mux.Handle("GET /static/", cacheControlMiddleware(fileServer))
 
 	// Locale pages: /en and /pt-br
 	mux.Handle("GET /en", pageHandler)

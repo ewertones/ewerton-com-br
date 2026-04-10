@@ -1,0 +1,57 @@
+{{define "technologies"}}
+<section class="section">
+  <h2 class="sectionTitle">{{call .T "landing.technologies.title"}}</h2>
+  <p class="sectionSubtitle">{{call .T "landing.technologies.subtitle"}}</p>
+
+  <div class="techSearchContainer">
+    <span class="techSearchIcon">{{template "icon-search" 20}}</span>
+    <input
+      type="text"
+      id="techSearch"
+      placeholder="Search skills (e.g. Postgres, React, AWS...)"
+      class="techSearchInput"
+      autocomplete="off"
+    />
+  </div>
+
+  <div class="techCategoriesGrid" id="techGrid">
+    {{range .Technologies}}
+    <div class="techCategory" data-category="{{.Slug}}" data-category-name="{{.Category}}">
+      <div class="techCategoryHeader">
+        <span class="techCategoryIcon">{{template "icon-category" .Icon}}</span>
+        <h3 class="techCategoryTitle" data-i18n-key="landing.technologies.categories.{{.Slug}}">{{call $.T (printf "landing.technologies.categories.%s" .Slug)}}</h3>
+      </div>
+      <div class="techSkillsGrid">
+        {{range .Skills}}
+        <div class="techSkillCard" data-name="{{lower .Name}}" data-keywords="{{keywords .Keywords}}">
+          <span class="techSkillName">{{.Name}}</span>
+          {{template "star-rating" (dict "Rating" .Rating "Size" 14)}}
+        </div>
+        {{end}}
+      </div>
+    </div>
+    {{end}}
+  </div>
+</section>
+{{end}}
+
+{{define "icon-category"}}
+{{if eq . "code2"}}{{template "icon-code2" 20}}
+{{else if eq . "database"}}{{template "icon-database" 20}}
+{{else if eq . "network"}}{{template "icon-network" 20}}
+{{else if eq . "line-chart"}}{{template "icon-line-chart" 20}}
+{{else if eq . "layout"}}{{template "icon-layout" 20}}
+{{else if eq . "server"}}{{template "icon-server" 20}}
+{{else if eq . "cloud"}}{{template "icon-cloud" 20}}
+{{else if eq . "box"}}{{template "icon-box" 20}}
+{{else if eq . "settings"}}{{template "icon-settings" 20}}
+{{else if eq . "git-branch"}}{{template "icon-git-branch" 20}}
+{{else if eq . "layout-dashboard"}}{{template "icon-layout-dashboard" 20}}
+{{else if eq . "route"}}{{template "icon-route" 20}}
+{{else if eq . "list-tree"}}{{template "icon-list-tree" 20}}
+{{else if eq . "activity"}}{{template "icon-activity" 20}}
+{{else if eq . "megaphone"}}{{template "icon-megaphone" 20}}
+{{else if eq . "monitor"}}{{template "icon-monitor" 20}}
+{{else}}{{template "icon-code2" 20}}
+{{end}}
+{{end}}

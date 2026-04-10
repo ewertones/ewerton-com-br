@@ -1,0 +1,16 @@
+{{define "closing_cta"}}
+<div class="closingCtaCard">
+  <div class="closingCtaContent">
+    <h2 class="closingCtaTitle">{{call .T "landing.closingCta.title"}}</h2>
+    <p class="closingCtaSubtitle">{{call .T "landing.closingCta.subtitle"}}</p>
+  </div>
+  <div class="closingCtaButton">
+    <a href="{{.CalendlyURL}}" target="_blank" rel="noopener noreferrer">
+      <button class="button primary lg" id="bookMeetingBtn">
+        <span class="iconLeft">{{template "icon-calendar" 20}}</span>
+        {{call .T "landing.closingCta.button"}}
+      </button>
+    </a>
+  </div>
+</div>
+{{end}}

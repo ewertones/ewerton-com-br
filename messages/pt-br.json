@@ -1,0 +1,125 @@
+{
+  "common": {
+    "viewResume": "Ver Currículo",
+    "connectLinkedIn": "Conectar no LinkedIn",
+    "comingSoon": "Em Breve",
+    "viewDetails": "Ver Detalhes"
+  },
+  "landing": {
+    "hero": {
+      "title1": "Melhorando o Mundo",
+      "title2": "Através da Tecnologia",
+      "subtitle": "Bem-vindo ao meu portfólio! Sou um programador focado em transformar problemas complexos em softwares bonitos e confiáveis. Projeto e construo tecnologia que ajuda pessoas e empresas a avançar mais rápido, escalar com segurança e criar um impacto real.",
+      "greeting": "prazer em te conhecer!",
+      "cta": "Entre em Contato"
+    },
+    "projects": {
+      "title": "O Que Estou Construindo",
+      "subtitle": "Estes são os produtos que venho desenvolvendo para resolver problemas operacionais reais. Sou inteiramente responsável por todas as áreas de desenvolvimento, da concepção e modelagem, até implementação, deployment e marketing.",
+      "aiomover": {
+        "title": "aiomover",
+        "tagline": "Mova seus arquivos para qualquer lugar, instantaneamente",
+        "description": "A ferramenta definitiva de migração na nuvem para uso pessoal e empresarial. O aiomover torna simples transferir arquivos entre diferentes serviços de nuvem de forma segura e eficiente. Seja para backup de dados, migrações para novos programas ou sincronização entre plataformas, o aiomover cuida de tudo.",
+        "features": {
+          "fast": "Transferências Ultra Rápidas",
+          "secure": "Segurança de Nível Bancário",
+          "simple": "Interface Simples"
+        }
+      },
+      "questao": {
+        "title": "questao",
+        "tagline": "Domine o ENEM, uma questão de cada vez",
+        "description": "Uma plataforma EdTech com inteligência artificial projetada para ajudar estudantes a se prepararem para o ENEM. Com anos de questões reais de provas, aprendizado gamificado, rankings ao vivo e tutoria personalizada por IA, o questao torna o estudo divertido e eficaz.",
+        "features": {
+          "ai": "Aprendizado com IA",
+          "gamified": "Experiência Gamificada",
+          "community": "Conecte-se com colegas"
+        }
+      }
+    },
+    "technologies": {
+      "title": "Tecnologias e Habilidades",
+      "subtitle": "Uma visão geral das ferramentas e tecnologias que venho utilizando nos últimos anos, juntamente com uma autoavaliação da minha proficiência.",
+      "categories": {
+        "programming_languages": "Linguagens de Programação",
+        "databases": "Bancos de Dados",
+        "big_data_processing": "Big Data e Processamento",
+        "data_science_ml": "Ciência de Dados e ML",
+        "web_development": "Desenvolvimento Web",
+        "data_engineering": "Engenharia de Dados",
+        "cloud_providers": "Provedores de Nuvem",
+        "containerization": "Conteinerização",
+        "devops_ci_cd": "DevOps e CI/CD",
+        "version_control": "Controle de Versão",
+        "dashboarding": "Visualização de Dados",
+        "agile": "Agile",
+        "orchestration": "Orquestração",
+        "testing_frameworks": "Testes Automatizados",
+        "logging": "Logging",
+        "ads": "Anúncios",
+        "os": "Sistemas Operacionais"
+      }
+    },
+    "partners": {
+      "title": "Empresas Parceiras",
+      "subtitle": "Ao longo da minha carreira, tive o privilégio de trabalhar com essas empresas incríveis. Meu trabalho envolveu implementação de APIs, modelagem de bancos de dados, melhoria de processos, consultoria, migração de sistemas, automação de pipelines e muito mais.",
+      "categories": {
+        "financial": "Instituições Financeiras",
+        "marketing": "Marketing",
+        "tax": "Impostos e Contabilidade",
+        "food": "Comida",
+        "outsourcing": "Terceirização"
+      },
+      "descriptions": {
+        "stagwell": {
+          "role1": "Engenheiro Backend Líder (Code & Theory)",
+          "period1": "Dez 2024 - Fev 2026",
+          "desc1": "Como Desenvolvedor Backend Líder fundador, eu arquitetei e escalei esta plataforma de IA empresarial do zero, liderando uma equipe de engenheiros sêniores para construir um sistema robusto e pronto para produção no Google Cloud Platform.\n\nPrincipais conquistas:\n- Arquitetei um Motor de IA Escalonável usando Python, FastAPI e LangGraph com RAG e busca vetorial multi-inquilino.\n- Engenhei um Backend de Classe Empresarial no GCP com SQLAlchemy e Pydantic.\n- Liderei Operações de Equipe e Segurança (JWT, SSO/Okta, RBAC) e mentorei uma equipe de 8 desenvolvedores sêniores.",
+          "role2": "Engenheiro de Dados Sênior (Stagwell Marketing Cloud)",
+          "period2": "Abr 2024 - Nov 2024",
+          "desc2": "Pioneiro na estratégia de colaboração de dados segura da empresa, projetando e implementando um pipeline de dados multi-nuvem totalmente automatizado para AWS, GCP e Snowflake.\n\nPrincipais conquistas:\n- Arquitetei uma Estrutura de Ingestão e Processamento Multi-Nuvem para compartilhamento de dados seguro e escalonável.\n- Construí um Motor de Automação Serverless na AWS usando Glue, Lambda e Step Functions.\n- Implementei Analytics Seguros com Snowflake Clean Rooms, permitindo insights conjuntos preservando a privacidade."
+        },
+        "morsum": {
+          "role": "Desenvolvedor Back End Sênior",
+          "period": "Maio 2023 - Abr 2024",
+          "desc": "Responsável por escalar a API principal da plataforma e a infraestrutura de pipeline de dados no setor de foodtech.\n\n- Desenvolvi e escalei a API REST principal em Python/Flask.\n- Arquitetei a estrutura de processamento de dados da empresa usando Apache Airflow para todos os pipelines ETL automatizados."
+        },
+        "dashfi": {
+          "role": "Engenheiro de Dados Sênior",
+          "period": "Out 2021 - Maio 2023",
+          "desc": "Trabalhei em uma empresa de cartões de crédito B2B para gastos com anúncios digitais.\n\n- Criei APIs REST rápidas e seguras com FastAPI.\n- Construí pipelines ETL para painéis internos usando GCP BigQuery e Looker Studio.\n- Mantive o servidor Apache Airflow com CI/CD para DAGs.\n- Desenvolvi modelos estatísticos preditivos para dados de gastos."
+        },
+        "cerc": {
+          "role": "Engenheiro de Big Data",
+          "period": "Maio 2021 - Out 2021",
+          "desc": "Mantive pipelines de dados e infraestrutura para uma das principais registradoras de recebíveis do Brasil.\n\n- Mantive pipelines de dados em Python e Java/Kotlin.\n- Implementei soluções usando Docker, Kubernetes, Airflow, Hadoop, Spark e Dataflow.\n- Otimizei consultas no Spanner e BigQuery."
+        },
+        "begrowth": {
+          "role": "Engenheiro de Dados",
+          "period": "Maio 2020 - Maio 2021",
+          "desc": "Construí a infraestrutura de dados para uma startup de AdTech.\n\n- Criei solução de Data Lake e Warehouse usando Google Cloud BigQuery.\n- Orquestrei dados de anúncios (Facebook, Google) usando Airflow.\n- Escrevi scripts Python (Pandas/Numpy) para mesclagem de dados.\n- Gerenciei contas/campanhas do Google e Facebook Ads e melhorei o ROAS por meio de testes A/B."
+        }
+      }
+    },
+    "about": {
+      "title": "Trajetória e Formação",
+      "subtitle": "Minha jornada profissional e base acadêmica",
+      "description": "Opa, me chamo Ewerton, um Engenheiro Líder com mais de 7 anos de experiência arquitetando e escalando plataformas complexas de dados e IA do zero. Especializo-me na interseção do desenvolvimento backend e engenharia de dados, transformando requisitos de negócios em sistemas robustos e prontos para produção na GCP e AWS. Orientando desenvolvedores e conduzindo projetos desde o conceito inicial até a implantação, sou apaixonado por resolver desafios complexos de dados e construir a infraestrutura que alimenta produtos inteligentes. Guiado pela minha fé em Deus, busco construir tecnologia de forma responsável e criar ferramentas que tenham um impacto positivo e duradouro.",
+      "location": "Tô no Brasil",
+      "focus": "Fã n°1 do Python"
+    },
+    "closingCta": {
+      "title": "Vamos Conversar",
+      "subtitle": "Se você chegou até aqui, sinta-se à vontade para agendar uma reunião comigo, se necessário!",
+      "button": "Agendar uma Reunião"
+    }
+  },
+  "footer": {
+    "copyright": "© 2018–2026 Ewerton Software LTDA · CNPJ 39.633.105/0001-13 · Todos os direitos reservados.",
+    "madeWith": "Feito com amor no",
+    "brazil": "Brasil"
+  },
+  "metadata": {
+    "title": "ewerton"
+  }
+}

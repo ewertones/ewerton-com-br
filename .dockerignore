@@ -1,0 +1,17 @@
+# Git
+.git
+.github
+.gitignore
+
+# Editor
+.idea
+.vscode
+
+# Generated binaries
+/ewerton-go
+/ewerton-go.exe
+
+# Docker
+Dockerfile
+.dockerignore
+Makefile

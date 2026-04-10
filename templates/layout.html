@@ -1,0 +1,64 @@
+{{define "layout.html"}}
+<!DOCTYPE html>
+<html lang="{{.Locale}}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{call .T `metadata.title`}}</title>
+  <meta name="description" content="{{call .T `landing.hero.subtitle`}}" />
+
+  <!-- SEO -->
+  <link rel="icon" href="/static/images/logo.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://ewerton.dev/{{.Locale}}" />
+  <link rel="alternate" hreflang="en" href="https://ewerton.dev/en" />
+  <link rel="alternate" hreflang="pt-br" href="https://ewerton.dev/pt-br" />
+  <link rel="alternate" hreflang="x-default" href="https://ewerton.dev/en" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ewerton.dev/{{.Locale}}" />
+  <meta property="og:title" content="{{call .T `metadata.title`}}" />
+  <meta property="og:description" content="{{call .T `landing.hero.subtitle`}}" />
+  <meta property="og:image" content="https://ewerton.dev/static/images/photos/ewerton.webp" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{call .T `metadata.title`}}" />
+  <meta name="twitter:description" content="{{call .T `landing.hero.subtitle`}}" />
+
+  <!-- JSON-LD Person schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ewerton",
+    "url": "https://ewerton.dev",
+    "sameAs": ["https://www.linkedin.com/in/ewertones"]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/static/css/globals.css?v={{.Version}}" />
+
+  <!-- Prevent theme flash -->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  {{block "content" .}}{{end}}
+  <script src="/static/js/app.js?v={{.Version}}"></script>
+</body>
+</html>
+{{end}}

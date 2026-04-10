@@ -1,0 +1,11 @@
+# Go binaries
+/ewerton-go
+/ewerton-go.exe
+
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Docker
+docker-compose.override.yml

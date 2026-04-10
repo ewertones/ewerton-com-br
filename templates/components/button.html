@@ -1,0 +1,11 @@
+{{/* Usage: {{template "button" (dict "Variant" "primary" "Size" "lg" "Icon" "linkedin" "Text" "Connect" "ID" "btnId")}} */}}
+{{define "button"}}
+<button
+  class="button {{.Variant}} {{.Size}}"
+  {{if .ID}}id="{{.ID}}"{{end}}
+  {{if .Type}}type="{{.Type}}"{{end}}
+>
+  {{if .Icon}}<span class="iconLeft">{{template "icon-inline" .Icon}}</span>{{end}}
+  {{.Text}}
+</button>
+{{end}}

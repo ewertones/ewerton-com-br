@@ -1,0 +1,15 @@
+{{define "footer"}}
+<footer class="footer">
+  <div class="footerContent">
+    <a href="/{{.Locale}}" class="footerLogoLink">
+      <img src="/static/images/logo.svg" alt="ewerton" width="48" height="48" class="footerLogo" />
+    </a>
+    <div class="footerBottom">
+      <p class="footerCopyright">{{call .T "footer.copyright"}}</p>
+      <p class="footerMadeWith">
+        {{call .T "footer.madeWith"}} <span class="footerBrazil">{{call .T "footer.brazil"}}</span>
+      </p>
+    </div>
+  </div>
+</footer>
+{{end}}

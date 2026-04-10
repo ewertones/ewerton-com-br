@@ -1,0 +1,70 @@
+{{define "projects"}}
+<section class="section">
+  <h2 class="sectionTitle">{{call .T "landing.projects.title"}}</h2>
+  <p class="sectionSubtitle">{{call .T "landing.projects.subtitle"}}</p>
+
+  <!-- aiomover -->
+  <a href="{{.AiomoverURL}}" target="_blank" rel="noopener noreferrer" class="projectCardLink">
+    <div class="projectCard">
+      <div class="projectHeader">
+        <div class="projectLogo">
+          <img src="/static/images/projects/aiomover.svg" alt="aiomover" width="48" height="48" />
+        </div>
+        <div class="projectTitleGroup">
+          <h3 class="projectTitle">{{call .T "landing.projects.aiomover.title"}}</h3>
+          <p class="projectTagline">{{call .T "landing.projects.aiomover.tagline"}}</p>
+        </div>
+        <span class="projectArrow">{{template "icon-arrow-right" 24}}</span>
+      </div>
+
+      <p class="projectDescription">{{call .T "landing.projects.aiomover.description"}}</p>
+
+      <div class="projectFeatures">
+        <div class="featureItem">
+          <span class="featureIcon">{{template "icon-zap" 20}}</span>
+          {{call .T "landing.projects.aiomover.features.fast"}}
+        </div>
+        <div class="featureItem">
+          <span class="featureIcon">{{template "icon-shield" 20}}</span>
+          {{call .T "landing.projects.aiomover.features.secure"}}
+        </div>
+        <div class="featureItem">
+          <span class="featureIcon">{{template "icon-layout-grid" 20}}</span>
+          {{call .T "landing.projects.aiomover.features.simple"}}
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <!-- questao (disabled) -->
+  <div class="projectCard projectCardDisabled">
+    <div class="projectHeader">
+      <div class="projectLogo">
+        <img src="/static/images/projects/questao.svg" alt="questao" width="48" height="48" />
+      </div>
+      <div class="projectTitleGroup">
+        <h3 class="projectTitle">{{call .T "landing.projects.questao.title"}}</h3>
+        <p class="projectTagline">{{call .T "landing.projects.questao.tagline"}}</p>
+      </div>
+      <span class="comingSoonBadge">{{call .T "common.comingSoon"}}</span>
+    </div>
+
+    <p class="projectDescription">{{call .T "landing.projects.questao.description"}}</p>
+
+    <div class="projectFeatures">
+      <div class="featureItem">
+        <span class="featureIcon">{{template "icon-brain" 20}}</span>
+        {{call .T "landing.projects.questao.features.ai"}}
+      </div>
+      <div class="featureItem">
+        <span class="featureIcon">{{template "icon-gamepad2" 20}}</span>
+        {{call .T "landing.projects.questao.features.gamified"}}
+      </div>
+      <div class="featureItem">
+        <span class="featureIcon">{{template "icon-users" 20}}</span>
+        {{call .T "landing.projects.questao.features.community"}}
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

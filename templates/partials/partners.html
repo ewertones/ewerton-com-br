@@ -1,51 +1,40 @@
-{{define "partners"}}
-<section class="section">
-  <h2 class="sectionTitle">{{call .T "landing.partners.title"}}</h2>
-  <p class="sectionSubtitle">{{call .T "landing.partners.subtitle"}}</p>
+{{ define "partners" }}
+  <section class="section">
+    <h2 class="sectionTitle">{{ call .T "landing.partners.title" }}</h2>
+    <p class="sectionSubtitle">{{ call .T "landing.partners.subtitle" }}</p>
 
-  <div class="partnerGroups">
-    {{range .PartnerGroups}}
-    <div class="partnerGroup">
-      <h3 class="partnerGroupTitle" data-i18n-key="landing.partners.categories.{{.Slug}}">
-        {{call $.T (printf "landing.partners.categories.%s" .Slug)}}
-      </h3>
-      <div class="partnersGrid">
-        {{range .Partners}}
-        <div class="partnerCardWrapper">
-          <a
-            href="{{.URL}}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="partnerCard"
-          >
-            <div class="partnerLogo">
-              <img
-                src="{{.Logo}}"
-                alt="{{.Name}}"
-                width="72"
-                height="72"
-                loading="lazy"
-              />
-            </div>
-            <p class="partnerName">{{.Name}}</p>
-            <p class="partnerUrl">{{.DisplayURL}}</p>
-          </a>
-          {{if .HasDescription}}
-          <button
-            class="infoButton"
-            data-company-slug="{{.Slug}}"
-            title="{{call $.T `common.viewDetails`}}"
-            aria-label="{{call $.T `common.viewDetails`}} {{.Name}}"
-            onclick="openCompanyModal('{{.Slug}}')"
-          >
-            {{template "icon-info" 18}}
-          </button>
-          {{end}}
+    <div class="partnerGroups">
+      {{ range .PartnerGroups }}
+        <div class="partnerGroup">
+          <h3 class="partnerGroupTitle" data-i18n-key="landing.partners.categories.{{ .Slug }}">
+            {{ call $.T (printf "landing.partners.categories.%s" .Slug) }}
+          </h3>
+          <div class="partnersGrid">
+            {{ range .Partners }}
+              <div class="partnerCardWrapper">
+                <a href="{{ .URL }}" target="_blank" rel="noopener noreferrer" class="partnerCard">
+                  <div class="partnerLogo">
+                    <img src="{{ .Logo }}" alt="{{ .Name }}" width="72" height="72" loading="lazy" />
+                  </div>
+                  <p class="partnerName">{{ .Name }}</p>
+                  <p class="partnerUrl">{{ .DisplayURL }}</p>
+                </a>
+                {{ if .HasDescription }}
+                  <button
+                    class="infoButton"
+                    data-company-slug="{{ .Slug }}"
+                    title="{{ call $.T `common.viewDetails` }}"
+                    aria-label="{{ call $.T `common.viewDetails` }} {{ .Name }}"
+                    onclick="openCompanyModal('{{ .Slug }}')"
+                  >
+                    {{ template "icon-info" 18 }}
+                  </button>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
         </div>
-        {{end}}
-      </div>
+      {{ end }}
     </div>
-    {{end}}
-  </div>
-</section>
-{{end}}
+  </section>
+{{ end }}

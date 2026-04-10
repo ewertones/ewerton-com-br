@@ -15,3 +15,8 @@
 Dockerfile
 .dockerignore
 Makefile
+
+# npm / Prettier
+node_modules/
+package.json
+package-lock.json

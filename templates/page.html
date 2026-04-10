@@ -1,15 +1,15 @@
-{{define "content"}}
-<div class="page">
-  {{template "navbar" .}}
-  <main class="main">
-    {{template "hero" .}}
-    {{template "projects" .}}
-    {{template "technologies" .}}
-    {{template "education" .}}
-    {{template "partners" .}}
-    {{template "closing_cta" .}}
-  </main>
-  {{template "footer" .}}
-  {{template "modals" .}}
-</div>
-{{end}}
+{{ define "content" }}
+  <div class="page">
+    {{ template "navbar" . }}
+    <main class="main">
+      {{ template "hero" . }} {{ template "projects" . }} {{ template "technologies" . }}
+      {{ template "education" . }}
+      {{ template
+        "partners" .
+      }}
+      {{ template "closing_cta" . }}
+    </main>
+    {{ template "footer" . }}
+    {{ template "modals" . }}
+  </div>
+{{ end }}

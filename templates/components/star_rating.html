@@ -1,19 +1,31 @@
-{{define "star-rating"}}
-{{- $pct := pct .Rating -}}
-<div class="starContainer" title="{{.Rating}} out of 5.0">
-  <div class="starsBackground">
-    {{template "icon-star" (dict "Size" .Size "Fill" "none" "Class" "starEmpty")}}
-    {{template "icon-star" (dict "Size" .Size "Fill" "none" "Class" "starEmpty")}}
-    {{template "icon-star" (dict "Size" .Size "Fill" "none" "Class" "starEmpty")}}
-    {{template "icon-star" (dict "Size" .Size "Fill" "none" "Class" "starEmpty")}}
-    {{template "icon-star" (dict "Size" .Size "Fill" "none" "Class" "starEmpty")}}
+{{ define "star-rating" }}
+  {{- $pct := pct .Rating -}}
+  <div class="starContainer" title="{{ .Rating }} out of 5.0">
+    <div class="starsBackground">
+      {{ template "icon-star" (dict "Size" .Size "Fill" "none" "Class" "starEmpty") }}
+      {{ template "icon-star" (dict "Size"
+        .Size "Fill" "none" "Class" "starEmpty")
+      }}
+      {{ template "icon-star" (dict "Size" .Size "Fill" "none" "Class"
+        "starEmpty")
+      }}
+      {{ template "icon-star" (dict "Size" .Size "Fill" "none" "Class" "starEmpty") }}
+      {{ template "icon-star"
+        (dict "Size" .Size "Fill" "none" "Class" "starEmpty")
+      }}
+    </div>
+    <div class="starsForeground" style="width: {{ $pct }}%">
+      {{ template "icon-star" (dict "Size" .Size "Fill" "currentColor" "Class" "starFilled") }}
+      {{ template "icon-star" (dict
+        "Size" .Size "Fill" "currentColor" "Class" "starFilled")
+      }}
+      {{ template "icon-star" (dict "Size" .Size "Fill"
+        "currentColor" "Class" "starFilled")
+      }}
+      {{ template "icon-star" (dict "Size" .Size "Fill" "currentColor" "Class"
+        "starFilled")
+      }}
+      {{ template "icon-star" (dict "Size" .Size "Fill" "currentColor" "Class" "starFilled") }}
+    </div>
   </div>
-  <div class="starsForeground" style="width: {{$pct}}%">
-    {{template "icon-star" (dict "Size" .Size "Fill" "currentColor" "Class" "starFilled")}}
-    {{template "icon-star" (dict "Size" .Size "Fill" "currentColor" "Class" "starFilled")}}
-    {{template "icon-star" (dict "Size" .Size "Fill" "currentColor" "Class" "starFilled")}}
-    {{template "icon-star" (dict "Size" .Size "Fill" "currentColor" "Class" "starFilled")}}
-    {{template "icon-star" (dict "Size" .Size "Fill" "currentColor" "Class" "starFilled")}}
-  </div>
-</div>
-{{end}}
+{{ end }}

@@ -1,48 +1,44 @@
-{{define "hero"}}
-<section class="hero">
-  <h1 class="heroGreeting">
-    <span class="helloWord" id="helloWord">Hello</span><span class="helloCursor"></span>{{", "}}{{call .T "landing.hero.greeting"}}
-  </h1>
+{{ define "hero" }}
+  <section class="hero">
+    <h1 class="heroGreeting">
+      <span class="helloWord" id="helloWord">Hello</span><span class="helloCursor"></span>{{ ", " }}{{ call .T
+        "landing.hero.greeting"
+      }}
+    </h1>
 
-  <div class="heroContent">
-    <div class="heroText">
-      <p class="heroSubtitle">{{call .T "landing.hero.subtitle"}}</p>
+    <div class="heroContent">
+      <div class="heroText">
+        <p class="heroSubtitle">{{ call .T "landing.hero.subtitle" }}</p>
 
-      <div class="aboutMeta">
-        <div class="aboutMetaItem">
-          {{template "icon-map-pin" 18}}
-          {{call .T "landing.about.location"}}
+        <div class="aboutMeta">
+          <div class="aboutMetaItem">{{ template "icon-map-pin" 18 }} {{ call .T "landing.about.location" }}</div>
+          <div class="aboutMetaItem">{{ template "icon-code2" 18 }} {{ call .T "landing.about.focus" }}</div>
         </div>
-        <div class="aboutMetaItem">
-          {{template "icon-code2" 18}}
-          {{call .T "landing.about.focus"}}
-        </div>
-      </div>
 
-      <div class="heroCta">
-        <a href="{{.LinkedInURL}}" target="_blank" rel="noopener noreferrer">
-          <button class="button primary lg">
-            <span class="iconLeft">{{template "icon-linkedin" 20}}</span>
-            {{call .T "common.connectLinkedIn"}}
+        <div class="heroCta">
+          <a href="{{ .LinkedInURL }}" target="_blank" rel="noopener noreferrer">
+            <button class="button primary lg">
+              <span class="iconLeft">{{ template "icon-linkedin" 20 }}</span>
+              {{ call .T "common.connectLinkedIn" }}
+            </button>
+          </a>
+          <button class="button secondary lg" id="viewResumeBtn">
+            <span class="iconLeft">{{ template "icon-file-text" 20 }}</span>
+            {{ call .T "common.viewResume" }}
           </button>
-        </a>
-        <button class="button secondary lg" id="viewResumeBtn">
-          <span class="iconLeft">{{template "icon-file-text" 20}}</span>
-          {{call .T "common.viewResume"}}
-        </button>
+        </div>
+      </div>
+
+      <div class="heroPhoto">
+        <img
+          src="/static/images/photos/ewerton.webp"
+          alt="Ewerton"
+          width="280"
+          height="280"
+          class="photo"
+          loading="eager"
+        />
       </div>
     </div>
-
-    <div class="heroPhoto">
-      <img
-        src="/static/images/photos/ewerton.webp"
-        alt="Ewerton"
-        width="280"
-        height="280"
-        class="photo"
-        loading="eager"
-      />
-    </div>
-  </div>
-</section>
-{{end}}
+  </section>
+{{ end }}

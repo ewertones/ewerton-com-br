@@ -1,4 +1,4 @@
-.PHONY: dev build docker clean
+.PHONY: dev build docker clean format
 
 # Run with live output; kill with Ctrl+C
 dev:
@@ -12,6 +12,10 @@ build:
 docker:
 	docker build -t ewerton-go .
 	docker run --rm -p 3000:3000 ewerton-go
+
+# Format the frontend code
+format:
+	npm run format
 
 clean:
 	rm -f ewerton-go

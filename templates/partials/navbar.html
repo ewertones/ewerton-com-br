@@ -1,30 +1,30 @@
-{{define "navbar"}}
-<nav class="navbar">
-  <div class="navContent">
-    <a href="/{{.Locale}}" class="logo">ewerton</a>
-    <div class="navActions">
-      <!-- Language Switcher -->
-      <div class="langSwitcher" id="langSwitcher">
-        <button class="langButton" id="langBtn" aria-label="Switch language">
-          <span class="langFlag">{{if eq .Locale "en"}}🇺🇸{{else}}🇧🇷{{end}}</span>
-          {{template "icon-chevron-down" 14}}
-        </button>
-        <div class="langDropdown" id="langDropdown">
-          <button class="langOption{{if eq .Locale "en"}} active{{end}}" data-locale="en">
-            <span class="langFlag">🇺🇸</span> English
+{{ define "navbar" }}
+  <nav class="navbar">
+    <div class="navContent">
+      <a href="/{{ .Locale }}" class="logo">ewerton</a>
+      <div class="navActions">
+        <!-- Language Switcher -->
+        <div class="langSwitcher" id="langSwitcher">
+          <button class="langButton" id="langBtn" aria-label="Switch language">
+            <span class="langFlag">{{ if eq .Locale "en" }}🇺🇸{{ else }}🇧🇷{{ end }}</span>
+            {{ template "icon-chevron-down" 14 }}
           </button>
-          <button class="langOption{{if eq .Locale "pt-br"}} active{{end}}" data-locale="pt-br">
-            <span class="langFlag">🇧🇷</span> Português
-          </button>
+          <div class="langDropdown" id="langDropdown">
+            <button class="langOption{{ if eq .Locale "en" }}active{{ end }}" data-locale="en">
+              <span class="langFlag">🇺🇸</span> English
+            </button>
+            <button class="langOption{{ if eq .Locale "pt-br" }}active{{ end }}" data-locale="pt-br">
+              <span class="langFlag">🇧🇷</span> Português
+            </button>
+          </div>
         </div>
-      </div>
 
-      <!-- Theme Toggle -->
-      <button class="themeToggle" id="themeToggleBtn" aria-label="Toggle theme">
-        <span id="iconMoon">{{template "icon-moon" 18}}</span>
-        <span id="iconSun" style="display:none">{{template "icon-sun" 18}}</span>
-      </button>
+        <!-- Theme Toggle -->
+        <button class="themeToggle" id="themeToggleBtn" aria-label="Toggle theme">
+          <span id="iconMoon">{{ template "icon-moon" 18 }}</span>
+          <span id="iconSun" style="display:none">{{ template "icon-sun" 18 }}</span>
+        </button>
+      </div>
     </div>
-  </div>
-</nav>
-{{end}}
+  </nav>
+{{ end }}

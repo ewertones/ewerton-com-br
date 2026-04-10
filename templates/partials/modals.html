@@ -1,142 +1,144 @@
-{{define "modals"}}
-<!-- ==================== PDF VIEWER MODAL ==================== -->
-<div class="pdfViewerOverlay" id="pdfViewerOverlay" onclick="closePdfViewer(event)">
-  <div class="pdfViewerContainer" onclick="event.stopPropagation()">
-    <iframe
-      id="pdfViewerFrame"
-      src=""
-      class="pdfViewerFrame"
-      title="Resume"
-    ></iframe>
+{{ define "modals" }}
+  <!-- ==================== PDF VIEWER MODAL ==================== -->
+  <div class="pdfViewerOverlay" id="pdfViewerOverlay" onclick="closePdfViewer(event)">
+    <div class="pdfViewerContainer" onclick="event.stopPropagation()">
+      <iframe id="pdfViewerFrame" src="" class="pdfViewerFrame" title="Resume"></iframe>
+    </div>
   </div>
-</div>
 
-<!-- ==================== COMPANY INFO MODAL ==================== -->
-<div class="modalOverlay" id="companyModalOverlay" onclick="closeCompanyModal(event)">
-  <div class="modal" onclick="event.stopPropagation()">
-    <button class="modalCloseButton" onclick="closeCompanyModal()" aria-label="Close">
-      {{template "icon-x" 24}}
-    </button>
-    <div class="modalContent">
-
-      <!-- dashfi -->
-      <div class="companyRoleSection" id="modal-dashfi">
-        <div class="modalHeader">
-          <div class="modalLogo">
-            <img src="/static/images/partners/dashfi.webp" alt="DashFi" width="64" height="64" />
+  <!-- ==================== COMPANY INFO MODAL ==================== -->
+  <div class="modalOverlay" id="companyModalOverlay" onclick="closeCompanyModal(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modalCloseButton" onclick="closeCompanyModal()" aria-label="Close">
+        {{ template "icon-x" 24 }}
+      </button>
+      <div class="modalContent">
+        <!-- dashfi -->
+        <div class="companyRoleSection" id="modal-dashfi">
+          <div class="modalHeader">
+            <div class="modalLogo">
+              <img src="/static/images/partners/dashfi.webp" alt="DashFi" width="64" height="64" />
+            </div>
+            <div class="modalCompanyInfo">
+              <h2>DashFi</h2>
+              <a href="https://dash.fi" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl">dash.fi</a>
+            </div>
           </div>
-          <div class="modalCompanyInfo">
-            <h2>DashFi</h2>
-            <a href="https://dash.fi" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl">dash.fi</a>
+          <div class="modalRoles">
+            <div class="modalRoleItem">
+              <div class="modalRoleHeader">
+                <h3 class="modalRoleTitle">{{ call .T "landing.partners.descriptions.dashfi.role" }}</h3>
+                <span class="modalRolePeriod">{{ call .T "landing.partners.descriptions.dashfi.period" }}</span>
+              </div>
+              <p class="modalRoleDescription">{{ call .T "landing.partners.descriptions.dashfi.desc" }}</p>
+            </div>
           </div>
         </div>
-        <div class="modalRoles">
-          <div class="modalRoleItem">
-            <div class="modalRoleHeader">
-              <h3 class="modalRoleTitle">{{call .T "landing.partners.descriptions.dashfi.role"}}</h3>
-              <span class="modalRolePeriod">{{call .T "landing.partners.descriptions.dashfi.period"}}</span>
+
+        <!-- cerc -->
+        <div class="companyRoleSection" id="modal-cerc">
+          <div class="modalHeader">
+            <div class="modalLogo">
+              <img src="/static/images/partners/cerc.webp" alt="CERC" width="64" height="64" />
             </div>
-            <p class="modalRoleDescription">{{call .T "landing.partners.descriptions.dashfi.desc"}}</p>
+            <div class="modalCompanyInfo">
+              <h2>CERC</h2>
+              <a href="https://cerc.com" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl">cerc.com</a>
+            </div>
+          </div>
+          <div class="modalRoles">
+            <div class="modalRoleItem">
+              <div class="modalRoleHeader">
+                <h3 class="modalRoleTitle">{{ call .T "landing.partners.descriptions.cerc.role" }}</h3>
+                <span class="modalRolePeriod">{{ call .T "landing.partners.descriptions.cerc.period" }}</span>
+              </div>
+              <p class="modalRoleDescription">{{ call .T "landing.partners.descriptions.cerc.desc" }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- stagwell -->
+        <div class="companyRoleSection" id="modal-stagwell">
+          <div class="modalHeader">
+            <div class="modalLogo">
+              <img src="/static/images/partners/stagwell.webp" alt="Stagwell" width="64" height="64" />
+            </div>
+            <div class="modalCompanyInfo">
+              <h2>Stagwell</h2>
+              <a href="https://stagwellglobal.com" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl"
+                >stagwellglobal.com</a
+              >
+            </div>
+          </div>
+          <div class="modalRoles">
+            <div class="modalRoleItem">
+              <div class="modalRoleHeader">
+                <h3 class="modalRoleTitle">{{ call .T "landing.partners.descriptions.stagwell.role1" }}</h3>
+                <span class="modalRolePeriod">{{ call .T "landing.partners.descriptions.stagwell.period1" }}</span>
+              </div>
+              <p class="modalRoleDescription">{{ call .T "landing.partners.descriptions.stagwell.desc1" }}</p>
+            </div>
+            <div class="modalRoleItem">
+              <div class="modalRoleHeader">
+                <h3 class="modalRoleTitle">{{ call .T "landing.partners.descriptions.stagwell.role2" }}</h3>
+                <span class="modalRolePeriod">{{ call .T "landing.partners.descriptions.stagwell.period2" }}</span>
+              </div>
+              <p class="modalRoleDescription">{{ call .T "landing.partners.descriptions.stagwell.desc2" }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- begrowth -->
+        <div class="companyRoleSection" id="modal-begrowth">
+          <div class="modalHeader">
+            <div class="modalLogo">
+              <img src="/static/images/partners/begrowth.webp" alt="BeGrowth" width="64" height="64" />
+            </div>
+            <div class="modalCompanyInfo">
+              <h2>BeGrowth</h2>
+              <a href="https://begrowth.com.br" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl"
+                >begrowth.com.br</a
+              >
+            </div>
+          </div>
+          <div class="modalRoles">
+            <div class="modalRoleItem">
+              <div class="modalRoleHeader">
+                <h3 class="modalRoleTitle">{{ call .T "landing.partners.descriptions.begrowth.role" }}</h3>
+                <span class="modalRolePeriod">{{ call .T "landing.partners.descriptions.begrowth.period" }}</span>
+              </div>
+              <p class="modalRoleDescription">{{ call .T "landing.partners.descriptions.begrowth.desc" }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- morsum -->
+        <div class="companyRoleSection" id="modal-morsum">
+          <div class="modalHeader">
+            <div class="modalLogo">
+              <img src="/static/images/partners/morsum.webp" alt="Morsum" width="64" height="64" />
+            </div>
+            <div class="modalCompanyInfo">
+              <h2>Morsum</h2>
+              <a href="https://www.dotfoods.com" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl"
+                >dotfoods.com</a
+              >
+            </div>
+          </div>
+          <div class="modalRoles">
+            <div class="modalRoleItem">
+              <div class="modalRoleHeader">
+                <h3 class="modalRoleTitle">{{ call .T "landing.partners.descriptions.morsum.role" }}</h3>
+                <span class="modalRolePeriod">{{ call .T "landing.partners.descriptions.morsum.period" }}</span>
+              </div>
+              <p class="modalRoleDescription">{{ call .T "landing.partners.descriptions.morsum.desc" }}</p>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- cerc -->
-      <div class="companyRoleSection" id="modal-cerc">
-        <div class="modalHeader">
-          <div class="modalLogo">
-            <img src="/static/images/partners/cerc.webp" alt="CERC" width="64" height="64" />
-          </div>
-          <div class="modalCompanyInfo">
-            <h2>CERC</h2>
-            <a href="https://cerc.com" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl">cerc.com</a>
-          </div>
-        </div>
-        <div class="modalRoles">
-          <div class="modalRoleItem">
-            <div class="modalRoleHeader">
-              <h3 class="modalRoleTitle">{{call .T "landing.partners.descriptions.cerc.role"}}</h3>
-              <span class="modalRolePeriod">{{call .T "landing.partners.descriptions.cerc.period"}}</span>
-            </div>
-            <p class="modalRoleDescription">{{call .T "landing.partners.descriptions.cerc.desc"}}</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- stagwell -->
-      <div class="companyRoleSection" id="modal-stagwell">
-        <div class="modalHeader">
-          <div class="modalLogo">
-            <img src="/static/images/partners/stagwell.webp" alt="Stagwell" width="64" height="64" />
-          </div>
-          <div class="modalCompanyInfo">
-            <h2>Stagwell</h2>
-            <a href="https://stagwellglobal.com" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl">stagwellglobal.com</a>
-          </div>
-        </div>
-        <div class="modalRoles">
-          <div class="modalRoleItem">
-            <div class="modalRoleHeader">
-              <h3 class="modalRoleTitle">{{call .T "landing.partners.descriptions.stagwell.role1"}}</h3>
-              <span class="modalRolePeriod">{{call .T "landing.partners.descriptions.stagwell.period1"}}</span>
-            </div>
-            <p class="modalRoleDescription">{{call .T "landing.partners.descriptions.stagwell.desc1"}}</p>
-          </div>
-          <div class="modalRoleItem">
-            <div class="modalRoleHeader">
-              <h3 class="modalRoleTitle">{{call .T "landing.partners.descriptions.stagwell.role2"}}</h3>
-              <span class="modalRolePeriod">{{call .T "landing.partners.descriptions.stagwell.period2"}}</span>
-            </div>
-            <p class="modalRoleDescription">{{call .T "landing.partners.descriptions.stagwell.desc2"}}</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- begrowth -->
-      <div class="companyRoleSection" id="modal-begrowth">
-        <div class="modalHeader">
-          <div class="modalLogo">
-            <img src="/static/images/partners/begrowth.webp" alt="BeGrowth" width="64" height="64" />
-          </div>
-          <div class="modalCompanyInfo">
-            <h2>BeGrowth</h2>
-            <a href="https://begrowth.com.br" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl">begrowth.com.br</a>
-          </div>
-        </div>
-        <div class="modalRoles">
-          <div class="modalRoleItem">
-            <div class="modalRoleHeader">
-              <h3 class="modalRoleTitle">{{call .T "landing.partners.descriptions.begrowth.role"}}</h3>
-              <span class="modalRolePeriod">{{call .T "landing.partners.descriptions.begrowth.period"}}</span>
-            </div>
-            <p class="modalRoleDescription">{{call .T "landing.partners.descriptions.begrowth.desc"}}</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- morsum -->
-      <div class="companyRoleSection" id="modal-morsum">
-        <div class="modalHeader">
-          <div class="modalLogo">
-            <img src="/static/images/partners/morsum.webp" alt="Morsum" width="64" height="64" />
-          </div>
-          <div class="modalCompanyInfo">
-            <h2>Morsum</h2>
-            <a href="https://www.dotfoods.com" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl">dotfoods.com</a>
-          </div>
-        </div>
-        <div class="modalRoles">
-          <div class="modalRoleItem">
-            <div class="modalRoleHeader">
-              <h3 class="modalRoleTitle">{{call .T "landing.partners.descriptions.morsum.role"}}</h3>
-              <span class="modalRolePeriod">{{call .T "landing.partners.descriptions.morsum.period"}}</span>
-            </div>
-            <p class="modalRoleDescription">{{call .T "landing.partners.descriptions.morsum.desc"}}</p>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /.modalContent -->
-  </div><!-- /.modal -->
-</div><!-- /.modalOverlay -->
-{{end}}
+      <!-- /.modalContent -->
+    </div>
+    <!-- /.modal -->
+  </div>
+  <!-- /.modalOverlay -->
+{{ end }}

@@ -23,11 +23,7 @@
   // Sync icon state on load
   (function () {
     var saved = localStorage.getItem("theme");
-    var theme =
-      saved ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light");
+    var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     applyTheme(theme);
   })();
 
@@ -148,14 +144,18 @@
         var anyVisible = false;
 
         if (!query) {
-          cards.forEach(function (c) { c.style.display = ""; });
+          cards.forEach(function (c) {
+            c.style.display = "";
+          });
           cat.style.display = "";
           return;
         }
 
         // If category name matches, show all skills
         if (catName.includes(query)) {
-          cards.forEach(function (c) { c.style.display = ""; });
+          cards.forEach(function (c) {
+            c.style.display = "";
+          });
           cat.style.display = "";
           return;
         }

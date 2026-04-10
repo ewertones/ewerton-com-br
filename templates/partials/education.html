@@ -1,37 +1,37 @@
-{{define "education"}}
-<section class="section">
-  <h2 class="sectionTitle">{{call .T "landing.about.title"}}</h2>
-  <p class="sectionSubtitle">{{call .T "landing.about.subtitle"}}</p>
+{{ define "education" }}
+  <section class="section">
+    <h2 class="sectionTitle">{{ call .T "landing.about.title" }}</h2>
+    <p class="sectionSubtitle">{{ call .T "landing.about.subtitle" }}</p>
 
-  <div class="eduGrid">
-    {{range .Education}}
-    <div class="eduCard">
-      <div class="eduHeader">
-        <a href="{{.WebsiteURL}}" target="_blank" rel="noopener noreferrer" class="eduLogo">
-          <img src="{{.Logo}}" alt="{{.Institution}}" width="40" height="40" loading="lazy" />
-        </a>
-        <div class="eduDetails">
-          <a href="{{.WebsiteURL}}" target="_blank" rel="noopener noreferrer" class="eduInstLink">
-            <h3 class="eduInst">{{.Institution}}</h3>
-          </a>
-          <div class="eduDegreeWrapper">
-            {{if hasDegreeComma .Degree}}
-              <span class="eduDegreeType">{{degreeType .Degree}}</span>
-              <span class="eduDegreeName">{{degreeName .Degree}}</span>
-            {{else}}
-              <span class="eduDegreeName">{{.Degree}}</span>
-            {{end}}
+    <div class="eduGrid">
+      {{ range .Education }}
+        <div class="eduCard">
+          <div class="eduHeader">
+            <a href="{{ .WebsiteURL }}" target="_blank" rel="noopener noreferrer" class="eduLogo">
+              <img src="{{ .Logo }}" alt="{{ .Institution }}" width="40" height="40" loading="lazy" />
+            </a>
+            <div class="eduDetails">
+              <a href="{{ .WebsiteURL }}" target="_blank" rel="noopener noreferrer" class="eduInstLink">
+                <h3 class="eduInst">{{ .Institution }}</h3>
+              </a>
+              <div class="eduDegreeWrapper">
+                {{ if hasDegreeComma .Degree }}
+                  <span class="eduDegreeType">{{ degreeType .Degree }}</span>
+                  <span class="eduDegreeName">{{ degreeName .Degree }}</span>
+                {{ else }}
+                  <span class="eduDegreeName">{{ .Degree }}</span>
+                {{ end }}
+              </div>
+              <p class="eduMeta">{{ .Period }} • {{ .Grade }}</p>
+            </div>
           </div>
-          <p class="eduMeta">{{.Period}} • {{.Grade}}</p>
+          <div class="eduContent">
+            {{ range .Points }}
+              <p class="eduPoints">{{ . }}</p>
+            {{ end }}
+          </div>
         </div>
-      </div>
-      <div class="eduContent">
-        {{range .Points}}
-        <p class="eduPoints">{{.}}</p>
-        {{end}}
-      </div>
+      {{ end }}
     </div>
-    {{end}}
-  </div>
-</section>
-{{end}}
+  </section>
+{{ end }}

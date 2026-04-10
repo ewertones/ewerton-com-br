@@ -1,125 +1,125 @@
 {
-    "common": {
-        "viewResume": "View Resume",
-        "connectLinkedIn": "Connect on LinkedIn",
-        "comingSoon": "Coming Soon",
-        "viewDetails": "View Details"
+  "common": {
+    "viewResume": "View Resume",
+    "connectLinkedIn": "Connect on LinkedIn",
+    "comingSoon": "Coming Soon",
+    "viewDetails": "View Details"
+  },
+  "landing": {
+    "hero": {
+      "title1": "Improving the World",
+      "title2": "Through Technology",
+      "subtitle": "I'm a software engineer focused on turning complex problems into elegant, reliable software. I design and build technology that helps people and businesses move faster, scale safely, and create real-world impact.",
+      "greeting": "nice to meet you!",
+      "cta": "Get in Touch"
     },
-    "landing": {
-        "hero": {
-            "title1": "Improving the World",
-            "title2": "Through Technology",
-            "subtitle": "I'm a software engineer focused on turning complex problems into elegant, reliable software. I design and build technology that helps people and businesses move faster, scale safely, and create real-world impact.",
-            "greeting": "nice to meet you!",
-            "cta": "Get in Touch"
-        },
-        "projects": {
-            "title": "What I'm Building",
-            "subtitle": "These are the products I'm actively building and evolving to solve real operational problems. I am entirely responsible for all areas of development, from conception and modeling, to implementing, deploying, and marketing.",
-            "aiomover": {
-                "title": "aiomover",
-                "tagline": "Move your files anywhere, instantly",
-                "description": "The ultimate cloud migration tool for personal and business use. aiomover makes it simple to transfer files between cloud storage providers securely and efficiently. Whether you're backing up data, migrating to a new provider, or synchronizing across platforms, aiomover handles it all.",
-                "features": {
-                    "fast": "Lightning Fast Transfers",
-                    "secure": "Bank-Grade Security",
-                    "simple": "Simple Interface"
-                }
-            },
-            "questao": {
-                "title": "questao",
-                "tagline": "Master national exams, one question at a time",
-                "description": "An AI-powered EdTech platform designed to help students prepare for the national exams. With years of real exam questions, gamified learning, live rankings, and personalized AI tutoring, questao makes studying engaging and effective.",
-                "features": {
-                    "ai": "AI-Powered Learning",
-                    "gamified": "Gamified Experience",
-                    "community": "Connect with Peers"
-                }
-            }
-        },
-        "technologies": {
-            "title": "Technologies & Skills",
-            "subtitle": "An overview of the tools and technologies I've worked with over the years, along with a self-assessment of my proficiency.",
-            "categories": {
-                "programming_languages": "Programming Languages",
-                "databases": "Databases",
-                "big_data_processing": "Big Data & Processing",
-                "data_science_ml": "Data Science & ML",
-                "web_development": "Web Development",
-                "data_engineering": "Data Engineering",
-                "cloud_providers": "Cloud Providers",
-                "containerization": "Containerization",
-                "devops_ci_cd": "DevOps & CI/CD",
-                "version_control": "Version Control",
-                "dashboarding": "Dashboarding",
-                "agile": "Agile",
-                "orchestration": "Orchestration",
-                "testing_frameworks": "Testing Frameworks",
-                "logging": "Logging",
-                "ads": "Social & Search Ads",
-                "os": "Operating Systems"
-            }
-        },
-        "partners": {
-            "title": "Companies I've Worked With",
-            "subtitle": "Throughout my career, I've had the privilege of partnering with these amazing companies. My work involved implementing APIs, modeling databases, improving processes, consulting, migrating systems, automating pipelines, and more.",
-            "categories": {
-                "financial": "Financial Institutions",
-                "marketing": "Marketing",
-                "tax": "Tax & Accounting",
-                "food": "Food",
-                "outsourcing": "Outsourcing"
-            },
-            "descriptions": {
-                "stagwell": {
-                    "role1": "Lead Back-end Engineer (Code & Theory)",
-                    "period1": "Dec 2024 - Feb 2026",
-                    "desc1": "As the founding Lead Backend Developer, I architected and scaled this enterprise AI platform from the ground up, leading a team of senior engineers to build a robust, production-ready system on Google Cloud Platform.\n\nKey achievements:\n- Architected a Scalable AI Engine using Python, FastAPI, and LangGraph with RAG and multi-tenant vector search.\n- Engineered an Enterprise-Grade Backend on GCP with SQLAlchemy and Pydantic.\n- Led Security & Team Operations (JWT, SSO/Okta, RBAC) and mentored a team of 8 senior developers.",
-                    "role2": "Senior Data Engineer (Stagwell Marketing Cloud)",
-                    "period2": "Apr 2024 - Nov 2024",
-                    "desc2": "I pioneered the company's secure data collaboration strategy by designing and implementing a fully automated, multi-cloud data pipeline for AWS, GCP, and Snowflake.\n\nKey achievements:\n- Architected a Multi-Cloud Ingestion & Processing Framework for scalable and secure data sharing.\n- Built a Serverless Automation Engine on AWS using Glue, Lambda, and Step Functions.\n- Implemented Secure Analytics with Snowflake Clean Rooms enabling privacy-preserving joint insights."
-                },
-                "morsum": {
-                    "role": "Senior Back End Developer",
-                    "period": "May 2023 - Apr 2024",
-                    "desc": "Responsible for scaling the platform's core API and data pipeline infrastructure in the foodtech space.\n\n- Developed and scaled the primary Python/Flask REST API.\n- Architected the company's data processing framework using Apache Airflow for all automated ETL pipelines."
-                },
-                "dashfi": {
-                    "role": "Senior Data Engineer",
-                    "period": "Oct 2021 - May 2023",
-                    "desc": "Worked on a B2B credit card company for digital ad spending.\n\n- Created fast, secure REST APIs with FastAPI.\n- Built ETL pipelines for internal dashboards using GCP BigQuery and Looker Studio.\n- Maintained Apache Airflow server with CI/CD for DAGs.\n- Developed predictive statistical models for spending data."
-                },
-                "cerc": {
-                    "role": "Big Data Engineer",
-                    "period": "May 2021 - Oct 2021",
-                    "desc": "Maintained data pipelines and infrastructure for one of Brazil's main receivables registers.\n\n- Maintained Python and Java/Kotlin data pipelines.\n- Implemented solutions using Docker, Kubernetes, Airflow, Hadoop, Spark, and Dataflow.\n- Optimized queries in Spanner and BigQuery."
-                },
-                "begrowth": {
-                    "role": "Data Engineer",
-                    "period": "May 2020 - May 2021",
-                    "desc": "Built data infrastructure for an AdTech startup.\n\n- Created Data Lake & Warehouse using Google Cloud BigQuery.\n- Orchestrated Ads data (Facebook, Google) using Airflow.\n- Wrote Python (Pandas/Numpy) scripts for data merging.\n- Managed Ads accounts and improved ROAS through A/B testing."
-                }
-            }
-        },
-        "about": {
-            "title": "Background & Education",
-            "subtitle": "My professional journey and academic background",
-            "description": "Hi, I am Ewerton, a Lead Engineer with over 7 years of experience in architecting and scaling complex data and AI platforms from the ground up. I specialize in the intersection of backend development and data engineering, transforming business requirements into robust, production-ready systems on GCP and AWS. Mentoring developers and driving projects from concept to deployment, I am passionate about solving complex data challenges and building the infrastructure that powers intelligent products. Guided by my faith in God, I strive to build technology responsibly and create tools that have a lasting impact.",
-            "location": "Based in Brazil",
-            "focus": "Python n°1 fan"
-        },
-        "closingCta": {
-            "title": "Let's Connect",
-            "subtitle": "If you reached here, feel free to book a meeting with me if needed!",
-            "button": "Book a Meeting"
+    "projects": {
+      "title": "What I'm Building",
+      "subtitle": "These are the products I'm actively building and evolving to solve real operational problems. I am entirely responsible for all areas of development, from conception and modeling, to implementing, deploying, and marketing.",
+      "aiomover": {
+        "title": "aiomover",
+        "tagline": "Move your files anywhere, instantly",
+        "description": "The ultimate cloud migration tool for personal and business use. aiomover makes it simple to transfer files between cloud storage providers securely and efficiently. Whether you're backing up data, migrating to a new provider, or synchronizing across platforms, aiomover handles it all.",
+        "features": {
+          "fast": "Lightning Fast Transfers",
+          "secure": "Bank-Grade Security",
+          "simple": "Simple Interface"
         }
+      },
+      "questao": {
+        "title": "questao",
+        "tagline": "Master national exams, one question at a time",
+        "description": "An AI-powered EdTech platform designed to help students prepare for the national exams. With years of real exam questions, gamified learning, live rankings, and personalized AI tutoring, questao makes studying engaging and effective.",
+        "features": {
+          "ai": "AI-Powered Learning",
+          "gamified": "Gamified Experience",
+          "community": "Connect with Peers"
+        }
+      }
     },
-    "footer": {
-        "copyright": "© 2018–2026 Ewerton Software LTDA · CNPJ 39.633.105/0001-13 · All rights reserved.",
-        "madeWith": "Made with passion in",
-        "brazil": "Brazil"
+    "technologies": {
+      "title": "Technologies & Skills",
+      "subtitle": "An overview of the tools and technologies I've worked with over the years, along with a self-assessment of my proficiency.",
+      "categories": {
+        "programming_languages": "Programming Languages",
+        "databases": "Databases",
+        "big_data_processing": "Big Data & Processing",
+        "data_science_ml": "Data Science & ML",
+        "web_development": "Web Development",
+        "data_engineering": "Data Engineering",
+        "cloud_providers": "Cloud Providers",
+        "containerization": "Containerization",
+        "devops_ci_cd": "DevOps & CI/CD",
+        "version_control": "Version Control",
+        "dashboarding": "Dashboarding",
+        "agile": "Agile",
+        "orchestration": "Orchestration",
+        "testing_frameworks": "Testing Frameworks",
+        "logging": "Logging",
+        "ads": "Social & Search Ads",
+        "os": "Operating Systems"
+      }
     },
-    "metadata": {
-        "title": "ewerton"
+    "partners": {
+      "title": "Companies I've Worked With",
+      "subtitle": "Throughout my career, I've had the privilege of partnering with these amazing companies. My work involved implementing APIs, modeling databases, improving processes, consulting, migrating systems, automating pipelines, and more.",
+      "categories": {
+        "financial": "Financial Institutions",
+        "marketing": "Marketing",
+        "tax": "Tax & Accounting",
+        "food": "Food",
+        "outsourcing": "Outsourcing"
+      },
+      "descriptions": {
+        "stagwell": {
+          "role1": "Lead Back-end Engineer (Code & Theory)",
+          "period1": "Dec 2024 - Feb 2026",
+          "desc1": "As the founding Lead Backend Developer, I architected and scaled this enterprise AI platform from the ground up, leading a team of senior engineers to build a robust, production-ready system on Google Cloud Platform.\n\nKey achievements:\n- Architected a Scalable AI Engine using Python, FastAPI, and LangGraph with RAG and multi-tenant vector search.\n- Engineered an Enterprise-Grade Backend on GCP with SQLAlchemy and Pydantic.\n- Led Security & Team Operations (JWT, SSO/Okta, RBAC) and mentored a team of 8 senior developers.",
+          "role2": "Senior Data Engineer (Stagwell Marketing Cloud)",
+          "period2": "Apr 2024 - Nov 2024",
+          "desc2": "I pioneered the company's secure data collaboration strategy by designing and implementing a fully automated, multi-cloud data pipeline for AWS, GCP, and Snowflake.\n\nKey achievements:\n- Architected a Multi-Cloud Ingestion & Processing Framework for scalable and secure data sharing.\n- Built a Serverless Automation Engine on AWS using Glue, Lambda, and Step Functions.\n- Implemented Secure Analytics with Snowflake Clean Rooms enabling privacy-preserving joint insights."
+        },
+        "morsum": {
+          "role": "Senior Back End Developer",
+          "period": "May 2023 - Apr 2024",
+          "desc": "Responsible for scaling the platform's core API and data pipeline infrastructure in the foodtech space.\n\n- Developed and scaled the primary Python/Flask REST API.\n- Architected the company's data processing framework using Apache Airflow for all automated ETL pipelines."
+        },
+        "dashfi": {
+          "role": "Senior Data Engineer",
+          "period": "Oct 2021 - May 2023",
+          "desc": "Worked on a B2B credit card company for digital ad spending.\n\n- Created fast, secure REST APIs with FastAPI.\n- Built ETL pipelines for internal dashboards using GCP BigQuery and Looker Studio.\n- Maintained Apache Airflow server with CI/CD for DAGs.\n- Developed predictive statistical models for spending data."
+        },
+        "cerc": {
+          "role": "Big Data Engineer",
+          "period": "May 2021 - Oct 2021",
+          "desc": "Maintained data pipelines and infrastructure for one of Brazil's main receivables registers.\n\n- Maintained Python and Java/Kotlin data pipelines.\n- Implemented solutions using Docker, Kubernetes, Airflow, Hadoop, Spark, and Dataflow.\n- Optimized queries in Spanner and BigQuery."
+        },
+        "begrowth": {
+          "role": "Data Engineer",
+          "period": "May 2020 - May 2021",
+          "desc": "Built data infrastructure for an AdTech startup.\n\n- Created Data Lake & Warehouse using Google Cloud BigQuery.\n- Orchestrated Ads data (Facebook, Google) using Airflow.\n- Wrote Python (Pandas/Numpy) scripts for data merging.\n- Managed Ads accounts and improved ROAS through A/B testing."
+        }
+      }
+    },
+    "about": {
+      "title": "Background & Education",
+      "subtitle": "My professional journey and academic background",
+      "description": "Hi, I am Ewerton, a Lead Engineer with over 7 years of experience in architecting and scaling complex data and AI platforms from the ground up. I specialize in the intersection of backend development and data engineering, transforming business requirements into robust, production-ready systems on GCP and AWS. Mentoring developers and driving projects from concept to deployment, I am passionate about solving complex data challenges and building the infrastructure that powers intelligent products. Guided by my faith in God, I strive to build technology responsibly and create tools that have a lasting impact.",
+      "location": "Based in Brazil",
+      "focus": "Python n°1 fan"
+    },
+    "closingCta": {
+      "title": "Let's Connect",
+      "subtitle": "If you reached here, feel free to book a meeting with me if needed!",
+      "button": "Book a Meeting"
     }
+  },
+  "footer": {
+    "copyright": "© 2018–2026 Ewerton Software LTDA · CNPJ 39.633.105/0001-13 · All rights reserved.",
+    "madeWith": "Made with passion in",
+    "brazil": "Brazil"
+  },
+  "metadata": {
+    "title": "ewerton"
+  }
 }

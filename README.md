@@ -59,7 +59,7 @@ To guarantee environment parity with the pipeline production releases (Google Cl
 
 ```bash
 make docker
-# Behind the scenes this runs: docker build -t ewerton-go . & docker run -p 3000:3000
+# Behind the scenes this runs: docker build -t ewerton-go . & docker run -p 3000:3000 -d
 ```
 
 ## 🛠 Features Implemented

@@ -10,10 +10,10 @@
             {{ template "icon-chevron-down" 14 }}
           </button>
           <div class="langDropdown" id="langDropdown">
-            <button class="langOption{{ if eq .Locale "en" }}active{{ end }}" data-locale="en">
+            <button class="langOption {{ if eq .Locale "en" }}active{{ end }}" data-locale="en">
               <span class="langFlag">🇺🇸</span> English
             </button>
-            <button class="langOption{{ if eq .Locale "pt-br" }}active{{ end }}" data-locale="pt-br">
+            <button class="langOption {{ if eq .Locale "pt-br" }}active{{ end }}" data-locale="pt-br">
               <span class="langFlag">🇧🇷</span> Português
             </button>
           </div>

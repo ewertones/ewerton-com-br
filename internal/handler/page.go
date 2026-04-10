@@ -26,17 +26,20 @@ type PageData struct {
 	ResumePath      string
 	CalendlyURL     string
 	Version         string
+	CSSPath         string
+	JSPath          string
 }
 
 // PageHandler renders the single-page portfolio.
 type PageHandler struct {
-	tmpl    *template.Template
-	i18nSt  *i18n.Store
-	version string
+	tmpl     *template.Template
+	i18nSt   *i18n.Store
+	staticFS fs.FS
+	version  string
 }
 
 // NewPageHandler parses all templates and returns a ready handler.
-func NewPageHandler(templatesFS fs.FS, i18nStore *i18n.Store, version string) (*PageHandler, error) {
+func NewPageHandler(templatesFS fs.FS, staticFS fs.FS, i18nStore *i18n.Store, version string) (*PageHandler, error) {
 	funcMap := template.FuncMap{
 		"safeHTML": func(s string) template.HTML { return template.HTML(s) },
 		"pct": func(rating float64) float64 {
@@ -90,7 +93,27 @@ func NewPageHandler(templatesFS fs.FS, i18nStore *i18n.Store, version string) (*
 		return nil, err
 	}
 
-	return &PageHandler{tmpl: tmpl, i18nSt: i18nStore, version: version}, nil
+	return &PageHandler{tmpl: tmpl, i18nSt: i18nStore, staticFS: staticFS, version: version}, nil
+}
+
+func (h *PageHandler) resolveAsset(path string) string {
+	// e.g. /static/css/globals.css -> static/css/globals.min.css
+	if !strings.HasPrefix(path, "/static/") {
+		return path
+	}
+
+	relPath := strings.TrimPrefix(path, "/static/")
+	extIdx := strings.LastIndex(relPath, ".")
+	if extIdx == -1 {
+		return path
+	}
+
+	minPath := relPath[:extIdx] + ".min" + relPath[extIdx:]
+	if _, err := fs.Stat(h.staticFS, minPath); err == nil {
+		return "/static/" + minPath
+	}
+
+	return path
 }
 
 func (h *PageHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -127,6 +150,8 @@ func (h *PageHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		ResumePath:      data.ResumePath,
 		CalendlyURL:     data.CalendlyURL,
 		Version:         h.version,
+		CSSPath:         h.resolveAsset("/static/css/globals.css"),
+		JSPath:          h.resolveAsset("/static/js/app.js"),
 	}
 
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")

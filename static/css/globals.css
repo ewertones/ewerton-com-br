@@ -804,8 +804,8 @@ a:hover {
 
 /* ======================== PHOTO ======================== */
 .photo {
-  width: 320px;
-  height: 320px;
+  width: 280px;
+  height: 280px;
   border-radius: 20px;
   object-fit: cover;
   box-shadow: 0 8px 32px oklch(0 0 0 / 0.12);

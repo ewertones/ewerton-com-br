@@ -45,16 +45,16 @@ func main() {
 		log.Fatal("init i18n:", err)
 	}
 
-	// Build page handler
-	pageHandler, err := handler.NewPageHandler(templatesFS, i18nStore, version)
-	if err != nil {
-		log.Fatal("parse templates:", err)
-	}
-
 	// Static file server
 	staticSub, err := fs.Sub(staticFS, "static")
 	if err != nil {
 		log.Fatal("static fs:", err)
+	}
+
+	// Build page handler
+	pageHandler, err := handler.NewPageHandler(templatesFS, staticSub, i18nStore, version)
+	if err != nil {
+		log.Fatal("parse templates:", err)
 	}
 
 	mux := http.NewServeMux()

@@ -1,0 +1,6 @@
+static/**/*.min.js
+static/**/*.min.css
+node_modules/
+dist/
+.git/
+ewerton-go.exe

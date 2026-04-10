@@ -48,6 +48,17 @@ jobs:
       - name: Authorize Docker push
         run: gcloud auth configure-docker
 
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+
+      - name: Minify Assets
+        run: |
+          go install github.com/tdewolff/minify/v2/cmd/minify@latest
+          minify -o static/css/globals.min.css static/css/globals.css
+          minify -o static/js/app.min.js static/js/app.js
+
       - name: Build and Push Container
         run: |
           docker build -t gcr.io/${{ env.PROJECT_ID }}/${{ env.IMAGE_NAME }}:${{ env.ENV }} .

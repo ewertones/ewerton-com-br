@@ -46,7 +46,7 @@
       />
 
       <!-- Stylesheet -->
-      <link rel="stylesheet" href="/static/css/globals.min.css?v={{ .Version }}" />
+      <link rel="stylesheet" href="{{ .CSSPath }}?v={{ .Version }}" />
 
       <!-- Prevent theme flash -->
       <script>
@@ -72,7 +72,7 @@
     </head>
     <body>
       {{ block "content" . }}{{ end }}
-      <script src="/static/js/app.min.js?v={{ .Version }}"></script>
+      <script src="{{ .JSPath }}?v={{ .Version }}"></script>
     </body>
   </html>
 {{ end }}

@@ -83,6 +83,8 @@
     {{ template
       "icon-monitor" 20
     }}
+  {{ else if eq . "brain" }}
+    {{ template "icon-brain" 20 }}
   {{ else }}
     {{ template "icon-code2" 20 }}
   {{ end }}

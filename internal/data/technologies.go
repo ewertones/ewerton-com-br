@@ -35,10 +35,10 @@ var TechnologyCategories = []TechnologyCategory{
 		Icon:     "database",
 		Skills: []Technology{
 			{Name: "MySQL", Rating: 4.0, Keywords: []string{"sql", "rdbms", "relational", "database", "innodb", "transactions", "indexing", "web", "open source", "mariadb"}},
-			{Name: "PostgreSQL", Rating: 4.0, Keywords: []string{"postgres", "psql", "sql", "rdbms", "relational", "database", "jsonb", "extensions", "stored procedures", "open source", "transactions", "pg"}},
+			{Name: "PostgreSQL", Rating: 4.0, Keywords: []string{"postgres", "psql", "sql", "rdbms", "relational", "database", "jsonb", "extensions", "stored procedures", "open source", "transactions", "pg", "vector", "pgvector", "embeddings", "chromadb", "pinecone"}},
 			{Name: "BigQuery", Rating: 4.0, Keywords: []string{"gbq", "google cloud", "gcp", "data warehouse", "dw", "analytics", "sql", "serverless", "columnar", "bi", "petabyte"}},
 			{Name: "Spanner", Rating: 3.5, Keywords: []string{"google cloud", "gcp", "distributed", "sql", "rdbms", "database", "globally distributed", "transactions", "scalable", "strong consistency", "horizontally scalable"}},
-			{Name: "ElasticSearch", Rating: 3.0, Keywords: []string{"elastic", "search", "indexing", "nosql", "elk", "full-text search", "kibana", "logstash", "aggregations", "json", "opensearch"}},
+			{Name: "ElasticSearch", Rating: 3.0, Keywords: []string{"elastic", "search", "indexing", "nosql", "elk", "full-text search", "kibana", "logstash", "aggregations", "json", "opensearch", "vector", "vector search", "knn", "embeddings", "chromadb", "pinecone"}},
 			{Name: "CDC", Rating: 2.5, Keywords: []string{"change data capture", "replication", "streaming", "debezium", "kafka", "real-time", "sync", "event-driven", "incremental"}},
 			{Name: "MongoDB", Rating: 2.0, Keywords: []string{"mongo", "nosql", "database", "document", "json", "atlas", "aggregation", "schemaless", "crud", "bson", "collections"}},
 			{Name: "Redis", Rating: 2.0, Keywords: []string{"cache", "in-memory", "vss", "nosql", "key-value", "pub/sub", "queue", "session", "real-time", "caching layer", "sorted sets"}},
@@ -160,7 +160,7 @@ var TechnologyCategories = []TechnologyCategory{
 		Category: "Orchestration",
 		Icon:     "list-tree",
 		Skills: []Technology{
-			{Name: "Apache Airflow", Rating: 4.0, Keywords: []string{"airflow", "orchestration", "workflow", "dag", "python", "data engineering", "scheduler", "tasks", "operators", "xcom", "etl"}},
+			{Name: "Apache Airflow", Rating: 4.0, Keywords: []string{"airflow", "orchestration", "workflow", "dag", "python", "data engineering", "scheduler", "tasks", "operators", "xcom", "etl", "cloud composer", "composer"}},
 			{Name: "Zapier", Rating: 3.0, Keywords: []string{"automation", "integration", "low code", "workflow", "zaps", "triggers", "actions", "no code", "apps", "saas"}},
 		},
 	},
@@ -202,6 +202,17 @@ var TechnologyCategories = []TechnologyCategory{
 		Skills: []Technology{
 			{Name: "Windows", Rating: 4.0, Keywords: []string{"os", "operating system", "microsoft", "desktop", "powershell", "registry", "active directory", "wsl", "cmd"}},
 			{Name: "Linux", Rating: 4.0, Keywords: []string{"os", "operating system", "bash", "terminal", "server", "unix", "ubuntu", "debian", "centos", "ssh", "permissions"}},
+		},
+	},
+	{
+		Slug:     "ai_tooling",
+		Category: "AI Tooling",
+		Icon:     "brain",
+		Skills: []Technology{
+			{Name: "Vertex AI", Rating: 4.0, Keywords: []string{"google cloud", "gcp", "ai", "ml", "machine learning", "llm", "generative ai", "model deployment", "vertex", "gemini", "mlops", "pipelines"}},
+			{Name: "Claude Code", Rating: 4.0, Keywords: []string{"anthropic", "claude", "ai", "llm", "coding assistant", "agentic", "cli", "developer tools", "code generation", "ai assistant"}},
+			{Name: "GitHub Copilot", Rating: 3.0, Keywords: []string{"github", "ai", "coding assistant", "llm", "code completion", "developer tools", "openai", "copilot", "autocomplete", "pair programming"}},
+			{Name: "Factory AI", Rating: 3.0, Keywords: []string{"ai", "developer tools", "coding assistant", "automation", "software factory", "agents", "code generation", "engineering"}},
 		},
 	},
 }

@@ -228,6 +228,65 @@
   window.openCompanyModal = openCompanyModal;
   window.closeCompanyModal = closeCompanyModal;
 
+  // ======================== PORTUGUESE-ONLY WARNING MODAL ========================
+  var langWarningOverlay = document.getElementById("langWarningOverlay");
+  var langWarningContinueBtn = document.getElementById("langWarningContinueBtn");
+  var pendingPtOnlyUrl = null;
+
+  function openLangWarning(url) {
+    if (!langWarningOverlay) return true;
+    pendingPtOnlyUrl = url;
+    langWarningOverlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+    return false; // block the link's default navigation
+  }
+
+  function closeLangWarning(e) {
+    if (e && e.target !== langWarningOverlay) return;
+    if (!langWarningOverlay) return;
+    langWarningOverlay.classList.remove("open");
+    document.body.style.overflow = "";
+    pendingPtOnlyUrl = null;
+  }
+
+  window.openLangWarning = openLangWarning;
+  window.closeLangWarning = closeLangWarning;
+
+  if (langWarningContinueBtn) {
+    langWarningContinueBtn.addEventListener("click", function () {
+      if (pendingPtOnlyUrl) {
+        window.open(pendingPtOnlyUrl, "_blank", "noopener,noreferrer");
+      }
+      closeLangWarning();
+    });
+  }
+
+  // ======================== LAUNCH COUNTDOWN ========================
+  var countdownBadges = document.querySelectorAll(".comingSoonBadge[data-deadline]");
+
+  if (countdownBadges.length) {
+    var updateCountdowns = function () {
+      countdownBadges.forEach(function (badge) {
+        var deadline = new Date(badge.getAttribute("data-deadline")).getTime();
+        var launchesIn = badge.getAttribute("data-launches-in") || "";
+        var remaining = deadline - Date.now();
+
+        if (remaining <= 0) {
+          badge.textContent = "🎉";
+          return;
+        }
+
+        var days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((remaining / (1000 * 60 * 60)) % 24);
+        var minutes = Math.floor((remaining / (1000 * 60)) % 60);
+        badge.textContent = launchesIn + ": " + days + "d " + hours + "h " + minutes + "m";
+      });
+    };
+
+    updateCountdowns();
+    setInterval(updateCountdowns, 60000);
+  }
+
   // Escape key closes any open modal
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
@@ -239,6 +298,11 @@
       if (companyOverlay && companyOverlay.classList.contains("open")) {
         companyOverlay.classList.remove("open");
         document.body.style.overflow = "";
+      }
+      if (langWarningOverlay && langWarningOverlay.classList.contains("open")) {
+        langWarningOverlay.classList.remove("open");
+        document.body.style.overflow = "";
+        pendingPtOnlyUrl = null;
       }
     }
   });

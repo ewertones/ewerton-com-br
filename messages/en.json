@@ -3,7 +3,14 @@
     "viewResume": "View Resume",
     "connectLinkedIn": "Connect on LinkedIn",
     "comingSoon": "Coming Soon",
-    "viewDetails": "View Details"
+    "viewDetails": "View Details",
+    "launchesIn": "Launches in",
+    "ptOnlyWarning": {
+      "title": "Heads up, Portuguese only",
+      "body": "This app's interface is only available in Portuguese right now. You're welcome to continue, but everything you'll see will be in Portuguese.",
+      "cancel": "Stay here",
+      "continue": "Continue anyway"
+    }
   },
   "landing": {
     "hero": {
@@ -16,6 +23,10 @@
     "projects": {
       "title": "What I'm Building",
       "subtitle": "These are the products I'm actively building and evolving to solve real operational problems. I am entirely responsible for all areas of development, from conception and modeling, to implementing, deploying, and marketing.",
+      "groups": {
+        "web": "Web Applications",
+        "mobile": "Mobile Apps"
+      },
       "aiomover": {
         "title": "aiomover",
         "tagline": "Move your files anywhere, instantly",
@@ -34,6 +45,16 @@
           "ai": "AI-Powered Learning",
           "gamified": "Gamified Experience",
           "community": "Connect with Peers"
+        }
+      },
+      "harpaCrista": {
+        "title": "Harpa Cristã",
+        "tagline": "Six Brazilian hymnaries, always in your pocket",
+        "description": "A modern Android reader bringing together six of Brazil's most-used Christian hymnaries in one app. Fast full-text search across every hymn, offline-first lyrics, favorites, and on-demand audio playback make it easy to find and sing along to any hymn, anywhere.",
+        "features": {
+          "search": "Cross-Book Search",
+          "offline": "Offline-First Hymns",
+          "audio": "Audio Playback"
         }
       }
     },
@@ -72,6 +93,11 @@
         "outsourcing": "Outsourcing"
       },
       "descriptions": {
+        "ey": {
+          "role": "Senior Backend Developer",
+          "period": "Mar 2026 - Present",
+          "desc": "Building a tax compliance reporting platform for EY's tax practice, turning raw partner and investment data into K-1s, K-3s, and state tax reports.\n\n- Shipped over a dozen new report types in under six months.\n- Designed a feature-flag system for safe, incremental rollouts.\n- Built a two-lane job queue to speed up report processing.\n- Led a full migration to Python 3.12 while keeping a 74-report async pipeline reliable for real client deadlines."
+        },
         "stagwell": {
           "role1": "Lead Back-end Engineer (Code & Theory)",
           "period1": "Dec 2024 - Feb 2026",

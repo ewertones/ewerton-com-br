@@ -32,7 +32,7 @@ var PartnerGroups = []PartnerGroup{
 	{
 		Slug: "tax",
 		Partners: []Partner{
-			{Slug: "ey", Name: "EY", Logo: "/static/images/partners/ey.webp", URL: "https://ey.com", DisplayURL: "ey.com"},
+			{Slug: "ey", Name: "EY", Logo: "/static/images/partners/ey.webp", URL: "https://ey.com", DisplayURL: "ey.com", HasDescription: true},
 		},
 	},
 	{

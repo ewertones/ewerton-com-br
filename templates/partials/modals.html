@@ -6,6 +6,27 @@
     </div>
   </div>
 
+  <!-- ==================== PORTUGUESE-ONLY WARNING MODAL ==================== -->
+  <div class="modalOverlay" id="langWarningOverlay" onclick="closeLangWarning(event)">
+    <div class="modal langWarningModal" onclick="event.stopPropagation()">
+      <button class="modalCloseButton" onclick="closeLangWarning()" aria-label="Close">
+        {{ template "icon-x" 24 }}
+      </button>
+      <div class="modalContent">
+        <h2 class="langWarningTitle">{{ call .T "common.ptOnlyWarning.title" }}</h2>
+        <p class="langWarningBody">{{ call .T "common.ptOnlyWarning.body" }}</p>
+        <div class="langWarningActions">
+          <button class="button secondary md" onclick="closeLangWarning()">
+            {{ call .T "common.ptOnlyWarning.cancel" }}
+          </button>
+          <button class="button primary md" id="langWarningContinueBtn">
+            {{ call .T "common.ptOnlyWarning.continue" }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ==================== COMPANY INFO MODAL ==================== -->
   <div class="modalOverlay" id="companyModalOverlay" onclick="closeCompanyModal(event)">
     <div class="modal" onclick="event.stopPropagation()">
@@ -108,6 +129,28 @@
                 <span class="modalRolePeriod">{{ call .T "landing.partners.descriptions.begrowth.period" }}</span>
               </div>
               <p class="modalRoleDescription">{{ call .T "landing.partners.descriptions.begrowth.desc" }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ey -->
+        <div class="companyRoleSection" id="modal-ey">
+          <div class="modalHeader">
+            <div class="modalLogo">
+              <img src="/static/images/partners/ey.webp" alt="EY" width="64" height="64" />
+            </div>
+            <div class="modalCompanyInfo">
+              <h2>EY</h2>
+              <a href="https://ey.com" target="_blank" rel="noopener noreferrer" class="modalCompanyUrl">ey.com</a>
+            </div>
+          </div>
+          <div class="modalRoles">
+            <div class="modalRoleItem">
+              <div class="modalRoleHeader">
+                <h3 class="modalRoleTitle">{{ call .T "landing.partners.descriptions.ey.role" }}</h3>
+                <span class="modalRolePeriod">{{ call .T "landing.partners.descriptions.ey.period" }}</span>
+              </div>
+              <p class="modalRoleDescription">{{ call .T "landing.partners.descriptions.ey.desc" }}</p>
             </div>
           </div>
         </div>

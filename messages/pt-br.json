@@ -3,7 +3,14 @@
     "viewResume": "Ver Currículo",
     "connectLinkedIn": "Conectar no LinkedIn",
     "comingSoon": "Em Breve",
-    "viewDetails": "Ver Detalhes"
+    "viewDetails": "Ver Detalhes",
+    "launchesIn": "Lançamento em",
+    "ptOnlyWarning": {
+      "title": "Aviso: somente em português",
+      "body": "A interface deste app está disponível apenas em português no momento. Você pode continuar, mas tudo que verá estará em português.",
+      "cancel": "Ficar aqui",
+      "continue": "Continuar mesmo assim"
+    }
   },
   "landing": {
     "hero": {
@@ -16,6 +23,10 @@
     "projects": {
       "title": "O Que Estou Construindo",
       "subtitle": "Estes são os produtos que venho desenvolvendo para resolver problemas operacionais reais. Sou inteiramente responsável por todas as áreas de desenvolvimento, da concepção e modelagem, até implementação, deployment e marketing.",
+      "groups": {
+        "web": "Aplicações Web",
+        "mobile": "Aplicativos Mobile"
+      },
       "aiomover": {
         "title": "aiomover",
         "tagline": "Mova seus arquivos para qualquer lugar, instantaneamente",
@@ -34,6 +45,16 @@
           "ai": "Aprendizado com IA",
           "gamified": "Experiência Gamificada",
           "community": "Conecte-se com colegas"
+        }
+      },
+      "harpaCrista": {
+        "title": "Harpa Cristã",
+        "tagline": "Seis hinários brasileiros, sempre no seu bolso",
+        "description": "Um leitor moderno para Android reunindo seis dos hinários cristãos mais usados no Brasil em um só app. Busca rápida em todo o texto dos hinos, letras disponíveis offline, favoritos e reprodução de áudio sob demanda tornam fácil encontrar e cantar qualquer hino, em qualquer lugar.",
+        "features": {
+          "search": "Busca em Todos os Hinários",
+          "offline": "Hinos Offline",
+          "audio": "Reprodução de Áudio"
         }
       }
     },
@@ -72,6 +93,11 @@
         "outsourcing": "Terceirização"
       },
       "descriptions": {
+        "ey": {
+          "role": "Desenvolvedor Backend Sênior",
+          "period": "Mar 2026 - Presente",
+          "desc": "Construindo uma plataforma de relatórios de conformidade fiscal para a prática tributária da EY, transformando dados brutos de sócios e investimentos em K-1s, K-3s e relatórios fiscais estaduais.\n\n- Lancei mais de uma dezena de novos tipos de relatório em menos de seis meses.\n- Projetei um sistema de feature flags para lançamentos seguros e incrementais.\n- Construí uma fila de processamento de dois canais para acelerar o processamento de relatórios.\n- Liderei uma migração completa para Python 3.12 mantendo um pipeline assíncrono de 74 relatórios confiável para prazos reais de clientes."
+        },
         "stagwell": {
           "role1": "Engenheiro Backend Líder (Code & Theory)",
           "period1": "Dez 2024 - Fev 2026",

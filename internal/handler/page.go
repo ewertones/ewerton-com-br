@@ -7,6 +7,7 @@ import (
 	"math"
 	"net/http"
 	"strings"
+	"time"
 
 	"ewerton-go/internal/data"
 	"ewerton-go/internal/i18n"
@@ -14,20 +15,24 @@ import (
 
 // PageData is passed to every template render.
 type PageData struct {
-	Locale          string
-	OtherLocale     string
-	OtherLocaleName string
-	T               func(string) string
-	Technologies    []data.TechnologyCategory
-	Education       []data.EducationEntry
-	PartnerGroups   []data.PartnerGroup
-	LinkedInURL     string
-	AiomoverURL     string
-	ResumePath      string
-	CalendlyURL     string
-	Version         string
-	CSSPath         string
-	JSPath          string
+	Locale            string
+	OtherLocale       string
+	OtherLocaleName   string
+	T                 func(string) string
+	Technologies      []data.TechnologyCategory
+	Education         []data.EducationEntry
+	PartnerGroups     []data.PartnerGroup
+	LinkedInURL       string
+	AiomoverURL       string
+	QuestaoURL        string
+	HarpaCristaURL    string
+	ResumePath        string
+	CalendlyURL       string
+	Version           string
+	CSSPath           string
+	JSPath            string
+	ProjectsLaunched  bool
+	LaunchDeadlineISO string
 }
 
 // PageHandler renders the single-page portfolio.
@@ -137,21 +142,33 @@ func (h *PageHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		eduKey = "pt"
 	}
 
+	// ?preview=launched previews the post-launch state (questao / Harpa Cristã
+	// live, PT-only warning modal) ahead of data.LaunchDeadline, without
+	// touching the deadline itself.
+	projectsLaunched := !time.Now().Before(data.LaunchDeadline)
+	if r.URL.Query().Get("preview") == "launched" {
+		projectsLaunched = true
+	}
+
 	pd := PageData{
-		Locale:          locale,
-		OtherLocale:     otherLocale,
-		OtherLocaleName: otherLocaleName,
-		T:               h.i18nSt.TFunc(locale),
-		Technologies:    data.TechnologyCategories,
-		Education:       data.EducationData[eduKey],
-		PartnerGroups:   data.PartnerGroups,
-		LinkedInURL:     data.LinkedInURL,
-		AiomoverURL:     data.AiomoverURL,
-		ResumePath:      data.ResumePath,
-		CalendlyURL:     data.CalendlyURL,
-		Version:         h.version,
-		CSSPath:         h.resolveAsset("/static/css/globals.css"),
-		JSPath:          h.resolveAsset("/static/js/app.js"),
+		Locale:            locale,
+		OtherLocale:       otherLocale,
+		OtherLocaleName:   otherLocaleName,
+		T:                 h.i18nSt.TFunc(locale),
+		Technologies:      data.TechnologyCategories,
+		Education:         data.EducationData[eduKey],
+		PartnerGroups:     data.PartnerGroups,
+		LinkedInURL:       data.LinkedInURL,
+		AiomoverURL:       data.AiomoverURL,
+		QuestaoURL:        data.QuestaoURL,
+		HarpaCristaURL:    data.HarpaCristaURL,
+		ResumePath:        data.ResumePath,
+		CalendlyURL:       data.CalendlyURL,
+		Version:           h.version,
+		CSSPath:           h.resolveAsset("/static/css/globals.css"),
+		JSPath:            h.resolveAsset("/static/js/app.js"),
+		ProjectsLaunched:  projectsLaunched,
+		LaunchDeadlineISO: data.LaunchDeadline.Format(time.RFC3339),
 	}
 
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")

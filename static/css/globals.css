@@ -668,6 +668,48 @@ a:hover {
   display: none;
 }
 
+/* ======================== PORTUGUESE-ONLY WARNING MODAL ======================== */
+.langWarningModal {
+  max-width: 480px;
+}
+
+.langWarningTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin: 0 0 16px 0;
+}
+
+.langWarningBody {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0 0 32px 0;
+}
+
+.langWarningActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .langWarningModal .modalCloseButton {
+    position: static;
+    display: flex;
+    margin: 16px 16px 0 auto;
+  }
+  .langWarningModal .modalContent {
+    padding-top: 16px;
+  }
+  .langWarningActions {
+    flex-direction: column-reverse;
+  }
+  .langWarningActions .button {
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .modalContent {
     padding: 32px 24px;
@@ -836,11 +878,43 @@ a:hover {
 }
 
 /* ======================== PROJECTS ======================== */
+.projectGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.projectGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.projectGroupTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #002776;
+  margin: 0 0 24px 0;
+  position: relative;
+  padding-left: 16px;
+}
+
+.projectGroupTitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 100%;
+  background: #002776;
+  border-radius: 2px;
+}
+
 .projectCardLink {
   display: block;
   text-decoration: none;
   color: inherit;
-  margin-bottom: 24px;
 }
 
 .projectCard {
@@ -857,7 +931,6 @@ a:hover {
   cursor: default;
   opacity: 0.65;
   filter: grayscale(40%) contrast(0.9);
-  margin-top: 24px;
 }
 
 [data-theme="dark"] .projectCardDisabled {
@@ -1496,6 +1569,13 @@ a:hover {
   .partnerGroupTitle::before {
     display: none;
   }
+  .projectGroupTitle {
+    text-align: center;
+    padding-left: 0;
+  }
+  .projectGroupTitle::before {
+    display: none;
+  }
   .partnersGrid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
@@ -1522,14 +1602,7 @@ a:hover {
     gap: 16px;
   }
   .projectFeatures {
-    justify-content: center;
-    gap: 16px;
-  }
-  .featureItem {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
+    display: none;
   }
   .closingCtaCard {
     flex-direction: column;

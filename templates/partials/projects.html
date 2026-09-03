@@ -3,6 +3,87 @@
     <h2 class="sectionTitle">{{ call .T "landing.projects.title" }}</h2>
     <p class="sectionSubtitle">{{ call .T "landing.projects.subtitle" }}</p>
 
+    <div class="projectGroups">
+    <div class="projectGroup">
+    <h3 class="projectGroupTitle">{{ call .T "landing.projects.groups.web" }}</h3>
+
+    <!-- questao -->
+    {{ if .ProjectsLaunched }}
+      <a
+        href="{{ .QuestaoURL }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="projectCardLink"
+        {{ if eq .Locale "en" }}onclick="return openLangWarning('{{ .QuestaoURL }}')"{{ end }}
+      >
+        <div class="projectCard">
+          <div class="projectHeader">
+            <div class="projectLogo">
+              <img src="/static/images/projects/questao.svg" alt="questao" width="48" height="48" />
+            </div>
+            <div class="projectTitleGroup">
+              <h3 class="projectTitle">{{ call .T "landing.projects.questao.title" }}</h3>
+              <p class="projectTagline">{{ call .T "landing.projects.questao.tagline" }}</p>
+            </div>
+            <span class="projectArrow">{{ template "icon-arrow-right" 24 }}</span>
+          </div>
+
+          <p class="projectDescription">{{ call .T "landing.projects.questao.description" }}</p>
+
+          <div class="projectFeatures">
+            <div class="featureItem">
+              <span class="featureIcon">{{ template "icon-brain" 20 }}</span>
+              {{ call .T "landing.projects.questao.features.ai" }}
+            </div>
+            <div class="featureItem">
+              <span class="featureIcon">{{ template "icon-gamepad2" 20 }}</span>
+              {{ call .T "landing.projects.questao.features.gamified" }}
+            </div>
+            <div class="featureItem">
+              <span class="featureIcon">{{ template "icon-users" 20 }}</span>
+              {{ call .T "landing.projects.questao.features.community" }}
+            </div>
+          </div>
+        </div>
+      </a>
+    {{ else }}
+      <div class="projectCard projectCardDisabled">
+        <div class="projectHeader">
+          <div class="projectLogo">
+            <img src="/static/images/projects/questao.svg" alt="questao" width="48" height="48" />
+          </div>
+          <div class="projectTitleGroup">
+            <h3 class="projectTitle">{{ call .T "landing.projects.questao.title" }}</h3>
+            <p class="projectTagline">{{ call .T "landing.projects.questao.tagline" }}</p>
+          </div>
+          <span
+            class="comingSoonBadge"
+            data-deadline="{{ .LaunchDeadlineISO }}"
+            data-launches-in="{{ call .T "common.launchesIn" }}"
+          >
+            {{ call .T "common.comingSoon" }}
+          </span>
+        </div>
+
+        <p class="projectDescription">{{ call .T "landing.projects.questao.description" }}</p>
+
+        <div class="projectFeatures">
+          <div class="featureItem">
+            <span class="featureIcon">{{ template "icon-brain" 20 }}</span>
+            {{ call .T "landing.projects.questao.features.ai" }}
+          </div>
+          <div class="featureItem">
+            <span class="featureIcon">{{ template "icon-gamepad2" 20 }}</span>
+            {{ call .T "landing.projects.questao.features.gamified" }}
+          </div>
+          <div class="featureItem">
+            <span class="featureIcon">{{ template "icon-users" 20 }}</span>
+            {{ call .T "landing.projects.questao.features.community" }}
+          </div>
+        </div>
+      </div>
+    {{ end }}
+
     <!-- aiomover -->
     <a href="{{ .AiomoverURL }}" target="_blank" rel="noopener noreferrer" class="projectCardLink">
       <div class="projectCard">
@@ -35,36 +116,88 @@
         </div>
       </div>
     </a>
+    </div>
 
-    <!-- questao (disabled) -->
-    <div class="projectCard projectCardDisabled">
-      <div class="projectHeader">
-        <div class="projectLogo">
-          <img src="/static/images/projects/questao.svg" alt="questao" width="48" height="48" />
+    <div class="projectGroup">
+    <h3 class="projectGroupTitle">{{ call .T "landing.projects.groups.mobile" }}</h3>
+
+    <!-- harpa cristã -->
+    {{ if .ProjectsLaunched }}
+      <a
+        href="{{ .HarpaCristaURL }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="projectCardLink"
+        {{ if eq .Locale "en" }}onclick="return openLangWarning('{{ .HarpaCristaURL }}')"{{ end }}
+      >
+        <div class="projectCard">
+          <div class="projectHeader">
+            <div class="projectLogo">
+              <img src="/static/images/projects/harpa-crista.svg" alt="Harpa Cristã" width="48" height="48" />
+            </div>
+            <div class="projectTitleGroup">
+              <h3 class="projectTitle">{{ call .T "landing.projects.harpaCrista.title" }}</h3>
+              <p class="projectTagline">{{ call .T "landing.projects.harpaCrista.tagline" }}</p>
+            </div>
+            <span class="projectArrow">{{ template "icon-arrow-right" 24 }}</span>
+          </div>
+
+          <p class="projectDescription">{{ call .T "landing.projects.harpaCrista.description" }}</p>
+
+          <div class="projectFeatures">
+            <div class="featureItem">
+              <span class="featureIcon">{{ template "icon-search" 20 }}</span>
+              {{ call .T "landing.projects.harpaCrista.features.search" }}
+            </div>
+            <div class="featureItem">
+              <span class="featureIcon">{{ template "icon-database" 20 }}</span>
+              {{ call .T "landing.projects.harpaCrista.features.offline" }}
+            </div>
+            <div class="featureItem">
+              <span class="featureIcon">{{ template "icon-music" 20 }}</span>
+              {{ call .T "landing.projects.harpaCrista.features.audio" }}
+            </div>
+          </div>
         </div>
-        <div class="projectTitleGroup">
-          <h3 class="projectTitle">{{ call .T "landing.projects.questao.title" }}</h3>
-          <p class="projectTagline">{{ call .T "landing.projects.questao.tagline" }}</p>
+      </a>
+    {{ else }}
+      <div class="projectCard projectCardDisabled">
+        <div class="projectHeader">
+          <div class="projectLogo">
+            <img src="/static/images/projects/harpa-crista.svg" alt="Harpa Cristã" width="48" height="48" />
+          </div>
+          <div class="projectTitleGroup">
+            <h3 class="projectTitle">{{ call .T "landing.projects.harpaCrista.title" }}</h3>
+            <p class="projectTagline">{{ call .T "landing.projects.harpaCrista.tagline" }}</p>
+          </div>
+          <span
+            class="comingSoonBadge"
+            data-deadline="{{ .LaunchDeadlineISO }}"
+            data-launches-in="{{ call .T "common.launchesIn" }}"
+          >
+            {{ call .T "common.comingSoon" }}
+          </span>
         </div>
-        <span class="comingSoonBadge">{{ call .T "common.comingSoon" }}</span>
+
+        <p class="projectDescription">{{ call .T "landing.projects.harpaCrista.description" }}</p>
+
+        <div class="projectFeatures">
+          <div class="featureItem">
+            <span class="featureIcon">{{ template "icon-search" 20 }}</span>
+            {{ call .T "landing.projects.harpaCrista.features.search" }}
+          </div>
+          <div class="featureItem">
+            <span class="featureIcon">{{ template "icon-database" 20 }}</span>
+            {{ call .T "landing.projects.harpaCrista.features.offline" }}
+          </div>
+          <div class="featureItem">
+            <span class="featureIcon">{{ template "icon-music" 20 }}</span>
+            {{ call .T "landing.projects.harpaCrista.features.audio" }}
+          </div>
+        </div>
       </div>
-
-      <p class="projectDescription">{{ call .T "landing.projects.questao.description" }}</p>
-
-      <div class="projectFeatures">
-        <div class="featureItem">
-          <span class="featureIcon">{{ template "icon-brain" 20 }}</span>
-          {{ call .T "landing.projects.questao.features.ai" }}
-        </div>
-        <div class="featureItem">
-          <span class="featureIcon">{{ template "icon-gamepad2" 20 }}</span>
-          {{ call .T "landing.projects.questao.features.gamified" }}
-        </div>
-        <div class="featureItem">
-          <span class="featureIcon">{{ template "icon-users" 20 }}</span>
-          {{ call .T "landing.projects.questao.features.community" }}
-        </div>
-      </div>
+    {{ end }}
+    </div>
     </div>
   </section>
 {{ end }}

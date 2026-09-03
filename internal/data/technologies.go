@@ -104,7 +104,7 @@ var TechnologyCategories = []TechnologyCategory{
 			{Name: "Google Cloud", Rating: 4.0, Keywords: []string{"gcp", "google cloud platform", "cloud", "serverless", "computing", "bigquery", "cloud run", "gke", "cloud functions", "pub/sub", "gcs"}},
 			{Name: "AWS", Rating: 3.0, Keywords: []string{"amazon web services", "amazon", "cloud", "s3", "ec2", "lambda", "rds", "dynamodb", "iam", "cloudwatch", "ecs", "eks"}},
 			{Name: "Snowflake", Rating: 2.5, Keywords: []string{"cloud", "data warehouse", "analytics", "saas", "sql", "data sharing", "time travel", "virtual warehouse", "marketplace"}},
-			{Name: "Microsoft Azure", Rating: 1.5, Keywords: []string{"azure", "microsoft", "cloud", "computing", "enterprise", "azure devops", "active directory", "blob storage", "aks", "functions", "ad"}},
+			{Name: "Microsoft Azure", Rating: 2, Keywords: []string{"azure", "microsoft", "cloud", "computing", "enterprise", "azure devops", "active directory", "blob storage", "aks", "functions", "ad"}},
 		},
 	},
 	{

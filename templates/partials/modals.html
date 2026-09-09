@@ -1,8 +1,42 @@
 {{ define "modals" }}
-  <!-- ==================== PDF VIEWER MODAL ==================== -->
-  <div class="pdfViewerOverlay" id="pdfViewerOverlay" onclick="closePdfViewer(event)">
+  <!-- ==================== RESUME VIEWER MODAL ==================== -->
+  <!-- The PDF is generated on request from the same data this page renders;
+       the JSON and Markdown links expose that data directly. -->
+  <div
+    class="pdfViewerOverlay"
+    id="pdfViewerOverlay"
+    onclick="closePdfViewer(event)"
+    data-resume="/{{ .Locale }}{{ .ResumePath }}"
+  >
     <div class="pdfViewerContainer" onclick="event.stopPropagation()">
-      <iframe id="pdfViewerFrame" src="" class="pdfViewerFrame" title="Resume"></iframe>
+      <div class="pdfViewerToolbar">
+        <span class="pdfViewerTitle">{{ template "icon-file-text" 16 }} {{ call .T "common.viewResume" }}</span>
+        <div class="pdfViewerActions">
+          <a class="pdfViewerAction primary" href="/{{ .Locale }}{{ .ResumePath }}?download=1">
+            {{ template "icon-download" 15 }} <span>{{ call .T "resume.download" }}</span>
+          </a>
+          <a class="pdfViewerAction" href="/{{ .Locale }}{{ .ResumePath }}" target="_blank" rel="noopener noreferrer">
+            {{ template "icon-external-link" 15 }} <span>{{ call .T "resume.openTab" }}</span>
+          </a>
+          <button class="pdfViewerAction pdfViewerClose" onclick="closePdfViewer()" aria-label="Close">
+            {{ template "icon-x" 16 }}
+          </button>
+        </div>
+      </div>
+      <iframe
+        id="pdfViewerFrame"
+        src=""
+        class="pdfViewerFrame"
+        title="{{ call .T `common.viewResume` }}"
+        loading="lazy"
+      ></iframe>
+      <div class="pdfViewerFooter">
+        {{ template "icon-code-json" 14 }}
+        <span>{{ call .T "resume.alsoAvailable" }}</span>
+        <a href="/{{ .Locale }}{{ .ResumeJSONPath }}" target="_blank" rel="noopener noreferrer">JSON Resume</a>
+        <span class="pdfViewerDot">·</span>
+        <a href="/{{ .Locale }}{{ .ResumeMDPath }}" target="_blank" rel="noopener noreferrer">Markdown</a>
+      </div>
     </div>
   </div>
 

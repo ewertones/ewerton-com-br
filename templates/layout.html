@@ -6,35 +6,54 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>{{ call .T `metadata.title` }}</title>
       <meta name="description" content="{{ call .T `landing.hero.subtitle` }}" />
+      <meta name="author" content="Ewerton de Souza" />
+      <!-- Let search and AI engines quote the page in full. -->
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
       <!-- SEO -->
       <link rel="icon" href="/static/images/logo.svg" type="image/svg+xml" />
-      <link rel="canonical" href="https://ewerton.dev/{{ .Locale }}" />
-      <link rel="alternate" hreflang="en" href="https://ewerton.dev/en" />
-      <link rel="alternate" hreflang="pt-br" href="https://ewerton.dev/pt-br" />
-      <link rel="alternate" hreflang="x-default" href="https://ewerton.dev/en" />
+      <link rel="canonical" href="{{ .SiteOrigin }}/{{ .Locale }}" />
+      <link rel="alternate" hreflang="en" href="{{ .SiteOrigin }}/en" />
+      <link rel="alternate" hreflang="pt-br" href="{{ .SiteOrigin }}/pt-br" />
+      <link rel="alternate" hreflang="x-default" href="{{ .SiteOrigin }}/en" />
+
+      <!-- Machine-readable resume, in every format it is published in -->
+      <link
+        rel="alternate"
+        type="application/json"
+        href="/{{ .Locale }}{{ .ResumeJSONPath }}"
+        title="JSON Resume"
+      />
+      <link rel="alternate" type="text/markdown" href="/{{ .Locale }}{{ .ResumeMDPath }}" title="Resume (Markdown)" />
+      <link rel="alternate" type="application/pdf" href="/{{ .Locale }}{{ .ResumePath }}" title="Resume (PDF)" />
+      <link rel="describedby" type="text/plain" href="/llms.txt" />
 
       <!-- Open Graph -->
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://ewerton.dev/{{ .Locale }}" />
+      <meta property="og:type" content="profile" />
+      <meta property="og:url" content="{{ .SiteOrigin }}/{{ .Locale }}" />
       <meta property="og:title" content="{{ call .T `metadata.title` }}" />
       <meta property="og:description" content="{{ call .T `landing.hero.subtitle` }}" />
-      <meta property="og:image" content="https://ewerton.dev/static/images/photos/ewerton.webp" />
+      <meta property="og:image" content="{{ .SiteOrigin }}/static/images/og-card-{{ .Locale }}.jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:alt" content="{{ call .T `metadata.title` }}" />
+      <meta property="og:site_name" content="{{ .SiteName }}" />
+      <meta property="og:locale" content="{{ if eq .Locale `pt-br` }}pt_BR{{ else }}en_US{{ end }}" />
+      <meta property="profile:first_name" content="Ewerton" />
+      <meta property="profile:last_name" content="de Souza" />
 
       <!-- Twitter Card -->
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="{{ call .T `metadata.title` }}" />
       <meta name="twitter:description" content="{{ call .T `landing.hero.subtitle` }}" />
+      <meta name="twitter:image" content="{{ .SiteOrigin }}/static/images/og-card-{{ .Locale }}.jpg" />
+      <meta name="twitter:image:alt" content="{{ call .T `metadata.title` }}" />
 
-      <!-- JSON-LD Person schema -->
+      <!-- schema.org graph: Person, ProfilePage, credentials, employment history
+           and the products, all generated from the same model as the resume. -->
       <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Ewerton",
-          "url": "https://ewerton.dev",
-          "sameAs": ["https://www.linkedin.com/in/ewertones"]
-        }
+        {{ .JSONLD }}
       </script>
 
       <!-- Google Fonts -->
@@ -46,7 +65,7 @@
       />
 
       <!-- Stylesheet -->
-      <link rel="stylesheet" href="{{ .CSSPath }}?v={{ .Version }}" />
+      <link rel="stylesheet" href="{{ .CSSPath }}" />
 
       <!-- Prevent theme flash -->
       <script>
@@ -59,7 +78,7 @@
         })();
       </script>
       <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFH72L1LCE"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ .GoogleAnalID }}"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() {
@@ -67,12 +86,12 @@
         }
         gtag("js", new Date());
 
-        gtag("config", "G-MFH72L1LCE");
+        gtag("config", "{{ .GoogleAnalID }}");
       </script>
     </head>
     <body>
       {{ block "content" . }}{{ end }}
-      <script src="{{ .JSPath }}?v={{ .Version }}"></script>
+      <script src="{{ .JSPath }}"></script>
     </body>
   </html>
 {{ end }}

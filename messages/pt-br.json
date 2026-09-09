@@ -146,7 +146,77 @@
     "madeWith": "Feito com amor no",
     "brazil": "Brasil"
   },
+  "resume": {
+    "headline": "Engenheiro Backend & de Dados Sênior",
+    "country": "Brasil",
+    "bookMeeting": "Agende uma reunião",
+    "generatedOn": "Gerado em",
+    "stack": "Construído com",
+    "machineReadable": "Versão legível por máquina",
+    "soleDeveloper": "Fundador e Desenvolvedor Único",
+    "download": "Baixar PDF",
+    "openTab": "Abrir em nova aba",
+    "alsoAvailable": "Também disponível como",
+    "sections": {
+      "summary": "Resumo",
+      "experience": "Experiência",
+      "education": "Formação Acadêmica",
+      "projects": "Produtos que Construo",
+      "skills": "Tecnologias & Habilidades",
+      "languages": "Idiomas"
+    },
+    "levels": {
+      "expert": "Especialista",
+      "advanced": "Avançado",
+      "intermediate": "Intermediário",
+      "familiar": "Familiarizado"
+    },
+    "languages": {
+      "portuguese": "Português",
+      "english": "Inglês",
+      "french": "Francês",
+      "spanish": "Espanhol",
+      "native": "Nativo",
+      "professional": "Fluência profissional completa"
+    },
+    "table": {
+      "category": "Categoria",
+      "skill": "Habilidade",
+      "level": "Nível",
+      "rating": "Nota"
+    },
+    "llms": {
+      "basedIn": "morando em",
+      "intro": "Este site é um portfólio pessoal e currículo. Tudo abaixo é gerado a partir de uma única fonte de verdade, então o PDF, o JSON e este arquivo sempre concordam entre si.",
+      "sections": {
+        "resume": "Currículo",
+        "contact": "Contato",
+        "site": "Site",
+        "products": "Produtos",
+        "optional": "Opcional"
+      },
+      "labels": {
+        "markdown": "Currículo (Markdown)",
+        "json": "Currículo (esquema JSON Resume v1.0.0)",
+        "pdf": "Currículo (PDF)",
+        "full": "Tudo em um único arquivo",
+        "english": "English",
+        "portuguese": "Português",
+        "sitemap": "Mapa do site",
+        "email": "E-mail",
+        "phone": "Telefone"
+      },
+      "descriptions": {
+        "markdown": "o currículo completo em texto puro — comece por aqui",
+        "json": "dados estruturados: histórico profissional, formação, projetos e habilidades com níveis de proficiência",
+        "pdf": "o documento diagramado, com o JSON embutido como anexo",
+        "full": "o currículo completo, inline",
+        "english": "página inicial do portfólio, em inglês",
+        "portuguese": "a mesma página em português do Brasil"
+      }
+    }
+  },
   "metadata": {
-    "title": "ewerton"
+    "title": "Ewerton de Souza — Engenheiro Backend & de Dados Sênior"
   }
 }

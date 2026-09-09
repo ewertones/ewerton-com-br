@@ -146,7 +146,77 @@
     "madeWith": "Made with passion in",
     "brazil": "Brazil"
   },
+  "resume": {
+    "headline": "Senior Backend & Data Engineer",
+    "country": "Brazil",
+    "bookMeeting": "Book a meeting",
+    "generatedOn": "Generated on",
+    "stack": "Built with",
+    "machineReadable": "Machine-readable version",
+    "soleDeveloper": "Founder & Sole Developer",
+    "download": "Download PDF",
+    "openTab": "Open in new tab",
+    "alsoAvailable": "Also available as",
+    "sections": {
+      "summary": "Summary",
+      "experience": "Experience",
+      "education": "Education",
+      "projects": "Products I Build",
+      "skills": "Technologies & Skills",
+      "languages": "Languages"
+    },
+    "levels": {
+      "expert": "Expert",
+      "advanced": "Advanced",
+      "intermediate": "Intermediate",
+      "familiar": "Familiar"
+    },
+    "languages": {
+      "portuguese": "Portuguese",
+      "english": "English",
+      "french": "French",
+      "spanish": "Spanish",
+      "native": "Native",
+      "professional": "Full professional proficiency"
+    },
+    "table": {
+      "category": "Category",
+      "skill": "Skill",
+      "level": "Level",
+      "rating": "Rating"
+    },
+    "llms": {
+      "basedIn": "based in",
+      "intro": "This site is a personal portfolio and resume. Everything below is generated from a single source of truth, so the PDF, the JSON and this file always agree.",
+      "sections": {
+        "resume": "Resume",
+        "contact": "Contact",
+        "site": "Site",
+        "products": "Products",
+        "optional": "Optional"
+      },
+      "labels": {
+        "markdown": "Resume (Markdown)",
+        "json": "Resume (JSON Resume schema v1.0.0)",
+        "pdf": "Resume (PDF)",
+        "full": "Everything in one file",
+        "english": "English",
+        "portuguese": "Português",
+        "sitemap": "Sitemap",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "descriptions": {
+        "markdown": "the complete resume as plain text — start here",
+        "json": "structured data: work history, education, projects, and skills with proficiency ratings",
+        "pdf": "the designed document, with the JSON embedded as an attachment",
+        "full": "the full resume inline",
+        "english": "portfolio landing page",
+        "portuguese": "the same page in Brazilian Portuguese"
+      }
+    }
+  },
   "metadata": {
-    "title": "ewerton"
+    "title": "Ewerton de Souza — Senior Backend & Data Engineer"
   }
 }

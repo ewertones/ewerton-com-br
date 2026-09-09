@@ -33,6 +33,16 @@ type PageData struct {
 	JSPath            string
 	ProjectsLaunched  bool
 	LaunchDeadlineISO string
+
+	// Resume artifacts and the schema.org graph, generated from the same model
+	// that produces the PDF so the page and the document cannot disagree.
+	SiteOrigin     string
+	SiteName       string
+	Headline       string
+	ResumeJSONPath string
+	ResumeMDPath   string
+	GoogleAnalID   string
+	JSONLD         template.JS
 }
 
 // PageHandler renders the single-page portfolio.
@@ -41,10 +51,11 @@ type PageHandler struct {
 	i18nSt   *i18n.Store
 	staticFS fs.FS
 	version  string
+	resumes  *ResumeHandler
 }
 
 // NewPageHandler parses all templates and returns a ready handler.
-func NewPageHandler(templatesFS fs.FS, staticFS fs.FS, i18nStore *i18n.Store, version string) (*PageHandler, error) {
+func NewPageHandler(templatesFS fs.FS, staticFS fs.FS, i18nStore *i18n.Store, version string, resumes *ResumeHandler) (*PageHandler, error) {
 	funcMap := template.FuncMap{
 		"safeHTML": func(s string) template.HTML { return template.HTML(s) },
 		"pct": func(rating float64) float64 {
@@ -98,11 +109,15 @@ func NewPageHandler(templatesFS fs.FS, staticFS fs.FS, i18nStore *i18n.Store, ve
 		return nil, err
 	}
 
-	return &PageHandler{tmpl: tmpl, i18nSt: i18nStore, staticFS: staticFS, version: version}, nil
+	return &PageHandler{tmpl: tmpl, i18nSt: i18nStore, staticFS: staticFS, version: version, resumes: resumes}, nil
 }
 
+// resolveAsset picks the minified build of an asset when one exists.
+//
+// No cache-busting query is appended: static assets are served with
+// Cache-Control: no-cache and an ETag (see staticCache in main.go), so a
+// changed file is picked up on the next request without versioned URLs.
 func (h *PageHandler) resolveAsset(path string) string {
-	// e.g. /static/css/globals.css -> static/css/globals.min.css
 	if !strings.HasPrefix(path, "/static/") {
 		return path
 	}
@@ -169,9 +184,24 @@ func (h *PageHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		JSPath:            h.resolveAsset("/static/js/app.js"),
 		ProjectsLaunched:  projectsLaunched,
 		LaunchDeadlineISO: data.LaunchDeadline.Format(time.RFC3339),
+		SiteOrigin:        data.SiteOrigin,
+		SiteName:          data.FullName,
+		Headline:          h.i18nSt.Get(locale, "resume.headline"),
+		ResumeJSONPath:    data.ResumeJSONPath,
+		ResumeMDPath:      data.ResumeMDPath,
+		GoogleAnalID:      data.GoogleAnalID,
+		JSONLD:            h.resumes.JSONLD(locale),
 	}
 
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	// Advertise the machine-readable resume at the protocol level, so an agent
+	// that only issues a HEAD request still finds it.
+	w.Header().Set("Link", strings.Join([]string{
+		fmt.Sprintf(`<%s>; rel="alternate"; type="application/json"; title="JSON Resume"`, data.ResumeJSONPath),
+		fmt.Sprintf(`<%s>; rel="alternate"; type="text/markdown"; title="Resume (Markdown)"`, data.ResumeMDPath),
+		fmt.Sprintf(`<%s>; rel="alternate"; type="application/pdf"; title="Resume (PDF)"`, data.ResumePath),
+		`</llms.txt>; rel="describedby"; type="text/plain"`,
+	}, ", "))
 	if err := h.tmpl.ExecuteTemplate(w, "layout.html", pd); err != nil {
 		http.Error(w, "template error: "+err.Error(), http.StatusInternalServerError)
 	}

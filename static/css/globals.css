@@ -53,7 +53,11 @@
   --color-text-muted: oklch(0.45 0 0);
   --color-text-inverse: oklch(1 0 0);
 
-  --color-pdf-overlay: oklch(1 0 0 / 0.65);
+  --color-danger-50: oklch(0.96 0.025 25);
+  --color-danger-300: oklch(0.8 0.12 25);
+  --color-danger-600: oklch(0.55 0.2 25);
+
+  --color-pdf-overlay: oklch(1 0 0 / 0.03);
 }
 
 [data-theme="dark"] {
@@ -89,7 +93,11 @@
   --color-text-muted: oklch(0.92 0 0);
   --color-text-inverse: oklch(0.12 0 0);
 
-  --color-pdf-overlay: oklch(0.1 0.01 250 / 0.75);
+  --color-danger-50: oklch(0.29 0.07 25);
+  --color-danger-300: oklch(0.5 0.14 25);
+  --color-danger-600: oklch(0.74 0.16 25);
+
+  --color-pdf-overlay: oklch(0.08 0.01 250 / 0.03);
 }
 
 /* ======================== BASE ======================== */
@@ -1049,9 +1057,9 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--color-pdf-overlay, oklch(1 0 0 / 0.65));
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--color-pdf-overlay, oklch(1 0 0 / 0.03));
+  backdrop-filter: blur(28px) saturate(115%);
+  -webkit-backdrop-filter: blur(28px) saturate(115%);
   z-index: 1000;
   display: none;
   align-items: center;
@@ -1073,13 +1081,170 @@ a:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 24px 64px oklch(0 0 0 / 0.15);
+  border: 1px solid var(--color-surface-glass-border);
+  box-shadow:
+    0 28px 70px oklch(0 0 0 / 0.28),
+    0 2px 10px oklch(0 0 0 / 0.1);
 }
 
 .pdfViewerFrame {
   flex: 1;
   width: 100%;
   border: none;
+}
+
+.pdfViewerToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-neutral-200);
+  background: var(--color-card);
+}
+
+.pdfViewerTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary-800);
+}
+
+.pdfViewerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pdfViewerAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 9px;
+  background: var(--color-surface);
+  color: var(--color-text-main);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.pdfViewerAction svg {
+  flex-shrink: 0;
+  opacity: 0.75;
+  transition: opacity 0.18s ease;
+}
+
+.pdfViewerAction:hover {
+  border-color: var(--color-primary-300);
+  color: var(--color-primary-800);
+  box-shadow: 0 2px 8px oklch(0 0 0 / 0.08);
+  transform: translateY(-1px);
+}
+
+.pdfViewerAction:hover svg {
+  opacity: 1;
+}
+
+.pdfViewerAction:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.pdfViewerAction:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+/* The primary action carries the brand fill; the rest stay quiet. */
+.pdfViewerAction.primary {
+  border-color: transparent;
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.pdfViewerAction.primary svg {
+  opacity: 0.9;
+}
+
+.pdfViewerAction.primary:hover {
+  background: var(--color-primary-700);
+  border-color: transparent;
+  color: var(--color-text-inverse);
+}
+
+.pdfViewerClose {
+  width: 34px;
+  padding: 0;
+  justify-content: center;
+  margin-left: 4px;
+}
+
+.pdfViewerClose:hover {
+  border-color: var(--color-danger-300);
+  background: var(--color-danger-50);
+  color: var(--color-danger-600);
+}
+
+.pdfViewerClose:focus-visible {
+  outline-color: var(--color-danger-600);
+}
+
+.pdfViewerFooter {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  padding: 11px 18px;
+  border-top: 1px solid var(--color-neutral-200);
+  background: var(--color-card);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.pdfViewerFooter svg {
+  opacity: 0.6;
+}
+
+.pdfViewerFooter a {
+  color: var(--color-primary-700);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.pdfViewerFooter a:hover {
+  text-decoration: underline;
+}
+
+.pdfViewerDot {
+  opacity: 0.45;
+}
+
+@media (max-width: 640px) {
+  .pdfViewerAction span {
+    display: none;
+  }
+
+  .pdfViewerAction {
+    width: 34px;
+    padding: 0;
+    justify-content: center;
+  }
 }
 
 /* ======================== TECHNOLOGIES ======================== */

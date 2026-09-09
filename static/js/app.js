@@ -177,7 +177,8 @@
   var pdfOverlay = document.getElementById("pdfViewerOverlay");
   var pdfFrame = document.getElementById("pdfViewerFrame");
   var viewResumeBtn = document.getElementById("viewResumeBtn");
-  var RESUME_PATH = "/static/documents/resume-ewerton.pdf";
+  // The resume is generated per locale; the overlay carries the right path.
+  var RESUME_PATH = (pdfOverlay && pdfOverlay.dataset.resume) || "/resume.pdf";
 
   function openPdfViewer() {
     if (!pdfOverlay || !pdfFrame) return;

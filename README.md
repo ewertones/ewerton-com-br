@@ -95,7 +95,7 @@ is real text — extractable, searchable, linkable — and about 90 KB.
 
 ## 🚀 Running Locally
 
-Development requires [Go](https://go.dev/doc/install) (1.20+) and standard CLI tools (`make`/`docker`).
+Development requires [Go](https://go.dev/doc/install) 1.27+ and standard CLI tools (`make`/`docker`).
 
 ### 1. Dev Server
 
